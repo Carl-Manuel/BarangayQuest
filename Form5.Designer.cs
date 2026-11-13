@@ -102,6 +102,7 @@
             activequest.BackColor = Color.SaddleBrown;
             activequest.FlatStyle = FlatStyle.Popup;
             activequest.Font = new Font("Times New Roman", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            activequest.ForeColor = Color.Moccasin;
             activequest.Location = new Point(574, 266);
             activequest.Name = "activequest";
             activequest.Size = new Size(310, 33);
