@@ -40,6 +40,7 @@
             label3 = new Label();
             passwordtxt = new TextBox();
             registernewacc = new Button();
+            accessdashboard = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -170,6 +171,19 @@
             registernewacc.TabIndex = 17;
             registernewacc.UseVisualStyleBackColor = false;
             // 
+            // accessdashboard
+            // 
+            accessdashboard.BackColor = Color.FromArgb(45, 21, 0);
+            accessdashboard.BackgroundImage = (Image)resources.GetObject("accessdashboard.BackgroundImage");
+            accessdashboard.BackgroundImageLayout = ImageLayout.Stretch;
+            accessdashboard.FlatStyle = FlatStyle.Flat;
+            accessdashboard.ForeColor = Color.FromArgb(45, 21, 0);
+            accessdashboard.Location = new Point(401, 340);
+            accessdashboard.Name = "accessdashboard";
+            accessdashboard.Size = new Size(219, 37);
+            accessdashboard.TabIndex = 18;
+            accessdashboard.UseVisualStyleBackColor = false;
+            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -177,6 +191,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1009, 581);
+            Controls.Add(accessdashboard);
             Controls.Add(registernewacc);
             Controls.Add(passwordtxt);
             Controls.Add(label3);
@@ -211,5 +226,6 @@
         private Label label3;
         private TextBox passwordtxt;
         private Button registernewacc;
+        private Button accessdashboard;
     }
 }
