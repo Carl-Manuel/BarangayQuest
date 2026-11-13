@@ -41,7 +41,7 @@
             DoubleBuffered = true;
             ForeColor = SystemColors.ControlDarkDark;
             Name = "Form1";
-            Text = "Form1";
+            Text = " ";
             Load += Form1_Load;
             ResumeLayout(false);
         }

@@ -30,22 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             pictureBox1 = new PictureBox();
-            button1 = new Button();
+            returntorole = new Button();
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox3 = new TextBox();
+            fullnametxt = new TextBox();
+            contactnumtxt = new TextBox();
+            usernameacctxt = new TextBox();
+            passcodetxt = new TextBox();
+            verifypasscodetxt = new TextBox();
+            barangayidnotxt = new TextBox();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
-            button2 = new Button();
+            registernewaccount = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -61,16 +61,16 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // button1
+            // returntorole
             // 
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Location = new Point(784, 37);
-            button1.Name = "button1";
-            button1.Size = new Size(164, 24);
-            button1.TabIndex = 1;
-            button1.UseVisualStyleBackColor = true;
+            returntorole.BackgroundImage = (Image)resources.GetObject("returntorole.BackgroundImage");
+            returntorole.BackgroundImageLayout = ImageLayout.Stretch;
+            returntorole.FlatStyle = FlatStyle.Popup;
+            returntorole.Location = new Point(784, 37);
+            returntorole.Name = "returntorole";
+            returntorole.Size = new Size(164, 24);
+            returntorole.TabIndex = 1;
+            returntorole.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -93,72 +93,72 @@
             label2.TabIndex = 3;
             label2.Text = "New Registration";
             // 
-            // textBox1
+            // fullnametxt
             // 
-            textBox1.BackColor = Color.FromArgb(64, 0, 0);
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.ForeColor = Color.LightGray;
-            textBox1.Location = new Point(84, 171);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(252, 29);
-            textBox1.TabIndex = 4;
+            fullnametxt.BackColor = Color.FromArgb(64, 0, 0);
+            fullnametxt.BorderStyle = BorderStyle.FixedSingle;
+            fullnametxt.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            fullnametxt.ForeColor = Color.LightGray;
+            fullnametxt.Location = new Point(84, 171);
+            fullnametxt.Name = "fullnametxt";
+            fullnametxt.Size = new Size(252, 29);
+            fullnametxt.TabIndex = 4;
             // 
-            // textBox2
+            // contactnumtxt
             // 
-            textBox2.BackColor = Color.FromArgb(64, 0, 0);
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox2.ForeColor = Color.LightGray;
-            textBox2.Location = new Point(84, 235);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(252, 29);
-            textBox2.TabIndex = 5;
+            contactnumtxt.BackColor = Color.FromArgb(64, 0, 0);
+            contactnumtxt.BorderStyle = BorderStyle.FixedSingle;
+            contactnumtxt.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            contactnumtxt.ForeColor = Color.LightGray;
+            contactnumtxt.Location = new Point(84, 235);
+            contactnumtxt.Name = "contactnumtxt";
+            contactnumtxt.Size = new Size(252, 29);
+            contactnumtxt.TabIndex = 5;
             // 
-            // textBox4
+            // usernameacctxt
             // 
-            textBox4.BackColor = Color.FromArgb(64, 0, 0);
-            textBox4.BorderStyle = BorderStyle.FixedSingle;
-            textBox4.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox4.ForeColor = Color.LightGray;
-            textBox4.Location = new Point(439, 235);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(252, 29);
-            textBox4.TabIndex = 7;
+            usernameacctxt.BackColor = Color.FromArgb(64, 0, 0);
+            usernameacctxt.BorderStyle = BorderStyle.FixedSingle;
+            usernameacctxt.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            usernameacctxt.ForeColor = Color.LightGray;
+            usernameacctxt.Location = new Point(439, 235);
+            usernameacctxt.Name = "usernameacctxt";
+            usernameacctxt.Size = new Size(252, 29);
+            usernameacctxt.TabIndex = 7;
             // 
-            // textBox5
+            // passcodetxt
             // 
-            textBox5.BackColor = Color.FromArgb(64, 0, 0);
-            textBox5.BorderStyle = BorderStyle.FixedSingle;
-            textBox5.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox5.ForeColor = Color.LightGray;
-            textBox5.Location = new Point(84, 307);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(395, 29);
-            textBox5.TabIndex = 8;
-            textBox5.TextChanged += textBox5_TextChanged;
+            passcodetxt.BackColor = Color.FromArgb(64, 0, 0);
+            passcodetxt.BorderStyle = BorderStyle.FixedSingle;
+            passcodetxt.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            passcodetxt.ForeColor = Color.LightGray;
+            passcodetxt.Location = new Point(84, 307);
+            passcodetxt.Name = "passcodetxt";
+            passcodetxt.Size = new Size(395, 29);
+            passcodetxt.TabIndex = 8;
+            passcodetxt.TextChanged += textBox5_TextChanged;
             // 
-            // textBox6
+            // verifypasscodetxt
             // 
-            textBox6.BackColor = Color.FromArgb(64, 0, 0);
-            textBox6.BorderStyle = BorderStyle.FixedSingle;
-            textBox6.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox6.ForeColor = Color.LightGray;
-            textBox6.Location = new Point(84, 379);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(395, 29);
-            textBox6.TabIndex = 9;
+            verifypasscodetxt.BackColor = Color.FromArgb(64, 0, 0);
+            verifypasscodetxt.BorderStyle = BorderStyle.FixedSingle;
+            verifypasscodetxt.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            verifypasscodetxt.ForeColor = Color.LightGray;
+            verifypasscodetxt.Location = new Point(84, 379);
+            verifypasscodetxt.Name = "verifypasscodetxt";
+            verifypasscodetxt.Size = new Size(395, 29);
+            verifypasscodetxt.TabIndex = 9;
             // 
-            // textBox3
+            // barangayidnotxt
             // 
-            textBox3.BackColor = Color.FromArgb(64, 0, 0);
-            textBox3.BorderStyle = BorderStyle.FixedSingle;
-            textBox3.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox3.ForeColor = Color.LightGray;
-            textBox3.Location = new Point(439, 171);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(252, 29);
-            textBox3.TabIndex = 6;
+            barangayidnotxt.BackColor = Color.FromArgb(64, 0, 0);
+            barangayidnotxt.BorderStyle = BorderStyle.FixedSingle;
+            barangayidnotxt.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            barangayidnotxt.ForeColor = Color.LightGray;
+            barangayidnotxt.Location = new Point(439, 171);
+            barangayidnotxt.Name = "barangayidnotxt";
+            barangayidnotxt.Size = new Size(252, 29);
+            barangayidnotxt.TabIndex = 6;
             // 
             // label3
             // 
@@ -232,16 +232,16 @@
             label8.TabIndex = 15;
             label8.Text = "VERIFY YOUR PASSCODE / PIN";
             // 
-            // button2
+            // registernewaccount
             // 
-            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
-            button2.BackgroundImageLayout = ImageLayout.Stretch;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Location = new Point(409, 440);
-            button2.Name = "button2";
-            button2.Size = new Size(171, 33);
-            button2.TabIndex = 16;
-            button2.UseVisualStyleBackColor = true;
+            registernewaccount.BackgroundImage = (Image)resources.GetObject("registernewaccount.BackgroundImage");
+            registernewaccount.BackgroundImageLayout = ImageLayout.Stretch;
+            registernewaccount.FlatStyle = FlatStyle.Popup;
+            registernewaccount.Location = new Point(412, 441);
+            registernewaccount.Name = "registernewaccount";
+            registernewaccount.Size = new Size(181, 33);
+            registernewaccount.TabIndex = 16;
+            registernewaccount.UseVisualStyleBackColor = true;
             // 
             // Form3
             // 
@@ -250,22 +250,22 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1009, 581);
-            Controls.Add(button2);
+            Controls.Add(registernewaccount);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(verifypasscodetxt);
+            Controls.Add(passcodetxt);
+            Controls.Add(usernameacctxt);
+            Controls.Add(barangayidnotxt);
+            Controls.Add(contactnumtxt);
+            Controls.Add(fullnametxt);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(button1);
+            Controls.Add(returntorole);
             Controls.Add(pictureBox1);
             DoubleBuffered = true;
             Name = "Form3";
@@ -278,21 +278,21 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Button button1;
+        private Button returntorole;
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox3;
+        private TextBox fullnametxt;
+        private TextBox contactnumtxt;
+        private TextBox usernameacctxt;
+        private TextBox passcodetxt;
+        private TextBox verifypasscodetxt;
+        private TextBox barangayidnotxt;
         private Label label3;
         private Label label4;
         private Label label5;
         private Label label6;
         private Label label7;
         private Label label8;
-        private Button button2;
+        private Button registernewaccount;
     }
 }

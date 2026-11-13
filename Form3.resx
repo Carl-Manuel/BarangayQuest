@@ -495,7 +495,7 @@
         RU5ErkJggg==
 </value>
   </data>
-  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="returntorole.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASIAAAAkCAYAAAAtkDcfAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
         cQAAEnEB89x6jgAABbdJREFUeF7tlk2OFUcQhDkTl+IUHIELwIIjcATWeMUOb2ZhCSzhjWVZWDayGCst
@@ -525,10 +525,10 @@
         G5ExZjs2ImPMdmxExpjt2IiMMduxERljtmMjMsZsx0ZkjNnOPyv9I4jmGgbTAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="registernewaccount.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAc8AAAA3CAYAAABqzsHrAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cwAAEnMBjCK5BwAAFL1JREFUeF7tXfl3FUX273/iq2yyzfkO4DaOoyK7yznfc0ZFXMH5KoyMoyMDCriM
+        cgAAEnIBXmVb4wAAFL1JREFUeF7tXfl3FUX273/iq2yyzfkO4DaOoyK7yznfc0ZFXMH5KoyMoyMDCriM
         IoRllE3hK4ZBFlFJWBIIkIQAWSCQDcjCjknIRkgggSSEEAjI6v2eTyfdr7qqul+/8PJT7j3nc+67dW/d
         W911q6qrXr/EGJ7el4bv+R1pebpLOetZz3rWs15fzvpOoTeG78aH35HIR1iyBdaznvWsZz3rWW/rjWFp
         fYnBYDAYDIZ/GMNS+xKDwWAwGAz/MIYm96FhKX2JOXPmzJkzZ+6PG0N39qVhyX1Jy3e6lLOe9axnPev1
