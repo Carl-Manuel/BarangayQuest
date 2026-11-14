@@ -121,6 +121,7 @@
             // 
             citizenusernametxt.BackColor = Color.FromArgb(64, 0, 0);
             citizenusernametxt.BorderStyle = BorderStyle.FixedSingle;
+            citizenusernametxt.ForeColor = SystemColors.Menu;
             citizenusernametxt.Location = new Point(317, 234);
             citizenusernametxt.Name = "citizenusernametxt";
             citizenusernametxt.Size = new Size(373, 23);
@@ -154,6 +155,7 @@
             // 
             passwordtxt.BackColor = Color.FromArgb(64, 0, 0);
             passwordtxt.BorderStyle = BorderStyle.FixedSingle;
+            passwordtxt.ForeColor = SystemColors.Menu;
             passwordtxt.Location = new Point(317, 300);
             passwordtxt.Name = "passwordtxt";
             passwordtxt.Size = new Size(373, 23);
