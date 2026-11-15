@@ -47,12 +47,10 @@
             label2 = new Label();
             toolsredeemed = new Label();
             activequestdescription2 = new Label();
-            deadlineschedule = new Button();
             abandonquest = new Button();
             submitproofofwork = new Button();
             submitproofofwork2 = new Button();
             abandonquest2 = new Button();
-            deadlineschedule2 = new Button();
             activequestdescription3 = new Label();
             toolsredeemed2 = new Label();
             label6 = new Label();
@@ -67,6 +65,8 @@
             label4 = new Label();
             totalpoints = new Label();
             button1 = new Button();
+            dealinetxt = new TextBox();
+            deadlinetxt2 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -294,18 +294,6 @@
             activequestdescription2.TabIndex = 53;
             activequestdescription2.Text = "THIS SHOWS THE DESCRIPTION OF THE ACTIVE QUEST";
             // 
-            // deadlineschedule
-            // 
-            deadlineschedule.BackColor = Color.Transparent;
-            deadlineschedule.BackgroundImage = (Image)resources.GetObject("deadlineschedule.BackgroundImage");
-            deadlineschedule.BackgroundImageLayout = ImageLayout.Stretch;
-            deadlineschedule.FlatStyle = FlatStyle.Flat;
-            deadlineschedule.Location = new Point(246, 265);
-            deadlineschedule.Name = "deadlineschedule";
-            deadlineschedule.Size = new Size(351, 31);
-            deadlineschedule.TabIndex = 54;
-            deadlineschedule.UseVisualStyleBackColor = false;
-            // 
             // abandonquest
             // 
             abandonquest.BackColor = Color.FromArgb(60, 40, 0);
@@ -357,18 +345,6 @@
             abandonquest2.Size = new Size(138, 33);
             abandonquest2.TabIndex = 68;
             abandonquest2.UseVisualStyleBackColor = false;
-            // 
-            // deadlineschedule2
-            // 
-            deadlineschedule2.BackColor = Color.Transparent;
-            deadlineschedule2.BackgroundImage = (Image)resources.GetObject("deadlineschedule2.BackgroundImage");
-            deadlineschedule2.BackgroundImageLayout = ImageLayout.Stretch;
-            deadlineschedule2.FlatStyle = FlatStyle.Flat;
-            deadlineschedule2.Location = new Point(246, 462);
-            deadlineschedule2.Name = "deadlineschedule2";
-            deadlineschedule2.Size = new Size(351, 31);
-            deadlineschedule2.TabIndex = 67;
-            deadlineschedule2.UseVisualStyleBackColor = false;
             // 
             // activequestdescription3
             // 
@@ -538,6 +514,30 @@
             button1.TabIndex = 73;
             button1.UseVisualStyleBackColor = false;
             // 
+            // dealinetxt
+            // 
+            dealinetxt.BackColor = Color.Chartreuse;
+            dealinetxt.BorderStyle = BorderStyle.FixedSingle;
+            dealinetxt.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dealinetxt.ForeColor = Color.Black;
+            dealinetxt.Location = new Point(268, 271);
+            dealinetxt.Name = "dealinetxt";
+            dealinetxt.Size = new Size(284, 21);
+            dealinetxt.TabIndex = 74;
+            dealinetxt.Text = "DEADLINE: ";
+            // 
+            // deadlinetxt2
+            // 
+            deadlinetxt2.BackColor = Color.Chartreuse;
+            deadlinetxt2.BorderStyle = BorderStyle.FixedSingle;
+            deadlinetxt2.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            deadlinetxt2.ForeColor = Color.Black;
+            deadlinetxt2.Location = new Point(268, 468);
+            deadlinetxt2.Name = "deadlinetxt2";
+            deadlinetxt2.Size = new Size(284, 21);
+            deadlinetxt2.TabIndex = 75;
+            deadlinetxt2.Text = "DEADLINE: ";
+            // 
             // Form8
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -545,13 +545,14 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1009, 581);
+            Controls.Add(deadlinetxt2);
+            Controls.Add(dealinetxt);
             Controls.Add(button1);
             Controls.Add(totalpoints);
             Controls.Add(label4);
             Controls.Add(pictureBox6);
             Controls.Add(submitproofofwork2);
             Controls.Add(abandonquest2);
-            Controls.Add(deadlineschedule2);
             Controls.Add(activequestdescription3);
             Controls.Add(toolsredeemed2);
             Controls.Add(label6);
@@ -564,7 +565,6 @@
             Controls.Add(pictureBox5);
             Controls.Add(submitproofofwork);
             Controls.Add(abandonquest);
-            Controls.Add(deadlineschedule);
             Controls.Add(activequestdescription2);
             Controls.Add(toolsredeemed);
             Controls.Add(label2);
@@ -616,12 +616,10 @@
         private Label label2;
         private Label toolsredeemed;
         private Label activequestdescription2;
-        private Button deadlineschedule;
         private Button abandonquest;
         private Button submitproofofwork;
         private Button submitproofofwork2;
         private Button abandonquest2;
-        private Button deadlineschedule2;
         private Label activequestdescription3;
         private Label toolsredeemed2;
         private Label label6;
@@ -636,5 +634,7 @@
         private Label label4;
         private Label totalpoints;
         private Button button1;
+        private TextBox dealinetxt;
+        private TextBox deadlinetxt2;
     }
 }
