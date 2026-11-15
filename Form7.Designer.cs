@@ -120,7 +120,7 @@
             userid2.BackColor = Color.FromArgb(54, 4, 2);
             userid2.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             userid2.ForeColor = Color.DarkGray;
-            userid2.Location = new Point(517, 203);
+            userid2.Location = new Point(361, 189);
             userid2.Name = "userid2";
             userid2.Size = new Size(54, 15);
             userid2.TabIndex = 26;
@@ -156,7 +156,7 @@
             username2.BackColor = Color.FromArgb(54, 4, 2);
             username2.Font = new Font("Times New Roman", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             username2.ForeColor = Color.FromArgb(255, 224, 96);
-            username2.Location = new Point(495, 158);
+            username2.Location = new Point(339, 144);
             username2.Name = "username2";
             username2.Size = new Size(100, 33);
             username2.TabIndex = 23;
@@ -164,10 +164,10 @@
             // 
             // pictureBox5
             // 
-            pictureBox5.BackColor = Color.Transparent;
+            pictureBox5.BackColor = Color.FromArgb(64, 0, 0);
             pictureBox5.BackgroundImage = (Image)resources.GetObject("pictureBox5.BackgroundImage");
             pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox5.Location = new Point(463, 221);
+            pictureBox5.Location = new Point(173, 144);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(160, 118);
             pictureBox5.TabIndex = 22;

@@ -90,10 +90,10 @@
             // 
             // pictureBox4
             // 
-            pictureBox4.BackColor = Color.Transparent;
+            pictureBox4.BackColor = Color.FromArgb(64, 0, 0);
             pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(459, 212);
+            pictureBox4.Location = new Point(176, 134);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(160, 118);
             pictureBox4.TabIndex = 3;
@@ -105,7 +105,7 @@
             username.BackColor = Color.FromArgb(54, 4, 2);
             username.Font = new Font("Times New Roman", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             username.ForeColor = Color.FromArgb(255, 224, 96);
-            username.Location = new Point(491, 149);
+            username.Location = new Point(342, 134);
             username.Name = "username";
             username.Size = new Size(100, 33);
             username.TabIndex = 4;
@@ -142,7 +142,7 @@
             userid.BackColor = Color.FromArgb(54, 4, 2);
             userid.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             userid.ForeColor = Color.DarkGray;
-            userid.Location = new Point(513, 194);
+            userid.Location = new Point(364, 179);
             userid.Name = "userid";
             userid.Size = new Size(54, 15);
             userid.TabIndex = 7;

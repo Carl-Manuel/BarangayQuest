@@ -65,8 +65,8 @@
             label4 = new Label();
             totalpoints = new Label();
             button1 = new Button();
-            dealinetxt = new TextBox();
-            deadlinetxt2 = new TextBox();
+            deadline2 = new Label();
+            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -514,29 +514,29 @@
             button1.TabIndex = 73;
             button1.UseVisualStyleBackColor = false;
             // 
-            // dealinetxt
+            // deadline2
             // 
-            dealinetxt.BackColor = Color.Chartreuse;
-            dealinetxt.BorderStyle = BorderStyle.FixedSingle;
-            dealinetxt.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dealinetxt.ForeColor = Color.Black;
-            dealinetxt.Location = new Point(268, 271);
-            dealinetxt.Name = "dealinetxt";
-            dealinetxt.Size = new Size(284, 21);
-            dealinetxt.TabIndex = 74;
-            dealinetxt.Text = "DEADLINE: ";
+            deadline2.AutoSize = true;
+            deadline2.BackColor = Color.Chartreuse;
+            deadline2.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            deadline2.ForeColor = SystemColors.ActiveCaptionText;
+            deadline2.Location = new Point(268, 461);
+            deadline2.Name = "deadline2";
+            deadline2.Size = new Size(74, 15);
+            deadline2.TabIndex = 74;
+            deadline2.Text = "DEADLINE: ";
             // 
-            // deadlinetxt2
+            // label5
             // 
-            deadlinetxt2.BackColor = Color.Chartreuse;
-            deadlinetxt2.BorderStyle = BorderStyle.FixedSingle;
-            deadlinetxt2.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            deadlinetxt2.ForeColor = Color.Black;
-            deadlinetxt2.Location = new Point(268, 468);
-            deadlinetxt2.Name = "deadlinetxt2";
-            deadlinetxt2.Size = new Size(284, 21);
-            deadlinetxt2.TabIndex = 75;
-            deadlinetxt2.Text = "DEADLINE: ";
+            label5.AutoSize = true;
+            label5.BackColor = Color.Chartreuse;
+            label5.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.ForeColor = SystemColors.ActiveCaptionText;
+            label5.Location = new Point(268, 271);
+            label5.Name = "label5";
+            label5.Size = new Size(74, 15);
+            label5.TabIndex = 75;
+            label5.Text = "DEADLINE: ";
             // 
             // Form8
             // 
@@ -545,8 +545,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1009, 581);
-            Controls.Add(deadlinetxt2);
-            Controls.Add(dealinetxt);
+            Controls.Add(label5);
+            Controls.Add(deadline2);
             Controls.Add(button1);
             Controls.Add(totalpoints);
             Controls.Add(label4);
@@ -634,7 +634,7 @@
         private Label label4;
         private Label totalpoints;
         private Button button1;
-        private TextBox dealinetxt;
-        private TextBox deadlinetxt2;
+        private Label deadline2;
+        private Label label5;
     }
 }

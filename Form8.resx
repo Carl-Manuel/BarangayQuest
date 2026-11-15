@@ -121,7 +121,7 @@
   <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABk8AAAB7CAYAAADdahd+AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
-        cgAAEnIBXmVb4wAAiuxJREFUeF7tnXd4VVXaxcGu2EEIvYQ0UoCEECCk957Qe+9NQLCgCNjGMs6njjo6
+        cQAAEnEB89x6jgAAiuxJREFUeF7tnXd4VVXaxcGu2EEIvYQ0UoCEECCk957Qe+9NQLCgCNjGMs6njjo6
         6jgWir2CiohldFSKjl1RwDbqjHWKimVmfc96zzk3N+deQkJTh/XH7zm5uefus88u7977Xbs0GZsZheF9
         OmJIr3ZGddJJKOx8FLLbHoKMVk32DxFNkdmqKTIivM9NkNP2EOS0O8TiURnfHCPTO2NifjeMyYzC2Kxo
         TMrvZtcR/TphcEpbu6ew85HIbN0UmRFuWF54+4KguJLM1gchu83ByOtwOIamtsP0kh5YOCwTJw/og1mV
@@ -720,7 +720,7 @@
   <data name="pictureBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAATAAAAArCAYAAAD/ndQfAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAErZJREFUeF7tm/ezXVUVx7EMI5YRkRaldwi9B0ghEEhCGgMIooARDIQeDBiQIr0X
+        wAAADsABataJCQAAErZJREFUeF7tm/ezXVUVx7EMI5YRkRaldwi9B0ghEEhCGgMIooARDIQeDBiQIr0X
         qRIgECAEklAcUcQRRRTHEcXBjkoRRRT9H47zOY/vZb11197n3JcXyIX9w3eSt+uq313OvquM3nyVqqCg
         oKAfsYovKCgoKOgXFAIrKCjoWxQCKygo6FsUAisoKOhbFAIrKCjoWxQCKygo6FsUAisoKOhbFAIrKCjo
         W7QisAkjP1zdetLW1R/vOrB6Y+n06n+PHFz9Z9mM+m/Krztu8+qZa8fUbb85a8u63oPyVF0Oryw6qDr1
@@ -5087,7 +5087,7 @@
   <data name="pictureBox6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAYAAAC+ZpjcAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAACqtJREFUeF7t1iEBACAQwMCvQA765wOPZfLEmSXY7DUHAIDOvAEAgD8GCwAgZrAA
+        EAAACxABrSO9dQAACqtJREFUeF7t1iEBACAQwMCvQA765wOPZfLEmSXY7DUHAIDOvAEAgD8GCwAgZrAA
         AGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAg
         ZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIG
         CwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAA
