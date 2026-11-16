@@ -297,13 +297,14 @@
             // 
             // backbutton
             // 
-            backbutton.BackColor = Color.Transparent;
+            backbutton.BackColor = Color.FromArgb(60, 40, 0);
             backbutton.BackgroundImage = (Image)resources.GetObject("backbutton.BackgroundImage");
             backbutton.BackgroundImageLayout = ImageLayout.Stretch;
             backbutton.FlatStyle = FlatStyle.Flat;
-            backbutton.Location = new Point(236, 393);
+            backbutton.ForeColor = Color.FromArgb(60, 40, 0);
+            backbutton.Location = new Point(236, 367);
             backbutton.Name = "backbutton";
-            backbutton.Size = new Size(133, 32);
+            backbutton.Size = new Size(133, 58);
             backbutton.TabIndex = 79;
             backbutton.UseVisualStyleBackColor = false;
             // 
