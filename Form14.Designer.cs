@@ -51,6 +51,10 @@
             numberofdispatchers = new Label();
             backbutton3 = new Button();
             button1 = new Button();
+            suspendacc = new Button();
+            updatebutt = new Button();
+            modifyuserprofile1 = new Button();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -290,6 +294,57 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // suspendacc
+            // 
+            suspendacc.BackColor = Color.Transparent;
+            suspendacc.BackgroundImage = (Image)resources.GetObject("suspendacc.BackgroundImage");
+            suspendacc.BackgroundImageLayout = ImageLayout.Stretch;
+            suspendacc.FlatStyle = FlatStyle.Popup;
+            suspendacc.ForeColor = Color.Transparent;
+            suspendacc.Location = new Point(341, 478);
+            suspendacc.Name = "suspendacc";
+            suspendacc.Size = new Size(156, 44);
+            suspendacc.TabIndex = 86;
+            suspendacc.UseVisualStyleBackColor = false;
+            // 
+            // updatebutt
+            // 
+            updatebutt.BackColor = Color.Transparent;
+            updatebutt.BackgroundImage = (Image)resources.GetObject("updatebutt.BackgroundImage");
+            updatebutt.BackgroundImageLayout = ImageLayout.Stretch;
+            updatebutt.FlatStyle = FlatStyle.Popup;
+            updatebutt.ForeColor = Color.Transparent;
+            updatebutt.Location = new Point(420, 526);
+            updatebutt.Name = "updatebutt";
+            updatebutt.Size = new Size(161, 46);
+            updatebutt.TabIndex = 87;
+            updatebutt.UseVisualStyleBackColor = false;
+            // 
+            // modifyuserprofile1
+            // 
+            modifyuserprofile1.BackColor = Color.Transparent;
+            modifyuserprofile1.BackgroundImage = (Image)resources.GetObject("modifyuserprofile1.BackgroundImage");
+            modifyuserprofile1.BackgroundImageLayout = ImageLayout.Stretch;
+            modifyuserprofile1.FlatStyle = FlatStyle.Popup;
+            modifyuserprofile1.ForeColor = Color.Transparent;
+            modifyuserprofile1.Location = new Point(504, 474);
+            modifyuserprofile1.Name = "modifyuserprofile1";
+            modifyuserprofile1.Size = new Size(156, 44);
+            modifyuserprofile1.TabIndex = 88;
+            modifyuserprofile1.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.FromArgb(215, 38, 38);
+            label3.Font = new Font("Arial Narrow", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.FloralWhite;
+            label3.Location = new Point(521, 491);
+            label3.Name = "label3";
+            label3.Size = new Size(122, 16);
+            label3.TabIndex = 89;
+            label3.Text = "MODIFY USER PROFILE";
+            // 
             // Form14
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -297,6 +352,10 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1009, 581);
+            Controls.Add(label3);
+            Controls.Add(modifyuserprofile1);
+            Controls.Add(updatebutt);
+            Controls.Add(suspendacc);
             Controls.Add(button1);
             Controls.Add(backbutton3);
             Controls.Add(numberofdispatchers);
@@ -353,5 +412,9 @@
         private Label numberofdispatchers;
         private Button backbutton3;
         private Button button1;
+        private Button suspendacc;
+        private Button updatebutt;
+        private Button modifyuserprofile1;
+        private Label label3;
     }
 }
