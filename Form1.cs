@@ -20,7 +20,12 @@ namespace BarangayQuest {
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.KeyDown += Form1_KeyDown;
+        }
 
+        private void Form1_KeyDown(object? sender, KeyEventArgs e)
+        {
+            StartApp();
         }
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)

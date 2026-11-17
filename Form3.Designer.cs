@@ -33,19 +33,19 @@
             returntorole = new Button();
             label1 = new Label();
             label2 = new Label();
-            fullnametxt = new TextBox();
-            contactnumtxt = new TextBox();
-            usernameacctxt = new TextBox();
-            passcodetxt = new TextBox();
-            verifypasscodetxt = new TextBox();
-            barangayidnotxt = new TextBox();
+            txtFullName = new TextBox();
+            txtContactNumber = new TextBox();
+            txtUsername = new TextBox();
+            txtPasscode = new TextBox();
+            txtVerifyPasscode = new TextBox();
+            txtBarangayID = new TextBox();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
-            registernewaccount = new Button();
+            btnRegister = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -71,6 +71,7 @@
             returntorole.Size = new Size(164, 24);
             returntorole.TabIndex = 1;
             returntorole.UseVisualStyleBackColor = true;
+            returntorole.Click += returntorole_Click;
             // 
             // label1
             // 
@@ -93,72 +94,74 @@
             label2.TabIndex = 3;
             label2.Text = "New Registration";
             // 
-            // fullnametxt
+            // txtFullName
             // 
-            fullnametxt.BackColor = Color.FromArgb(64, 0, 0);
-            fullnametxt.BorderStyle = BorderStyle.FixedSingle;
-            fullnametxt.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            fullnametxt.ForeColor = Color.LightGray;
-            fullnametxt.Location = new Point(84, 171);
-            fullnametxt.Name = "fullnametxt";
-            fullnametxt.Size = new Size(252, 29);
-            fullnametxt.TabIndex = 4;
+            txtFullName.BackColor = Color.FromArgb(64, 0, 0);
+            txtFullName.BorderStyle = BorderStyle.FixedSingle;
+            txtFullName.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtFullName.ForeColor = Color.LightGray;
+            txtFullName.Location = new Point(84, 171);
+            txtFullName.Name = "txtFullName";
+            txtFullName.Size = new Size(252, 29);
+            txtFullName.TabIndex = 4;
             // 
-            // contactnumtxt
+            // txtContactNumber
             // 
-            contactnumtxt.BackColor = Color.FromArgb(64, 0, 0);
-            contactnumtxt.BorderStyle = BorderStyle.FixedSingle;
-            contactnumtxt.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            contactnumtxt.ForeColor = Color.LightGray;
-            contactnumtxt.Location = new Point(84, 235);
-            contactnumtxt.Name = "contactnumtxt";
-            contactnumtxt.Size = new Size(252, 29);
-            contactnumtxt.TabIndex = 5;
+            txtContactNumber.BackColor = Color.FromArgb(64, 0, 0);
+            txtContactNumber.BorderStyle = BorderStyle.FixedSingle;
+            txtContactNumber.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtContactNumber.ForeColor = Color.LightGray;
+            txtContactNumber.Location = new Point(84, 235);
+            txtContactNumber.Name = "txtContactNumber";
+            txtContactNumber.Size = new Size(252, 29);
+            txtContactNumber.TabIndex = 5;
             // 
-            // usernameacctxt
+            // txtUsername
             // 
-            usernameacctxt.BackColor = Color.FromArgb(64, 0, 0);
-            usernameacctxt.BorderStyle = BorderStyle.FixedSingle;
-            usernameacctxt.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            usernameacctxt.ForeColor = Color.LightGray;
-            usernameacctxt.Location = new Point(439, 235);
-            usernameacctxt.Name = "usernameacctxt";
-            usernameacctxt.Size = new Size(252, 29);
-            usernameacctxt.TabIndex = 7;
+            txtUsername.BackColor = Color.FromArgb(64, 0, 0);
+            txtUsername.BorderStyle = BorderStyle.FixedSingle;
+            txtUsername.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtUsername.ForeColor = Color.LightGray;
+            txtUsername.Location = new Point(439, 235);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(252, 29);
+            txtUsername.TabIndex = 7;
             // 
-            // passcodetxt
+            // txtPasscode
             // 
-            passcodetxt.BackColor = Color.FromArgb(64, 0, 0);
-            passcodetxt.BorderStyle = BorderStyle.FixedSingle;
-            passcodetxt.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            passcodetxt.ForeColor = Color.LightGray;
-            passcodetxt.Location = new Point(84, 307);
-            passcodetxt.Name = "passcodetxt";
-            passcodetxt.Size = new Size(395, 29);
-            passcodetxt.TabIndex = 8;
-            passcodetxt.TextChanged += textBox5_TextChanged;
+            txtPasscode.BackColor = Color.FromArgb(64, 0, 0);
+            txtPasscode.BorderStyle = BorderStyle.FixedSingle;
+            txtPasscode.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtPasscode.ForeColor = Color.LightGray;
+            txtPasscode.Location = new Point(84, 307);
+            txtPasscode.Name = "txtPasscode";
+            txtPasscode.Size = new Size(395, 29);
+            txtPasscode.TabIndex = 8;
+            txtPasscode.UseSystemPasswordChar = true;
+            txtPasscode.TextChanged += textBox5_TextChanged;
             // 
-            // verifypasscodetxt
+            // txtVerifyPasscode
             // 
-            verifypasscodetxt.BackColor = Color.FromArgb(64, 0, 0);
-            verifypasscodetxt.BorderStyle = BorderStyle.FixedSingle;
-            verifypasscodetxt.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            verifypasscodetxt.ForeColor = Color.LightGray;
-            verifypasscodetxt.Location = new Point(84, 379);
-            verifypasscodetxt.Name = "verifypasscodetxt";
-            verifypasscodetxt.Size = new Size(395, 29);
-            verifypasscodetxt.TabIndex = 9;
+            txtVerifyPasscode.BackColor = Color.FromArgb(64, 0, 0);
+            txtVerifyPasscode.BorderStyle = BorderStyle.FixedSingle;
+            txtVerifyPasscode.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtVerifyPasscode.ForeColor = Color.LightGray;
+            txtVerifyPasscode.Location = new Point(84, 379);
+            txtVerifyPasscode.Name = "txtVerifyPasscode";
+            txtVerifyPasscode.Size = new Size(395, 29);
+            txtVerifyPasscode.TabIndex = 9;
+            txtVerifyPasscode.UseSystemPasswordChar = true;
             // 
-            // barangayidnotxt
+            // txtBarangayID
             // 
-            barangayidnotxt.BackColor = Color.FromArgb(64, 0, 0);
-            barangayidnotxt.BorderStyle = BorderStyle.FixedSingle;
-            barangayidnotxt.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            barangayidnotxt.ForeColor = Color.LightGray;
-            barangayidnotxt.Location = new Point(439, 171);
-            barangayidnotxt.Name = "barangayidnotxt";
-            barangayidnotxt.Size = new Size(252, 29);
-            barangayidnotxt.TabIndex = 6;
+            txtBarangayID.BackColor = Color.FromArgb(64, 0, 0);
+            txtBarangayID.BorderStyle = BorderStyle.FixedSingle;
+            txtBarangayID.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtBarangayID.ForeColor = Color.LightGray;
+            txtBarangayID.Location = new Point(439, 171);
+            txtBarangayID.Name = "txtBarangayID";
+            txtBarangayID.Size = new Size(252, 29);
+            txtBarangayID.TabIndex = 6;
             // 
             // label3
             // 
@@ -232,16 +235,17 @@
             label8.TabIndex = 15;
             label8.Text = "VERIFY YOUR PASSCODE / PIN";
             // 
-            // registernewaccount
+            // btnRegister
             // 
-            registernewaccount.BackgroundImage = (Image)resources.GetObject("registernewaccount.BackgroundImage");
-            registernewaccount.BackgroundImageLayout = ImageLayout.Stretch;
-            registernewaccount.FlatStyle = FlatStyle.Popup;
-            registernewaccount.Location = new Point(412, 441);
-            registernewaccount.Name = "registernewaccount";
-            registernewaccount.Size = new Size(181, 33);
-            registernewaccount.TabIndex = 16;
-            registernewaccount.UseVisualStyleBackColor = true;
+            btnRegister.BackgroundImage = (Image)resources.GetObject("btnRegister.BackgroundImage");
+            btnRegister.BackgroundImageLayout = ImageLayout.Stretch;
+            btnRegister.FlatStyle = FlatStyle.Popup;
+            btnRegister.Location = new Point(412, 441);
+            btnRegister.Name = "btnRegister";
+            btnRegister.Size = new Size(181, 33);
+            btnRegister.TabIndex = 16;
+            btnRegister.UseVisualStyleBackColor = true;
+            btnRegister.Click += btnRegister_Click;
             // 
             // Form3
             // 
@@ -250,19 +254,19 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1009, 581);
-            Controls.Add(registernewaccount);
+            Controls.Add(btnRegister);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(verifypasscodetxt);
-            Controls.Add(passcodetxt);
-            Controls.Add(usernameacctxt);
-            Controls.Add(barangayidnotxt);
-            Controls.Add(contactnumtxt);
-            Controls.Add(fullnametxt);
+            Controls.Add(txtVerifyPasscode);
+            Controls.Add(txtPasscode);
+            Controls.Add(txtUsername);
+            Controls.Add(txtBarangayID);
+            Controls.Add(txtContactNumber);
+            Controls.Add(txtFullName);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(returntorole);
@@ -281,18 +285,18 @@
         private Button returntorole;
         private Label label1;
         private Label label2;
-        private TextBox fullnametxt;
-        private TextBox contactnumtxt;
-        private TextBox usernameacctxt;
-        private TextBox passcodetxt;
-        private TextBox verifypasscodetxt;
-        private TextBox barangayidnotxt;
+        private TextBox txtFullName;
+        private TextBox txtContactNumber;
+        private TextBox txtUsername;
+        private TextBox txtPasscode;
+        private TextBox txtVerifyPasscode;
+        private TextBox txtBarangayID;
         private Label label3;
         private Label label4;
         private Label label5;
         private Label label6;
         private Label label7;
         private Label label8;
-        private Button registernewaccount;
+        private Button btnRegister;
     }
 }

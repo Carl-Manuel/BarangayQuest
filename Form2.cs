@@ -14,5 +14,19 @@ namespace BarangayQuest
         {
             InitializeComponent();
         }
+
+        private void CitizenWorkerBtn_Click(object sender, EventArgs e)
+        {
+            Form3 Form3 = new Form3();
+            Form3.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form9 Form9 = new Form9();
+            Form9.Show();
+            this.Hide();
+        }
     }
 }

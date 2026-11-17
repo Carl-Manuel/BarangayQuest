@@ -29,22 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            button1 = new Button();
+            CitizenWorkerBtn = new Button();
             button2 = new Button();
             button3 = new Button();
             SuspendLayout();
             // 
-            // button1
+            // CitizenWorkerBtn
             // 
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Location = new Point(80, 225);
-            button1.Name = "button1";
-            button1.Size = new Size(221, 215);
-            button1.TabIndex = 0;
-            button1.UseVisualStyleBackColor = true;
+            CitizenWorkerBtn.BackgroundImage = (Image)resources.GetObject("CitizenWorkerBtn.BackgroundImage");
+            CitizenWorkerBtn.BackgroundImageLayout = ImageLayout.Stretch;
+            CitizenWorkerBtn.FlatAppearance.BorderSize = 0;
+            CitizenWorkerBtn.FlatStyle = FlatStyle.Popup;
+            CitizenWorkerBtn.Location = new Point(80, 225);
+            CitizenWorkerBtn.Name = "CitizenWorkerBtn";
+            CitizenWorkerBtn.Size = new Size(221, 215);
+            CitizenWorkerBtn.TabIndex = 0;
+            CitizenWorkerBtn.UseVisualStyleBackColor = true;
+            CitizenWorkerBtn.Click += CitizenWorkerBtn_Click;
             // 
             // button2
             // 
@@ -69,6 +70,7 @@
             button3.Size = new Size(221, 215);
             button3.TabIndex = 2;
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // Form2
             // 
@@ -79,7 +81,7 @@
             ClientSize = new Size(1009, 581);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(CitizenWorkerBtn);
             DoubleBuffered = true;
             Name = "Form2";
             Text = "Form2";
@@ -88,7 +90,7 @@
 
         #endregion
 
-        private Button button1;
+        private Button CitizenWorkerBtn;
         private Button button2;
         private Button button3;
     }
