@@ -125,11 +125,11 @@
             label2.BackColor = Color.FromArgb(60, 40, 0);
             label2.Font = new Font("Times New Roman", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Cornsilk;
-            label2.Location = new Point(384, 205);
+            label2.Location = new Point(374, 205);
             label2.Name = "label2";
-            label2.Size = new Size(228, 14);
+            label2.Size = new Size(244, 14);
             label2.TabIndex = 51;
-            label2.Text = "Authorized Barangay Dispatcher & Officials Only";
+            label2.Text = "Authorized Barangay Dispatcher and Officials Only";
             // 
             // label6
             // 
