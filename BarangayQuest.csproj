@@ -24,7 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="GMap.NET.WinForms" Version="2.1.7" />
     <PackageReference Include="MySqlConnector" Version="3.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.1" />
   </ItemGroup>
 
 </Project>

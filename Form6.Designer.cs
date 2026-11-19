@@ -33,22 +33,23 @@
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
-            username = new Label();
-            taskfinished = new Label();
-            label1 = new Label();
-            userid = new Label();
-            userphonenumber = new Label();
+            lblFullName = new Label();
+            lblTasksFinished = new Label();
+            lblWorkerRank = new Label();
+            lblUserId = new Label();
+            lblPhoneNumber = new Label();
             label2 = new Label();
-            lguname = new Label();
-            label3 = new Label();
-            usertotalpoints = new Label();
+            lblLguName = new Label();
+            lblRole = new Label();
+            lblTotalPoints = new Label();
             label4 = new Label();
-            manageaccsecurity = new Button();
+            btnManageSecurity = new Button();
             citizendashboard = new Button();
             questmap = new Button();
             citizenquest = new Button();
             pointshop = new Button();
-            logout = new Button();
+            btLogout_Click = new Button();
+            btBack_Click = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -99,66 +100,65 @@
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
             // 
-            // username
+            // lblFullName
             // 
-            username.AutoSize = true;
-            username.BackColor = Color.FromArgb(54, 4, 2);
-            username.Font = new Font("Times New Roman", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            username.ForeColor = Color.FromArgb(255, 224, 96);
-            username.Location = new Point(342, 134);
-            username.Name = "username";
-            username.Size = new Size(100, 33);
-            username.TabIndex = 4;
-            username.Text = "NAME";
+            lblFullName.AutoSize = true;
+            lblFullName.BackColor = Color.FromArgb(54, 4, 2);
+            lblFullName.Font = new Font("Times New Roman", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblFullName.ForeColor = Color.FromArgb(255, 224, 96);
+            lblFullName.Location = new Point(342, 134);
+            lblFullName.Name = "lblFullName";
+            lblFullName.Size = new Size(100, 33);
+            lblFullName.TabIndex = 4;
+            lblFullName.Text = "NAME";
             // 
-            // taskfinished
+            // lblTasksFinished
             // 
-            taskfinished.AutoSize = true;
-            taskfinished.BackColor = Color.FromArgb(252, 172, 24);
-            taskfinished.Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            taskfinished.ForeColor = Color.Black;
-            taskfinished.Location = new Point(685, 268);
-            taskfinished.Name = "taskfinished";
-            taskfinished.Size = new Size(133, 17);
-            taskfinished.TabIndex = 5;
-            taskfinished.Text = "TASKS FINISHED: ";
-            taskfinished.Click += taskfinished_Click;
+            lblTasksFinished.AutoSize = true;
+            lblTasksFinished.BackColor = Color.FromArgb(252, 172, 24);
+            lblTasksFinished.Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTasksFinished.ForeColor = Color.Black;
+            lblTasksFinished.Location = new Point(685, 268);
+            lblTasksFinished.Name = "lblTasksFinished";
+            lblTasksFinished.Size = new Size(133, 17);
+            lblTasksFinished.TabIndex = 5;
+            lblTasksFinished.Text = "TASKS FINISHED: ";
             // 
-            // label1
+            // lblWorkerRank
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.FromArgb(252, 172, 24);
-            label1.Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(224, 268);
-            label1.Name = "label1";
-            label1.Size = new Size(179, 17);
-            label1.TabIndex = 6;
-            label1.Text = "EXPERIENCED WORKER";
+            lblWorkerRank.AutoSize = true;
+            lblWorkerRank.BackColor = Color.FromArgb(252, 172, 24);
+            lblWorkerRank.Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblWorkerRank.ForeColor = Color.Black;
+            lblWorkerRank.Location = new Point(224, 268);
+            lblWorkerRank.Name = "lblWorkerRank";
+            lblWorkerRank.Size = new Size(179, 17);
+            lblWorkerRank.TabIndex = 6;
+            lblWorkerRank.Text = "EXPERIENCED WORKER";
             // 
-            // userid
+            // lblUserId
             // 
-            userid.AutoSize = true;
-            userid.BackColor = Color.FromArgb(54, 4, 2);
-            userid.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            userid.ForeColor = Color.DarkGray;
-            userid.Location = new Point(364, 179);
-            userid.Name = "userid";
-            userid.Size = new Size(54, 15);
-            userid.TabIndex = 7;
-            userid.Text = "USER ID";
+            lblUserId.AutoSize = true;
+            lblUserId.BackColor = Color.FromArgb(54, 4, 2);
+            lblUserId.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblUserId.ForeColor = Color.DarkGray;
+            lblUserId.Location = new Point(364, 179);
+            lblUserId.Name = "lblUserId";
+            lblUserId.Size = new Size(54, 15);
+            lblUserId.TabIndex = 7;
+            lblUserId.Text = "USER ID";
             // 
-            // userphonenumber
+            // lblPhoneNumber
             // 
-            userphonenumber.AutoSize = true;
-            userphonenumber.BackColor = Color.FromArgb(60, 40, 0);
-            userphonenumber.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            userphonenumber.ForeColor = Color.LightGray;
-            userphonenumber.Location = new Point(694, 324);
-            userphonenumber.Name = "userphonenumber";
-            userphonenumber.Size = new Size(174, 23);
-            userphonenumber.TabIndex = 8;
-            userphonenumber.Text = "PHONE NUMBER";
+            lblPhoneNumber.AutoSize = true;
+            lblPhoneNumber.BackColor = Color.FromArgb(60, 40, 0);
+            lblPhoneNumber.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblPhoneNumber.ForeColor = Color.LightGray;
+            lblPhoneNumber.Location = new Point(694, 324);
+            lblPhoneNumber.Name = "lblPhoneNumber";
+            lblPhoneNumber.Size = new Size(174, 23);
+            lblPhoneNumber.TabIndex = 8;
+            lblPhoneNumber.Text = "PHONE NUMBER";
             // 
             // label2
             // 
@@ -172,41 +172,41 @@
             label2.TabIndex = 9;
             label2.Text = "PHONE NUMBER";
             // 
-            // lguname
+            // lblLguName
             // 
-            lguname.AutoSize = true;
-            lguname.BackColor = Color.FromArgb(60, 40, 0);
-            lguname.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lguname.ForeColor = Color.LightGray;
-            lguname.Location = new Point(250, 324);
-            lguname.Name = "lguname";
-            lguname.Size = new Size(117, 23);
-            lguname.TabIndex = 10;
-            lguname.Text = "LGU NAME";
+            lblLguName.AutoSize = true;
+            lblLguName.BackColor = Color.FromArgb(60, 40, 0);
+            lblLguName.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblLguName.ForeColor = Color.LightGray;
+            lblLguName.Location = new Point(250, 324);
+            lblLguName.Name = "lblLguName";
+            lblLguName.Size = new Size(117, 23);
+            lblLguName.TabIndex = 10;
+            lblLguName.Text = "LGU NAME";
             // 
-            // label3
+            // lblRole
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.FromArgb(60, 40, 0);
-            label3.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.FromArgb(255, 224, 96);
-            label3.Location = new Point(250, 347);
-            label3.Name = "label3";
-            label3.Size = new Size(109, 15);
-            label3.TabIndex = 11;
-            label3.Text = "LGU DISPATCHER";
+            lblRole.AutoSize = true;
+            lblRole.BackColor = Color.FromArgb(60, 40, 0);
+            lblRole.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRole.ForeColor = Color.FromArgb(255, 224, 96);
+            lblRole.Location = new Point(250, 347);
+            lblRole.Name = "lblRole";
+            lblRole.Size = new Size(109, 15);
+            lblRole.TabIndex = 11;
+            lblRole.Text = "LGU DISPATCHER";
             // 
-            // usertotalpoints
+            // lblTotalPoints
             // 
-            usertotalpoints.AutoSize = true;
-            usertotalpoints.BackColor = Color.FromArgb(60, 40, 0);
-            usertotalpoints.Font = new Font("Times New Roman", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            usertotalpoints.ForeColor = Color.Moccasin;
-            usertotalpoints.Location = new Point(441, 347);
-            usertotalpoints.Name = "usertotalpoints";
-            usertotalpoints.Size = new Size(196, 31);
-            usertotalpoints.TabIndex = 12;
-            usertotalpoints.Text = "TOTAL POINTS";
+            lblTotalPoints.AutoSize = true;
+            lblTotalPoints.BackColor = Color.FromArgb(60, 40, 0);
+            lblTotalPoints.Font = new Font("Times New Roman", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTotalPoints.ForeColor = Color.Moccasin;
+            lblTotalPoints.Location = new Point(441, 347);
+            lblTotalPoints.Name = "lblTotalPoints";
+            lblTotalPoints.Size = new Size(196, 31);
+            lblTotalPoints.TabIndex = 12;
+            lblTotalPoints.Text = "TOTAL POINTS";
             // 
             // label4
             // 
@@ -219,19 +219,18 @@
             label4.Size = new Size(164, 15);
             label4.TabIndex = 13;
             label4.Text = "DIGITAL STIPEND WALLET";
-            label4.Click += label4_Click;
             // 
-            // manageaccsecurity
+            // btnManageSecurity
             // 
-            manageaccsecurity.BackColor = Color.FromArgb(60, 40, 0);
-            manageaccsecurity.BackgroundImage = (Image)resources.GetObject("manageaccsecurity.BackgroundImage");
-            manageaccsecurity.BackgroundImageLayout = ImageLayout.Stretch;
-            manageaccsecurity.FlatStyle = FlatStyle.Popup;
-            manageaccsecurity.Location = new Point(727, 407);
-            manageaccsecurity.Name = "manageaccsecurity";
-            manageaccsecurity.Size = new Size(188, 25);
-            manageaccsecurity.TabIndex = 14;
-            manageaccsecurity.UseVisualStyleBackColor = false;
+            btnManageSecurity.BackColor = Color.FromArgb(60, 40, 0);
+            btnManageSecurity.BackgroundImage = (Image)resources.GetObject("btnManageSecurity.BackgroundImage");
+            btnManageSecurity.BackgroundImageLayout = ImageLayout.Stretch;
+            btnManageSecurity.FlatStyle = FlatStyle.Popup;
+            btnManageSecurity.Location = new Point(727, 407);
+            btnManageSecurity.Name = "btnManageSecurity";
+            btnManageSecurity.Size = new Size(188, 25);
+            btnManageSecurity.TabIndex = 14;
+            btnManageSecurity.UseVisualStyleBackColor = false;
             // 
             // citizendashboard
             // 
@@ -258,7 +257,6 @@
             questmap.Size = new Size(39, 39);
             questmap.TabIndex = 16;
             questmap.UseVisualStyleBackColor = false;
-            questmap.Click += button2_Click;
             // 
             // citizenquest
             // 
@@ -286,17 +284,32 @@
             pointshop.TabIndex = 18;
             pointshop.UseVisualStyleBackColor = false;
             // 
-            // logout
+            // btLogout_Click
             // 
-            logout.BackColor = Color.FromArgb(60, 40, 0);
-            logout.BackgroundImage = (Image)resources.GetObject("logout.BackgroundImage");
-            logout.BackgroundImageLayout = ImageLayout.Stretch;
-            logout.FlatStyle = FlatStyle.Popup;
-            logout.Location = new Point(823, 536);
-            logout.Name = "logout";
-            logout.Size = new Size(155, 24);
-            logout.TabIndex = 19;
-            logout.UseVisualStyleBackColor = false;
+            btLogout_Click.BackColor = Color.FromArgb(60, 40, 0);
+            btLogout_Click.BackgroundImage = (Image)resources.GetObject("btLogout_Click.BackgroundImage");
+            btLogout_Click.BackgroundImageLayout = ImageLayout.Stretch;
+            btLogout_Click.FlatStyle = FlatStyle.Popup;
+            btLogout_Click.Location = new Point(823, 536);
+            btLogout_Click.Name = "btLogout_Click";
+            btLogout_Click.Size = new Size(155, 24);
+            btLogout_Click.TabIndex = 19;
+            btLogout_Click.UseVisualStyleBackColor = false;
+            btLogout_Click.Click += logout_Click;
+            // 
+            // btBack_Click
+            // 
+            btBack_Click.BackColor = Color.FromArgb(60, 40, 0);
+            btBack_Click.BackgroundImage = (Image)resources.GetObject("btBack_Click.BackgroundImage");
+            btBack_Click.BackgroundImageLayout = ImageLayout.Stretch;
+            btBack_Click.FlatStyle = FlatStyle.Flat;
+            btBack_Click.ForeColor = Color.FromArgb(60, 40, 0);
+            btBack_Click.Location = new Point(176, 375);
+            btBack_Click.Name = "btBack_Click";
+            btBack_Click.Size = new Size(133, 57);
+            btBack_Click.TabIndex = 81;
+            btBack_Click.UseVisualStyleBackColor = false;
+            btBack_Click.Click += backbutton_Click;
             // 
             // Form6
             // 
@@ -305,22 +318,23 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1009, 581);
-            Controls.Add(logout);
+            Controls.Add(btBack_Click);
+            Controls.Add(btLogout_Click);
             Controls.Add(pointshop);
             Controls.Add(citizenquest);
             Controls.Add(questmap);
             Controls.Add(citizendashboard);
-            Controls.Add(manageaccsecurity);
+            Controls.Add(btnManageSecurity);
             Controls.Add(label4);
-            Controls.Add(usertotalpoints);
-            Controls.Add(label3);
-            Controls.Add(lguname);
+            Controls.Add(lblTotalPoints);
+            Controls.Add(lblRole);
+            Controls.Add(lblLguName);
             Controls.Add(label2);
-            Controls.Add(userphonenumber);
-            Controls.Add(userid);
-            Controls.Add(label1);
-            Controls.Add(taskfinished);
-            Controls.Add(username);
+            Controls.Add(lblPhoneNumber);
+            Controls.Add(lblUserId);
+            Controls.Add(lblWorkerRank);
+            Controls.Add(lblTasksFinished);
+            Controls.Add(lblFullName);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox1);
@@ -342,21 +356,22 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
-        private Label username;
-        private Label taskfinished;
-        private Label label1;
-        private Label userid;
-        private Label userphonenumber;
+        private Label lblFullName;
+        private Label lblTasksFinished;
+        private Label lblWorkerRank;
+        private Label lblUserId;
+        private Label lblPhoneNumber;
         private Label label2;
-        private Label lguname;
-        private Label label3;
-        private Label usertotalpoints;
+        private Label lblLguName;
+        private Label lblRole;
+        private Label lblTotalPoints;
         private Label label4;
-        private Button manageaccsecurity;
+        private Button btnManageSecurity;
         private Button citizendashboard;
         private Button questmap;
         private Button citizenquest;
         private Button pointshop;
-        private Button logout;
+        private Button btLogout_Click;
+        private Button btBack_Click;
     }
 }

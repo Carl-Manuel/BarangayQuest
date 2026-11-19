@@ -35,12 +35,12 @@
             pictureBox3 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
-            citizenusernametxt = new TextBox();
+            txtLoginId = new TextBox();
             label6 = new Label();
             label3 = new Label();
-            passwordtxt = new TextBox();
-            registernewacc = new Button();
-            accessdashboard = new Button();
+            txtPassword = new TextBox();
+            btnRegisterNewAcc = new Button();
+            btnAccessDashboard = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -55,7 +55,6 @@
             pictureBox1.Size = new Size(500, 329);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // returntorole2
             // 
@@ -91,7 +90,6 @@
             pictureBox3.Size = new Size(100, 57);
             pictureBox3.TabIndex = 4;
             pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
             // 
             // label1
             // 
@@ -117,15 +115,15 @@
             label2.TabIndex = 6;
             label2.Text = "CITIZEN WORKERS ONLY";
             // 
-            // citizenusernametxt
+            // txtLoginId
             // 
-            citizenusernametxt.BackColor = Color.FromArgb(64, 0, 0);
-            citizenusernametxt.BorderStyle = BorderStyle.FixedSingle;
-            citizenusernametxt.ForeColor = SystemColors.Menu;
-            citizenusernametxt.Location = new Point(317, 234);
-            citizenusernametxt.Name = "citizenusernametxt";
-            citizenusernametxt.Size = new Size(373, 23);
-            citizenusernametxt.TabIndex = 7;
+            txtLoginId.BackColor = Color.FromArgb(64, 0, 0);
+            txtLoginId.BorderStyle = BorderStyle.FixedSingle;
+            txtLoginId.ForeColor = SystemColors.Menu;
+            txtLoginId.Location = new Point(317, 234);
+            txtLoginId.Name = "txtLoginId";
+            txtLoginId.Size = new Size(373, 23);
+            txtLoginId.TabIndex = 7;
             // 
             // label6
             // 
@@ -151,40 +149,42 @@
             label3.TabIndex = 15;
             label3.Text = "PASSWORD";
             // 
-            // passwordtxt
+            // txtPassword
             // 
-            passwordtxt.BackColor = Color.FromArgb(64, 0, 0);
-            passwordtxt.BorderStyle = BorderStyle.FixedSingle;
-            passwordtxt.ForeColor = SystemColors.Menu;
-            passwordtxt.Location = new Point(317, 300);
-            passwordtxt.Name = "passwordtxt";
-            passwordtxt.Size = new Size(373, 23);
-            passwordtxt.TabIndex = 16;
+            txtPassword.BackColor = Color.FromArgb(64, 0, 0);
+            txtPassword.BorderStyle = BorderStyle.FixedSingle;
+            txtPassword.ForeColor = SystemColors.Menu;
+            txtPassword.Location = new Point(317, 300);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(373, 23);
+            txtPassword.TabIndex = 16;
             // 
-            // registernewacc
+            // btnRegisterNewAcc
             // 
-            registernewacc.BackColor = SystemColors.Control;
-            registernewacc.BackgroundImage = (Image)resources.GetObject("registernewacc.BackgroundImage");
-            registernewacc.BackgroundImageLayout = ImageLayout.Stretch;
-            registernewacc.FlatStyle = FlatStyle.Popup;
-            registernewacc.Location = new Point(436, 383);
-            registernewacc.Name = "registernewacc";
-            registernewacc.Size = new Size(140, 26);
-            registernewacc.TabIndex = 17;
-            registernewacc.UseVisualStyleBackColor = false;
+            btnRegisterNewAcc.BackColor = SystemColors.Control;
+            btnRegisterNewAcc.BackgroundImage = (Image)resources.GetObject("btnRegisterNewAcc.BackgroundImage");
+            btnRegisterNewAcc.BackgroundImageLayout = ImageLayout.Stretch;
+            btnRegisterNewAcc.FlatStyle = FlatStyle.Popup;
+            btnRegisterNewAcc.Location = new Point(436, 383);
+            btnRegisterNewAcc.Name = "btnRegisterNewAcc";
+            btnRegisterNewAcc.Size = new Size(140, 26);
+            btnRegisterNewAcc.TabIndex = 17;
+            btnRegisterNewAcc.UseVisualStyleBackColor = false;
+            btnRegisterNewAcc.Click += btnRegisterNewAcc_Click;
             // 
-            // accessdashboard
+            // btnAccessDashboard
             // 
-            accessdashboard.BackColor = Color.FromArgb(45, 21, 0);
-            accessdashboard.BackgroundImage = (Image)resources.GetObject("accessdashboard.BackgroundImage");
-            accessdashboard.BackgroundImageLayout = ImageLayout.Stretch;
-            accessdashboard.FlatStyle = FlatStyle.Flat;
-            accessdashboard.ForeColor = Color.FromArgb(45, 21, 0);
-            accessdashboard.Location = new Point(401, 340);
-            accessdashboard.Name = "accessdashboard";
-            accessdashboard.Size = new Size(219, 37);
-            accessdashboard.TabIndex = 18;
-            accessdashboard.UseVisualStyleBackColor = false;
+            btnAccessDashboard.BackColor = Color.FromArgb(45, 21, 0);
+            btnAccessDashboard.BackgroundImage = (Image)resources.GetObject("btnAccessDashboard.BackgroundImage");
+            btnAccessDashboard.BackgroundImageLayout = ImageLayout.Stretch;
+            btnAccessDashboard.FlatStyle = FlatStyle.Flat;
+            btnAccessDashboard.ForeColor = Color.FromArgb(45, 21, 0);
+            btnAccessDashboard.Location = new Point(401, 340);
+            btnAccessDashboard.Name = "btnAccessDashboard";
+            btnAccessDashboard.Size = new Size(219, 37);
+            btnAccessDashboard.TabIndex = 18;
+            btnAccessDashboard.UseVisualStyleBackColor = false;
+            btnAccessDashboard.Click += btnAccessDashboard_Click;
             // 
             // Form4
             // 
@@ -193,12 +193,12 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1009, 581);
-            Controls.Add(accessdashboard);
-            Controls.Add(registernewacc);
-            Controls.Add(passwordtxt);
+            Controls.Add(btnAccessDashboard);
+            Controls.Add(btnRegisterNewAcc);
+            Controls.Add(txtPassword);
             Controls.Add(label3);
             Controls.Add(label6);
-            Controls.Add(citizenusernametxt);
+            Controls.Add(txtLoginId);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox3);
@@ -223,11 +223,11 @@
         private PictureBox pictureBox3;
         private Label label1;
         private Label label2;
-        private TextBox citizenusernametxt;
+        private TextBox txtLoginId;
         private Label label6;
         private Label label3;
-        private TextBox passwordtxt;
-        private Button registernewacc;
-        private Button accessdashboard;
+        private TextBox txtPassword;
+        private Button btnRegisterNewAcc;
+        private Button btnAccessDashboard;
     }
 }

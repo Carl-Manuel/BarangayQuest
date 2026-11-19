@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             pictureBox1 = new PictureBox();
             label1 = new Label();
-            DISPLAYPOINTS = new Label();
+            lblPointsEarned = new Label();
             pictureBox2 = new PictureBox();
-            activequest = new Label();
-            activequestdescription = new Label();
+            lblActiveQuestTitle = new Label();
+            lblActiveQuestDesc = new Label();
             label2 = new Label();
-            pointsreward = new Label();
-            supplyreward = new Label();
+            lblRewardPoints = new Label();
+            lblRewardSupply = new Label();
             label3 = new Label();
-            toolsredeemed = new Label();
+            lblRedeemedTools = new Label();
             citizenprofile = new Button();
             questmap = new Button();
             questlist = new Button();
@@ -74,17 +74,17 @@
             label1.TabIndex = 1;
             label1.Text = "Reward Points";
             // 
-            // DISPLAYPOINTS
+            // lblPointsEarned
             // 
-            DISPLAYPOINTS.AutoSize = true;
-            DISPLAYPOINTS.BackColor = Color.Transparent;
-            DISPLAYPOINTS.Font = new Font("Nirmala Text", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            DISPLAYPOINTS.ForeColor = Color.Moccasin;
-            DISPLAYPOINTS.Location = new Point(625, 147);
-            DISPLAYPOINTS.Name = "DISPLAYPOINTS";
-            DISPLAYPOINTS.Size = new Size(190, 32);
-            DISPLAYPOINTS.TabIndex = 2;
-            DISPLAYPOINTS.Text = "POINTS EARNED";
+            lblPointsEarned.AutoSize = true;
+            lblPointsEarned.BackColor = Color.Transparent;
+            lblPointsEarned.Font = new Font("Nirmala Text", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblPointsEarned.ForeColor = Color.Moccasin;
+            lblPointsEarned.Location = new Point(625, 147);
+            lblPointsEarned.Name = "lblPointsEarned";
+            lblPointsEarned.Size = new Size(190, 32);
+            lblPointsEarned.TabIndex = 2;
+            lblPointsEarned.Text = "POINTS EARNED";
             // 
             // pictureBox2
             // 
@@ -96,29 +96,29 @@
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             // 
-            // activequest
+            // lblActiveQuestTitle
             // 
-            activequest.AutoSize = true;
-            activequest.BackColor = Color.SaddleBrown;
-            activequest.FlatStyle = FlatStyle.Popup;
-            activequest.Font = new Font("Times New Roman", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            activequest.ForeColor = Color.Moccasin;
-            activequest.Location = new Point(574, 266);
-            activequest.Name = "activequest";
-            activequest.Size = new Size(310, 33);
-            activequest.TabIndex = 4;
-            activequest.Text = "ACTIVE QUEST SHOW";
+            lblActiveQuestTitle.AutoSize = true;
+            lblActiveQuestTitle.BackColor = Color.SaddleBrown;
+            lblActiveQuestTitle.FlatStyle = FlatStyle.Popup;
+            lblActiveQuestTitle.Font = new Font("Times New Roman", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblActiveQuestTitle.ForeColor = Color.Moccasin;
+            lblActiveQuestTitle.Location = new Point(574, 266);
+            lblActiveQuestTitle.Name = "lblActiveQuestTitle";
+            lblActiveQuestTitle.Size = new Size(310, 33);
+            lblActiveQuestTitle.TabIndex = 4;
+            lblActiveQuestTitle.Text = "ACTIVE QUEST SHOW";
             // 
-            // activequestdescription
+            // lblActiveQuestDesc
             // 
-            activequestdescription.AutoSize = true;
-            activequestdescription.BackColor = Color.Transparent;
-            activequestdescription.ForeColor = Color.DarkGray;
-            activequestdescription.Location = new Point(575, 310);
-            activequestdescription.Name = "activequestdescription";
-            activequestdescription.Size = new Size(309, 15);
-            activequestdescription.TabIndex = 5;
-            activequestdescription.Text = "THIS SHOWS THE DESCRIPTION OF THE ACTICVE QUEST";
+            lblActiveQuestDesc.AutoSize = true;
+            lblActiveQuestDesc.BackColor = Color.Transparent;
+            lblActiveQuestDesc.ForeColor = Color.DarkGray;
+            lblActiveQuestDesc.Location = new Point(575, 310);
+            lblActiveQuestDesc.Name = "lblActiveQuestDesc";
+            lblActiveQuestDesc.Size = new Size(309, 15);
+            lblActiveQuestDesc.TabIndex = 5;
+            lblActiveQuestDesc.Text = "THIS SHOWS THE DESCRIPTION OF THE ACTICVE QUEST";
             // 
             // label2
             // 
@@ -132,30 +132,29 @@
             label2.TabIndex = 6;
             label2.Text = "TASK REWARD";
             // 
-            // pointsreward
+            // lblRewardPoints
             // 
-            pointsreward.AutoSize = true;
-            pointsreward.BackColor = Color.FromArgb(64, 0, 0);
-            pointsreward.Font = new Font("Nirmala Text", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            pointsreward.ForeColor = Color.Moccasin;
-            pointsreward.Location = new Point(541, 375);
-            pointsreward.Name = "pointsreward";
-            pointsreward.Size = new Size(155, 25);
-            pointsreward.TabIndex = 7;
-            pointsreward.Text = "REWARD POINTS";
+            lblRewardPoints.AutoSize = true;
+            lblRewardPoints.BackColor = Color.FromArgb(64, 0, 0);
+            lblRewardPoints.Font = new Font("Nirmala Text", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRewardPoints.ForeColor = Color.Moccasin;
+            lblRewardPoints.Location = new Point(541, 375);
+            lblRewardPoints.Name = "lblRewardPoints";
+            lblRewardPoints.Size = new Size(155, 25);
+            lblRewardPoints.TabIndex = 7;
+            lblRewardPoints.Text = "REWARD POINTS";
             // 
-            // supplyreward
+            // lblRewardSupply
             // 
-            supplyreward.AutoSize = true;
-            supplyreward.BackColor = Color.FromArgb(64, 0, 0);
-            supplyreward.Font = new Font("Nirmala Text", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            supplyreward.ForeColor = Color.Moccasin;
-            supplyreward.Location = new Point(773, 375);
-            supplyreward.Name = "supplyreward";
-            supplyreward.Size = new Size(155, 25);
-            supplyreward.TabIndex = 8;
-            supplyreward.Text = "REWARD SUPPLY";
-            supplyreward.Click += supplyreward_Click;
+            lblRewardSupply.AutoSize = true;
+            lblRewardSupply.BackColor = Color.FromArgb(64, 0, 0);
+            lblRewardSupply.Font = new Font("Nirmala Text", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRewardSupply.ForeColor = Color.Moccasin;
+            lblRewardSupply.Location = new Point(773, 375);
+            lblRewardSupply.Name = "lblRewardSupply";
+            lblRewardSupply.Size = new Size(155, 25);
+            lblRewardSupply.TabIndex = 8;
+            lblRewardSupply.Text = "REWARD SUPPLY";
             // 
             // label3
             // 
@@ -169,17 +168,17 @@
             label3.TabIndex = 9;
             label3.Text = "TOOL/s REDEEMED";
             // 
-            // toolsredeemed
+            // lblRedeemedTools
             // 
-            toolsredeemed.AutoSize = true;
-            toolsredeemed.BackColor = Color.FromArgb(64, 0, 0);
-            toolsredeemed.Font = new Font("Nirmala Text", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            toolsredeemed.ForeColor = Color.Moccasin;
-            toolsredeemed.Location = new Point(637, 441);
-            toolsredeemed.Name = "toolsredeemed";
-            toolsredeemed.Size = new Size(167, 25);
-            toolsredeemed.TabIndex = 10;
-            toolsredeemed.Text = "REDEEMED TOOLS";
+            lblRedeemedTools.AutoSize = true;
+            lblRedeemedTools.BackColor = Color.FromArgb(64, 0, 0);
+            lblRedeemedTools.Font = new Font("Nirmala Text", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRedeemedTools.ForeColor = Color.Moccasin;
+            lblRedeemedTools.Location = new Point(637, 441);
+            lblRedeemedTools.Name = "lblRedeemedTools";
+            lblRedeemedTools.Size = new Size(167, 25);
+            lblRedeemedTools.TabIndex = 10;
+            lblRedeemedTools.Text = "REDEEMED TOOLS";
             // 
             // citizenprofile
             // 
@@ -193,6 +192,7 @@
             citizenprofile.Size = new Size(402, 66);
             citizenprofile.TabIndex = 11;
             citizenprofile.UseVisualStyleBackColor = false;
+            citizenprofile.Click += citizenprofile_Click;
             // 
             // questmap
             // 
@@ -206,6 +206,7 @@
             questmap.Size = new Size(402, 66);
             questmap.TabIndex = 12;
             questmap.UseVisualStyleBackColor = false;
+            questmap.Click += questmap_Click;
             // 
             // questlist
             // 
@@ -265,15 +266,15 @@
             Controls.Add(questlist);
             Controls.Add(questmap);
             Controls.Add(citizenprofile);
-            Controls.Add(toolsredeemed);
+            Controls.Add(lblRedeemedTools);
             Controls.Add(label3);
-            Controls.Add(supplyreward);
-            Controls.Add(pointsreward);
+            Controls.Add(lblRewardSupply);
+            Controls.Add(lblRewardPoints);
             Controls.Add(label2);
-            Controls.Add(activequestdescription);
-            Controls.Add(activequest);
+            Controls.Add(lblActiveQuestDesc);
+            Controls.Add(lblActiveQuestTitle);
             Controls.Add(pictureBox2);
-            Controls.Add(DISPLAYPOINTS);
+            Controls.Add(lblPointsEarned);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox3);
@@ -294,15 +295,15 @@
 
         private PictureBox pictureBox1;
         private Label label1;
-        private Label DISPLAYPOINTS;
+        private Label lblPointsEarned;
         private PictureBox pictureBox2;
-        private Label activequest;
-        private Label activequestdescription;
+        private Label lblActiveQuestTitle;
+        private Label lblActiveQuestDesc;
         private Label label2;
-        private Label pointsreward;
-        private Label supplyreward;
+        private Label lblRewardPoints;
+        private Label lblRewardSupply;
         private Label label3;
-        private Label toolsredeemed;
+        private Label lblRedeemedTools;
         private Button citizenprofile;
         private Button questmap;
         private Button questlist;

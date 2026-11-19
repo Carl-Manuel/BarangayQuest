@@ -17,8 +17,8 @@ namespace BarangayQuest
 
         private void CitizenWorkerBtn_Click(object sender, EventArgs e)
         {
-            Form3 Form3 = new Form3();
-            Form3.Show();
+            Form4 Form4 = new Form4();
+            Form4.Show();
             this.Hide();
         }
 
