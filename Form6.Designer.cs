@@ -32,7 +32,7 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
+            picAvatar = new PictureBox();
             lblFullName = new Label();
             lblTasksFinished = new Label();
             lblWorkerRank = new Label();
@@ -43,7 +43,7 @@
             lblRole = new Label();
             lblTotalPoints = new Label();
             label4 = new Label();
-            btnManageSecurity = new Button();
+            btnManageAccount = new Button();
             citizendashboard = new Button();
             questmap = new Button();
             citizenquest = new Button();
@@ -53,7 +53,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picAvatar).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -89,16 +89,16 @@
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
             // 
-            // pictureBox4
+            // picAvatar
             // 
-            pictureBox4.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
-            pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(176, 134);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(160, 118);
-            pictureBox4.TabIndex = 3;
-            pictureBox4.TabStop = false;
+            picAvatar.BackColor = Color.FromArgb(64, 0, 0);
+            picAvatar.BackgroundImage = (Image)resources.GetObject("picAvatar.BackgroundImage");
+            picAvatar.BackgroundImageLayout = ImageLayout.Stretch;
+            picAvatar.Location = new Point(176, 134);
+            picAvatar.Name = "picAvatar";
+            picAvatar.Size = new Size(160, 118);
+            picAvatar.TabIndex = 3;
+            picAvatar.TabStop = false;
             // 
             // lblFullName
             // 
@@ -220,17 +220,17 @@
             label4.TabIndex = 13;
             label4.Text = "DIGITAL STIPEND WALLET";
             // 
-            // btnManageSecurity
+            // btnManageAccount
             // 
-            btnManageSecurity.BackColor = Color.FromArgb(60, 40, 0);
-            btnManageSecurity.BackgroundImage = (Image)resources.GetObject("btnManageSecurity.BackgroundImage");
-            btnManageSecurity.BackgroundImageLayout = ImageLayout.Stretch;
-            btnManageSecurity.FlatStyle = FlatStyle.Popup;
-            btnManageSecurity.Location = new Point(727, 407);
-            btnManageSecurity.Name = "btnManageSecurity";
-            btnManageSecurity.Size = new Size(188, 25);
-            btnManageSecurity.TabIndex = 14;
-            btnManageSecurity.UseVisualStyleBackColor = false;
+            btnManageAccount.BackColor = Color.FromArgb(60, 40, 0);
+            btnManageAccount.BackgroundImage = (Image)resources.GetObject("btnManageAccount.BackgroundImage");
+            btnManageAccount.BackgroundImageLayout = ImageLayout.Stretch;
+            btnManageAccount.FlatStyle = FlatStyle.Popup;
+            btnManageAccount.Location = new Point(727, 407);
+            btnManageAccount.Name = "btnManageAccount";
+            btnManageAccount.Size = new Size(188, 25);
+            btnManageAccount.TabIndex = 14;
+            btnManageAccount.UseVisualStyleBackColor = false;
             // 
             // citizendashboard
             // 
@@ -324,7 +324,7 @@
             Controls.Add(citizenquest);
             Controls.Add(questmap);
             Controls.Add(citizendashboard);
-            Controls.Add(btnManageSecurity);
+            Controls.Add(btnManageAccount);
             Controls.Add(label4);
             Controls.Add(lblTotalPoints);
             Controls.Add(lblRole);
@@ -335,7 +335,7 @@
             Controls.Add(lblWorkerRank);
             Controls.Add(lblTasksFinished);
             Controls.Add(lblFullName);
-            Controls.Add(pictureBox4);
+            Controls.Add(picAvatar);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
@@ -345,7 +345,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picAvatar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -355,7 +355,7 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
+        private PictureBox picAvatar;
         private Label lblFullName;
         private Label lblTasksFinished;
         private Label lblWorkerRank;
@@ -366,7 +366,7 @@
         private Label lblRole;
         private Label lblTotalPoints;
         private Label label4;
-        private Button btnManageSecurity;
+        private Button btnManageAccount;
         private Button citizendashboard;
         private Button questmap;
         private Button citizenquest;

@@ -50,7 +50,7 @@
             numberofusers = new Label();
             numberofdispatchers = new Label();
             backbutton3 = new Button();
-            button1 = new Button();
+            next = new Button();
             suspendacc = new Button();
             updatebutt = new Button();
             modifyuserprofile1 = new Button();
@@ -204,7 +204,6 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(470, 273);
             dataGridView1.TabIndex = 80;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // USERS
             // 
@@ -279,20 +278,21 @@
             backbutton3.Size = new Size(133, 57);
             backbutton3.TabIndex = 84;
             backbutton3.UseVisualStyleBackColor = false;
+            backbutton3.Click += backbutton3_Click;
             // 
-            // button1
+            // next
             // 
-            button1.BackColor = Color.FromArgb(60, 40, 0);
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.FromArgb(60, 40, 0);
-            button1.Location = new Point(442, 413);
-            button1.Name = "button1";
-            button1.Size = new Size(133, 44);
-            button1.TabIndex = 85;
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            next.BackColor = Color.FromArgb(60, 40, 0);
+            next.BackgroundImage = (Image)resources.GetObject("next.BackgroundImage");
+            next.BackgroundImageLayout = ImageLayout.Stretch;
+            next.FlatStyle = FlatStyle.Flat;
+            next.ForeColor = Color.FromArgb(60, 40, 0);
+            next.Location = new Point(442, 413);
+            next.Name = "next";
+            next.Size = new Size(133, 44);
+            next.TabIndex = 85;
+            next.UseVisualStyleBackColor = false;
+            next.Click += next_Click;
             // 
             // suspendacc
             // 
@@ -306,6 +306,7 @@
             suspendacc.Size = new Size(156, 44);
             suspendacc.TabIndex = 86;
             suspendacc.UseVisualStyleBackColor = false;
+            suspendacc.Click += suspendacc_Click;
             // 
             // updatebutt
             // 
@@ -319,6 +320,7 @@
             updatebutt.Size = new Size(161, 46);
             updatebutt.TabIndex = 87;
             updatebutt.UseVisualStyleBackColor = false;
+            updatebutt.Click += updatebutt_Click;
             // 
             // modifyuserprofile1
             // 
@@ -344,6 +346,7 @@
             label3.Size = new Size(122, 16);
             label3.TabIndex = 89;
             label3.Text = "MODIFY USER PROFILE";
+            label3.Click += label3_Click;
             // 
             // Form14
             // 
@@ -356,7 +359,7 @@
             Controls.Add(modifyuserprofile1);
             Controls.Add(updatebutt);
             Controls.Add(suspendacc);
-            Controls.Add(button1);
+            Controls.Add(next);
             Controls.Add(backbutton3);
             Controls.Add(numberofdispatchers);
             Controls.Add(numberofusers);
@@ -411,7 +414,7 @@
         private Label numberofusers;
         private Label numberofdispatchers;
         private Button backbutton3;
-        private Button button1;
+        private Button next;
         private Button suspendacc;
         private Button updatebutt;
         private Button modifyuserprofile1;

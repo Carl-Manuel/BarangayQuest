@@ -46,14 +46,18 @@
             pointshop = new Button();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            displayannouncement = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.None;
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Location = new Point(33, 25);
@@ -64,6 +68,7 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Times New Roman", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -76,6 +81,7 @@
             // 
             // lblPointsEarned
             // 
+            lblPointsEarned.Anchor = AnchorStyles.None;
             lblPointsEarned.AutoSize = true;
             lblPointsEarned.BackColor = Color.Transparent;
             lblPointsEarned.Font = new Font("Nirmala Text", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -88,6 +94,7 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.Anchor = AnchorStyles.None;
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox2.Location = new Point(477, 227);
@@ -98,6 +105,7 @@
             // 
             // lblActiveQuestTitle
             // 
+            lblActiveQuestTitle.Anchor = AnchorStyles.None;
             lblActiveQuestTitle.AutoSize = true;
             lblActiveQuestTitle.BackColor = Color.SaddleBrown;
             lblActiveQuestTitle.FlatStyle = FlatStyle.Popup;
@@ -111,6 +119,7 @@
             // 
             // lblActiveQuestDesc
             // 
+            lblActiveQuestDesc.Anchor = AnchorStyles.None;
             lblActiveQuestDesc.AutoSize = true;
             lblActiveQuestDesc.BackColor = Color.Transparent;
             lblActiveQuestDesc.ForeColor = Color.DarkGray;
@@ -122,6 +131,7 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.BackColor = Color.FromArgb(64, 0, 0);
             label2.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -134,6 +144,7 @@
             // 
             // lblRewardPoints
             // 
+            lblRewardPoints.Anchor = AnchorStyles.None;
             lblRewardPoints.AutoSize = true;
             lblRewardPoints.BackColor = Color.FromArgb(64, 0, 0);
             lblRewardPoints.Font = new Font("Nirmala Text", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -146,6 +157,7 @@
             // 
             // lblRewardSupply
             // 
+            lblRewardSupply.Anchor = AnchorStyles.None;
             lblRewardSupply.AutoSize = true;
             lblRewardSupply.BackColor = Color.FromArgb(64, 0, 0);
             lblRewardSupply.Font = new Font("Nirmala Text", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -158,6 +170,7 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.BackColor = Color.FromArgb(64, 0, 0);
             label3.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -170,6 +183,7 @@
             // 
             // lblRedeemedTools
             // 
+            lblRedeemedTools.Anchor = AnchorStyles.None;
             lblRedeemedTools.AutoSize = true;
             lblRedeemedTools.BackColor = Color.FromArgb(64, 0, 0);
             lblRedeemedTools.Font = new Font("Nirmala Text", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -182,60 +196,66 @@
             // 
             // citizenprofile
             // 
+            citizenprofile.Anchor = AnchorStyles.None;
             citizenprofile.BackColor = Color.Transparent;
             citizenprofile.BackgroundImage = (Image)resources.GetObject("citizenprofile.BackgroundImage");
             citizenprofile.BackgroundImageLayout = ImageLayout.Stretch;
             citizenprofile.FlatStyle = FlatStyle.Flat;
             citizenprofile.ForeColor = SystemColors.ButtonHighlight;
-            citizenprofile.Location = new Point(33, 166);
+            citizenprofile.Location = new Point(33, 105);
             citizenprofile.Name = "citizenprofile";
-            citizenprofile.Size = new Size(402, 66);
+            citizenprofile.Size = new Size(399, 62);
             citizenprofile.TabIndex = 11;
             citizenprofile.UseVisualStyleBackColor = false;
             citizenprofile.Click += citizenprofile_Click;
             // 
             // questmap
             // 
+            questmap.Anchor = AnchorStyles.None;
             questmap.BackColor = Color.Transparent;
             questmap.BackgroundImage = (Image)resources.GetObject("questmap.BackgroundImage");
             questmap.BackgroundImageLayout = ImageLayout.Stretch;
             questmap.FlatStyle = FlatStyle.Flat;
             questmap.ForeColor = SystemColors.ButtonHighlight;
-            questmap.Location = new Point(33, 238);
+            questmap.Location = new Point(33, 173);
             questmap.Name = "questmap";
-            questmap.Size = new Size(402, 66);
+            questmap.Size = new Size(399, 66);
             questmap.TabIndex = 12;
             questmap.UseVisualStyleBackColor = false;
             questmap.Click += questmap_Click;
             // 
             // questlist
             // 
+            questlist.Anchor = AnchorStyles.None;
             questlist.BackColor = Color.Transparent;
             questlist.BackgroundImage = (Image)resources.GetObject("questlist.BackgroundImage");
             questlist.BackgroundImageLayout = ImageLayout.Stretch;
             questlist.FlatStyle = FlatStyle.Flat;
             questlist.ForeColor = SystemColors.ButtonHighlight;
-            questlist.Location = new Point(33, 310);
+            questlist.Location = new Point(33, 245);
             questlist.Name = "questlist";
-            questlist.Size = new Size(402, 66);
+            questlist.Size = new Size(399, 59);
             questlist.TabIndex = 13;
             questlist.UseVisualStyleBackColor = false;
+            questlist.Click += questlist_Click_1;
             // 
             // pointshop
             // 
+            pointshop.Anchor = AnchorStyles.None;
             pointshop.BackColor = Color.Transparent;
             pointshop.BackgroundImage = (Image)resources.GetObject("pointshop.BackgroundImage");
             pointshop.BackgroundImageLayout = ImageLayout.Stretch;
             pointshop.FlatStyle = FlatStyle.Flat;
             pointshop.ForeColor = SystemColors.ButtonHighlight;
-            pointshop.Location = new Point(33, 382);
+            pointshop.Location = new Point(33, 310);
             pointshop.Name = "pointshop";
-            pointshop.Size = new Size(402, 66);
+            pointshop.Size = new Size(399, 58);
             pointshop.TabIndex = 14;
             pointshop.UseVisualStyleBackColor = false;
             // 
             // pictureBox3
             // 
+            pictureBox3.Anchor = AnchorStyles.None;
             pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
             pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox3.Location = new Point(477, 339);
@@ -247,6 +267,7 @@
             // 
             // pictureBox4
             // 
+            pictureBox4.Anchor = AnchorStyles.None;
             pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox4.Location = new Point(525, 421);
@@ -255,6 +276,32 @@
             pictureBox4.TabIndex = 16;
             pictureBox4.TabStop = false;
             // 
+            // pictureBox5
+            // 
+            pictureBox5.Anchor = AnchorStyles.None;
+            pictureBox5.BackColor = Color.Transparent;
+            pictureBox5.BackgroundImage = (Image)resources.GetObject("pictureBox5.BackgroundImage");
+            pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox5.Location = new Point(33, 374);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(346, 148);
+            pictureBox5.TabIndex = 204;
+            pictureBox5.TabStop = false;
+            // 
+            // displayannouncement
+            // 
+            displayannouncement.Anchor = AnchorStyles.None;
+            displayannouncement.AutoSize = true;
+            displayannouncement.BackColor = Color.FromArgb(60, 40, 0);
+            displayannouncement.Font = new Font("Nirmala Text", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            displayannouncement.ForeColor = Color.Moccasin;
+            displayannouncement.Location = new Point(50, 428);
+            displayannouncement.Name = "displayannouncement";
+            displayannouncement.Size = new Size(317, 50);
+            displayannouncement.TabIndex = 206;
+            displayannouncement.Text = "THIS SHOWS THE ANNOUNCEMENT\r\n FROM ADMIN";
+            displayannouncement.TextAlign = ContentAlignment.TopCenter;
+            // 
             // Form5
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -262,6 +309,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1009, 581);
+            Controls.Add(displayannouncement);
+            Controls.Add(pictureBox5);
             Controls.Add(pointshop);
             Controls.Add(questlist);
             Controls.Add(questmap);
@@ -287,6 +336,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -310,5 +360,7 @@
         private Button pointshop;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
+        private PictureBox pictureBox5;
+        private Label displayannouncement;
     }
 }

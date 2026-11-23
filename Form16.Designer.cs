@@ -106,6 +106,7 @@
             accessverificationdesk2.Size = new Size(219, 29);
             accessverificationdesk2.TabIndex = 160;
             accessverificationdesk2.UseVisualStyleBackColor = false;
+            accessverificationdesk2.Click += accessverificationdesk2_Click;
             // 
             // dispatcherpassword
             // 

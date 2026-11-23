@@ -38,35 +38,35 @@
             citizendashboard3 = new Button();
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
-            activequestname = new Label();
-            questtype = new Label();
-            questdifficulty = new Label();
+            lblQuestTitle1 = new Label();
+            lblQuestType1 = new Label();
+            lblQuestDifficulty1 = new Label();
             label3 = new Label();
-            taskrewardpoints = new Label();
-            taskrewardsupply = new Label();
+            lblRewardPoints1 = new Label();
+            lblRewardSupply1 = new Label();
             label2 = new Label();
-            toolsredeemed = new Label();
-            activequestdescription2 = new Label();
-            abandonquest = new Button();
-            submitproofofwork = new Button();
-            submitproofofwork2 = new Button();
-            abandonquest2 = new Button();
-            activequestdescription3 = new Label();
-            toolsredeemed2 = new Label();
+            lblRedeemedTools1 = new Label();
+            lblQuestDesc1 = new Label();
+            btnAbandonQuest1 = new Button();
+            btnSubmitProof1 = new Button();
+            btnSubmitProof2 = new Button();
+            btnAbandonQuest2 = new Button();
+            lblQuestDesc2 = new Label();
+            lblRedeemedTools2 = new Label();
             label6 = new Label();
-            taskrewardsupply2 = new Label();
-            taskrewardpoints2 = new Label();
+            lblRewardSupply2 = new Label();
+            lblRewardPoints2 = new Label();
             label9 = new Label();
-            questdifficulty2 = new Label();
-            questtype2 = new Label();
-            activequestname2 = new Label();
+            lblQuestDifficulty2 = new Label();
+            lblQuestType2 = new Label();
+            lblQuestTitle2 = new Label();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             label4 = new Label();
-            totalpoints = new Label();
-            button1 = new Button();
-            deadline2 = new Label();
-            label5 = new Label();
+            lblTotalPoints = new Label();
+            btnRedeem = new Button();
+            lblQuestDeadline2 = new Label();
+            lblQuestDeadline1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -85,7 +85,6 @@
             pictureBox1.Size = new Size(878, 61);
             pictureBox1.TabIndex = 20;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox2
             // 
@@ -184,42 +183,41 @@
             pictureBox4.TabIndex = 43;
             pictureBox4.TabStop = false;
             // 
-            // activequestname
+            // lblQuestTitle1
             // 
-            activequestname.AutoSize = true;
-            activequestname.BackColor = Color.FromArgb(60, 40, 0);
-            activequestname.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            activequestname.ForeColor = Color.FromArgb(255, 224, 96);
-            activequestname.Location = new Point(268, 131);
-            activequestname.Name = "activequestname";
-            activequestname.Size = new Size(155, 23);
-            activequestname.TabIndex = 45;
-            activequestname.Text = "ACTIVE QUEST";
-            activequestname.Click += activequestname_Click;
+            lblQuestTitle1.AutoSize = true;
+            lblQuestTitle1.BackColor = Color.FromArgb(60, 40, 0);
+            lblQuestTitle1.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblQuestTitle1.ForeColor = Color.FromArgb(255, 224, 96);
+            lblQuestTitle1.Location = new Point(268, 131);
+            lblQuestTitle1.Name = "lblQuestTitle1";
+            lblQuestTitle1.Size = new Size(155, 23);
+            lblQuestTitle1.TabIndex = 45;
+            lblQuestTitle1.Text = "ACTIVE QUEST";
             // 
-            // questtype
+            // lblQuestType1
             // 
-            questtype.AutoSize = true;
-            questtype.BackColor = Color.FromArgb(60, 40, 0);
-            questtype.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            questtype.ForeColor = Color.LightGray;
-            questtype.Location = new Point(268, 154);
-            questtype.Name = "questtype";
-            questtype.Size = new Size(121, 15);
-            questtype.TabIndex = 46;
-            questtype.Text = "quest type (solo/group)";
+            lblQuestType1.AutoSize = true;
+            lblQuestType1.BackColor = Color.FromArgb(60, 40, 0);
+            lblQuestType1.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblQuestType1.ForeColor = Color.LightGray;
+            lblQuestType1.Location = new Point(268, 154);
+            lblQuestType1.Name = "lblQuestType1";
+            lblQuestType1.Size = new Size(121, 15);
+            lblQuestType1.TabIndex = 46;
+            lblQuestType1.Text = "quest type (solo/group)";
             // 
-            // questdifficulty
+            // lblQuestDifficulty1
             // 
-            questdifficulty.AutoSize = true;
-            questdifficulty.BackColor = Color.FromArgb(60, 40, 0);
-            questdifficulty.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            questdifficulty.ForeColor = Color.White;
-            questdifficulty.Location = new Point(429, 137);
-            questdifficulty.Name = "questdifficulty";
-            questdifficulty.Size = new Size(52, 15);
-            questdifficulty.TabIndex = 47;
-            questdifficulty.Text = "difficulty";
+            lblQuestDifficulty1.AutoSize = true;
+            lblQuestDifficulty1.BackColor = Color.FromArgb(60, 40, 0);
+            lblQuestDifficulty1.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblQuestDifficulty1.ForeColor = Color.White;
+            lblQuestDifficulty1.Location = new Point(429, 137);
+            lblQuestDifficulty1.Name = "lblQuestDifficulty1";
+            lblQuestDifficulty1.Size = new Size(52, 15);
+            lblQuestDifficulty1.TabIndex = 47;
+            lblQuestDifficulty1.Text = "difficulty";
             // 
             // label3
             // 
@@ -232,31 +230,30 @@
             label3.Size = new Size(70, 12);
             label3.TabIndex = 48;
             label3.Text = "TASK REWARD";
-            label3.Click += label3_Click;
             // 
-            // taskrewardpoints
+            // lblRewardPoints1
             // 
-            taskrewardpoints.AutoSize = true;
-            taskrewardpoints.BackColor = Color.FromArgb(64, 0, 0);
-            taskrewardpoints.Font = new Font("Nirmala Text", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            taskrewardpoints.ForeColor = Color.Moccasin;
-            taskrewardpoints.Location = new Point(661, 176);
-            taskrewardpoints.Name = "taskrewardpoints";
-            taskrewardpoints.Size = new Size(108, 17);
-            taskrewardpoints.TabIndex = 49;
-            taskrewardpoints.Text = "REWARD POINTS";
+            lblRewardPoints1.AutoSize = true;
+            lblRewardPoints1.BackColor = Color.FromArgb(64, 0, 0);
+            lblRewardPoints1.Font = new Font("Nirmala Text", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRewardPoints1.ForeColor = Color.Moccasin;
+            lblRewardPoints1.Location = new Point(661, 176);
+            lblRewardPoints1.Name = "lblRewardPoints1";
+            lblRewardPoints1.Size = new Size(108, 17);
+            lblRewardPoints1.TabIndex = 49;
+            lblRewardPoints1.Text = "REWARD POINTS";
             // 
-            // taskrewardsupply
+            // lblRewardSupply1
             // 
-            taskrewardsupply.AutoSize = true;
-            taskrewardsupply.BackColor = Color.FromArgb(64, 0, 0);
-            taskrewardsupply.Font = new Font("Nirmala Text", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            taskrewardsupply.ForeColor = Color.Moccasin;
-            taskrewardsupply.Location = new Point(808, 176);
-            taskrewardsupply.Name = "taskrewardsupply";
-            taskrewardsupply.Size = new Size(106, 17);
-            taskrewardsupply.TabIndex = 50;
-            taskrewardsupply.Text = "REWARD SUPPLY";
+            lblRewardSupply1.AutoSize = true;
+            lblRewardSupply1.BackColor = Color.FromArgb(64, 0, 0);
+            lblRewardSupply1.Font = new Font("Nirmala Text", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRewardSupply1.ForeColor = Color.Moccasin;
+            lblRewardSupply1.Location = new Point(808, 176);
+            lblRewardSupply1.Name = "lblRewardSupply1";
+            lblRewardSupply1.Size = new Size(106, 17);
+            lblRewardSupply1.TabIndex = 50;
+            lblRewardSupply1.Text = "REWARD SUPPLY";
             // 
             // label2
             // 
@@ -270,105 +267,105 @@
             label2.TabIndex = 51;
             label2.Text = "TOOL/s REDEEMED";
             // 
-            // toolsredeemed
+            // lblRedeemedTools1
             // 
-            toolsredeemed.AutoSize = true;
-            toolsredeemed.BackColor = Color.FromArgb(64, 0, 0);
-            toolsredeemed.Font = new Font("Nirmala Text", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            toolsredeemed.ForeColor = Color.Moccasin;
-            toolsredeemed.Location = new Point(736, 271);
-            toolsredeemed.Name = "toolsredeemed";
-            toolsredeemed.Size = new Size(104, 15);
-            toolsredeemed.TabIndex = 52;
-            toolsredeemed.Text = "REDEEMED TOOLS";
+            lblRedeemedTools1.AutoSize = true;
+            lblRedeemedTools1.BackColor = Color.FromArgb(64, 0, 0);
+            lblRedeemedTools1.Font = new Font("Nirmala Text", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRedeemedTools1.ForeColor = Color.Moccasin;
+            lblRedeemedTools1.Location = new Point(736, 271);
+            lblRedeemedTools1.Name = "lblRedeemedTools1";
+            lblRedeemedTools1.Size = new Size(104, 15);
+            lblRedeemedTools1.TabIndex = 52;
+            lblRedeemedTools1.Text = "REDEEMED TOOLS";
             // 
-            // activequestdescription2
+            // lblQuestDesc1
             // 
-            activequestdescription2.AutoSize = true;
-            activequestdescription2.BackColor = Color.FromArgb(60, 40, 0);
-            activequestdescription2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            activequestdescription2.ForeColor = Color.DarkGray;
-            activequestdescription2.Location = new Point(268, 192);
-            activequestdescription2.Name = "activequestdescription2";
-            activequestdescription2.Size = new Size(329, 17);
-            activequestdescription2.TabIndex = 53;
-            activequestdescription2.Text = "THIS SHOWS THE DESCRIPTION OF THE ACTIVE QUEST";
+            lblQuestDesc1.AutoSize = true;
+            lblQuestDesc1.BackColor = Color.FromArgb(60, 40, 0);
+            lblQuestDesc1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblQuestDesc1.ForeColor = Color.DarkGray;
+            lblQuestDesc1.Location = new Point(268, 192);
+            lblQuestDesc1.Name = "lblQuestDesc1";
+            lblQuestDesc1.Size = new Size(329, 17);
+            lblQuestDesc1.TabIndex = 53;
+            lblQuestDesc1.Text = "THIS SHOWS THE DESCRIPTION OF THE ACTIVE QUEST";
             // 
-            // abandonquest
+            // btnAbandonQuest1
             // 
-            abandonquest.BackColor = Color.FromArgb(60, 40, 0);
-            abandonquest.BackgroundImage = (Image)resources.GetObject("abandonquest.BackgroundImage");
-            abandonquest.BackgroundImageLayout = ImageLayout.Stretch;
-            abandonquest.FlatStyle = FlatStyle.Flat;
-            abandonquest.ForeColor = Color.FromArgb(60, 40, 0);
-            abandonquest.Location = new Point(792, 218);
-            abandonquest.Name = "abandonquest";
-            abandonquest.Size = new Size(138, 33);
-            abandonquest.TabIndex = 55;
-            abandonquest.UseVisualStyleBackColor = false;
+            btnAbandonQuest1.BackColor = Color.FromArgb(60, 40, 0);
+            btnAbandonQuest1.BackgroundImage = (Image)resources.GetObject("btnAbandonQuest1.BackgroundImage");
+            btnAbandonQuest1.BackgroundImageLayout = ImageLayout.Stretch;
+            btnAbandonQuest1.FlatStyle = FlatStyle.Flat;
+            btnAbandonQuest1.ForeColor = Color.FromArgb(60, 40, 0);
+            btnAbandonQuest1.Location = new Point(792, 218);
+            btnAbandonQuest1.Name = "btnAbandonQuest1";
+            btnAbandonQuest1.Size = new Size(138, 33);
+            btnAbandonQuest1.TabIndex = 55;
+            btnAbandonQuest1.UseVisualStyleBackColor = false;
             // 
-            // submitproofofwork
+            // btnSubmitProof1
             // 
-            submitproofofwork.BackColor = Color.FromArgb(60, 40, 0);
-            submitproofofwork.BackgroundImage = (Image)resources.GetObject("submitproofofwork.BackgroundImage");
-            submitproofofwork.BackgroundImageLayout = ImageLayout.Stretch;
-            submitproofofwork.FlatStyle = FlatStyle.Flat;
-            submitproofofwork.ForeColor = Color.FromArgb(60, 40, 0);
-            submitproofofwork.Location = new Point(648, 218);
-            submitproofofwork.Name = "submitproofofwork";
-            submitproofofwork.Size = new Size(138, 33);
-            submitproofofwork.TabIndex = 56;
-            submitproofofwork.UseVisualStyleBackColor = false;
+            btnSubmitProof1.BackColor = Color.FromArgb(60, 40, 0);
+            btnSubmitProof1.BackgroundImage = (Image)resources.GetObject("btnSubmitProof1.BackgroundImage");
+            btnSubmitProof1.BackgroundImageLayout = ImageLayout.Stretch;
+            btnSubmitProof1.FlatStyle = FlatStyle.Flat;
+            btnSubmitProof1.ForeColor = Color.FromArgb(60, 40, 0);
+            btnSubmitProof1.Location = new Point(648, 218);
+            btnSubmitProof1.Name = "btnSubmitProof1";
+            btnSubmitProof1.Size = new Size(138, 33);
+            btnSubmitProof1.TabIndex = 56;
+            btnSubmitProof1.UseVisualStyleBackColor = false;
             // 
-            // submitproofofwork2
+            // btnSubmitProof2
             // 
-            submitproofofwork2.BackColor = Color.FromArgb(60, 40, 0);
-            submitproofofwork2.BackgroundImage = (Image)resources.GetObject("submitproofofwork2.BackgroundImage");
-            submitproofofwork2.BackgroundImageLayout = ImageLayout.Stretch;
-            submitproofofwork2.FlatStyle = FlatStyle.Flat;
-            submitproofofwork2.ForeColor = Color.FromArgb(60, 40, 0);
-            submitproofofwork2.Location = new Point(648, 415);
-            submitproofofwork2.Name = "submitproofofwork2";
-            submitproofofwork2.Size = new Size(138, 33);
-            submitproofofwork2.TabIndex = 69;
-            submitproofofwork2.UseVisualStyleBackColor = false;
+            btnSubmitProof2.BackColor = Color.FromArgb(60, 40, 0);
+            btnSubmitProof2.BackgroundImage = (Image)resources.GetObject("btnSubmitProof2.BackgroundImage");
+            btnSubmitProof2.BackgroundImageLayout = ImageLayout.Stretch;
+            btnSubmitProof2.FlatStyle = FlatStyle.Flat;
+            btnSubmitProof2.ForeColor = Color.FromArgb(60, 40, 0);
+            btnSubmitProof2.Location = new Point(648, 415);
+            btnSubmitProof2.Name = "btnSubmitProof2";
+            btnSubmitProof2.Size = new Size(138, 33);
+            btnSubmitProof2.TabIndex = 69;
+            btnSubmitProof2.UseVisualStyleBackColor = false;
             // 
-            // abandonquest2
+            // btnAbandonQuest2
             // 
-            abandonquest2.BackColor = Color.FromArgb(60, 40, 0);
-            abandonquest2.BackgroundImage = (Image)resources.GetObject("abandonquest2.BackgroundImage");
-            abandonquest2.BackgroundImageLayout = ImageLayout.Stretch;
-            abandonquest2.FlatStyle = FlatStyle.Flat;
-            abandonquest2.ForeColor = Color.FromArgb(60, 40, 0);
-            abandonquest2.Location = new Point(792, 415);
-            abandonquest2.Name = "abandonquest2";
-            abandonquest2.Size = new Size(138, 33);
-            abandonquest2.TabIndex = 68;
-            abandonquest2.UseVisualStyleBackColor = false;
+            btnAbandonQuest2.BackColor = Color.FromArgb(60, 40, 0);
+            btnAbandonQuest2.BackgroundImage = (Image)resources.GetObject("btnAbandonQuest2.BackgroundImage");
+            btnAbandonQuest2.BackgroundImageLayout = ImageLayout.Stretch;
+            btnAbandonQuest2.FlatStyle = FlatStyle.Flat;
+            btnAbandonQuest2.ForeColor = Color.FromArgb(60, 40, 0);
+            btnAbandonQuest2.Location = new Point(792, 415);
+            btnAbandonQuest2.Name = "btnAbandonQuest2";
+            btnAbandonQuest2.Size = new Size(138, 33);
+            btnAbandonQuest2.TabIndex = 68;
+            btnAbandonQuest2.UseVisualStyleBackColor = false;
             // 
-            // activequestdescription3
+            // lblQuestDesc2
             // 
-            activequestdescription3.AutoSize = true;
-            activequestdescription3.BackColor = Color.FromArgb(60, 40, 0);
-            activequestdescription3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            activequestdescription3.ForeColor = Color.DarkGray;
-            activequestdescription3.Location = new Point(268, 389);
-            activequestdescription3.Name = "activequestdescription3";
-            activequestdescription3.Size = new Size(329, 17);
-            activequestdescription3.TabIndex = 66;
-            activequestdescription3.Text = "THIS SHOWS THE DESCRIPTION OF THE ACTIVE QUEST";
+            lblQuestDesc2.AutoSize = true;
+            lblQuestDesc2.BackColor = Color.FromArgb(60, 40, 0);
+            lblQuestDesc2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblQuestDesc2.ForeColor = Color.DarkGray;
+            lblQuestDesc2.Location = new Point(268, 389);
+            lblQuestDesc2.Name = "lblQuestDesc2";
+            lblQuestDesc2.Size = new Size(329, 17);
+            lblQuestDesc2.TabIndex = 66;
+            lblQuestDesc2.Text = "THIS SHOWS THE DESCRIPTION OF THE ACTIVE QUEST";
             // 
-            // toolsredeemed2
+            // lblRedeemedTools2
             // 
-            toolsredeemed2.AutoSize = true;
-            toolsredeemed2.BackColor = Color.FromArgb(64, 0, 0);
-            toolsredeemed2.Font = new Font("Nirmala Text", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            toolsredeemed2.ForeColor = Color.Moccasin;
-            toolsredeemed2.Location = new Point(736, 468);
-            toolsredeemed2.Name = "toolsredeemed2";
-            toolsredeemed2.Size = new Size(104, 15);
-            toolsredeemed2.TabIndex = 65;
-            toolsredeemed2.Text = "REDEEMED TOOLS";
+            lblRedeemedTools2.AutoSize = true;
+            lblRedeemedTools2.BackColor = Color.FromArgb(64, 0, 0);
+            lblRedeemedTools2.Font = new Font("Nirmala Text", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRedeemedTools2.ForeColor = Color.Moccasin;
+            lblRedeemedTools2.Location = new Point(736, 468);
+            lblRedeemedTools2.Name = "lblRedeemedTools2";
+            lblRedeemedTools2.Size = new Size(104, 15);
+            lblRedeemedTools2.TabIndex = 65;
+            lblRedeemedTools2.Text = "REDEEMED TOOLS";
             // 
             // label6
             // 
@@ -382,29 +379,29 @@
             label6.TabIndex = 64;
             label6.Text = "TOOL/s REDEEMED";
             // 
-            // taskrewardsupply2
+            // lblRewardSupply2
             // 
-            taskrewardsupply2.AutoSize = true;
-            taskrewardsupply2.BackColor = Color.FromArgb(64, 0, 0);
-            taskrewardsupply2.Font = new Font("Nirmala Text", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            taskrewardsupply2.ForeColor = Color.Moccasin;
-            taskrewardsupply2.Location = new Point(808, 373);
-            taskrewardsupply2.Name = "taskrewardsupply2";
-            taskrewardsupply2.Size = new Size(106, 17);
-            taskrewardsupply2.TabIndex = 63;
-            taskrewardsupply2.Text = "REWARD SUPPLY";
+            lblRewardSupply2.AutoSize = true;
+            lblRewardSupply2.BackColor = Color.FromArgb(64, 0, 0);
+            lblRewardSupply2.Font = new Font("Nirmala Text", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRewardSupply2.ForeColor = Color.Moccasin;
+            lblRewardSupply2.Location = new Point(808, 373);
+            lblRewardSupply2.Name = "lblRewardSupply2";
+            lblRewardSupply2.Size = new Size(106, 17);
+            lblRewardSupply2.TabIndex = 63;
+            lblRewardSupply2.Text = "REWARD SUPPLY";
             // 
-            // taskrewardpoints2
+            // lblRewardPoints2
             // 
-            taskrewardpoints2.AutoSize = true;
-            taskrewardpoints2.BackColor = Color.FromArgb(64, 0, 0);
-            taskrewardpoints2.Font = new Font("Nirmala Text", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            taskrewardpoints2.ForeColor = Color.Moccasin;
-            taskrewardpoints2.Location = new Point(661, 373);
-            taskrewardpoints2.Name = "taskrewardpoints2";
-            taskrewardpoints2.Size = new Size(108, 17);
-            taskrewardpoints2.TabIndex = 62;
-            taskrewardpoints2.Text = "REWARD POINTS";
+            lblRewardPoints2.AutoSize = true;
+            lblRewardPoints2.BackColor = Color.FromArgb(64, 0, 0);
+            lblRewardPoints2.Font = new Font("Nirmala Text", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblRewardPoints2.ForeColor = Color.Moccasin;
+            lblRewardPoints2.Location = new Point(661, 373);
+            lblRewardPoints2.Name = "lblRewardPoints2";
+            lblRewardPoints2.Size = new Size(108, 17);
+            lblRewardPoints2.TabIndex = 62;
+            lblRewardPoints2.Text = "REWARD POINTS";
             // 
             // label9
             // 
@@ -418,41 +415,41 @@
             label9.TabIndex = 61;
             label9.Text = "TASK REWARD";
             // 
-            // questdifficulty2
+            // lblQuestDifficulty2
             // 
-            questdifficulty2.AutoSize = true;
-            questdifficulty2.BackColor = Color.FromArgb(60, 40, 0);
-            questdifficulty2.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            questdifficulty2.ForeColor = Color.White;
-            questdifficulty2.Location = new Point(429, 334);
-            questdifficulty2.Name = "questdifficulty2";
-            questdifficulty2.Size = new Size(52, 15);
-            questdifficulty2.TabIndex = 60;
-            questdifficulty2.Text = "difficulty";
+            lblQuestDifficulty2.AutoSize = true;
+            lblQuestDifficulty2.BackColor = Color.FromArgb(60, 40, 0);
+            lblQuestDifficulty2.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblQuestDifficulty2.ForeColor = Color.White;
+            lblQuestDifficulty2.Location = new Point(429, 334);
+            lblQuestDifficulty2.Name = "lblQuestDifficulty2";
+            lblQuestDifficulty2.Size = new Size(52, 15);
+            lblQuestDifficulty2.TabIndex = 60;
+            lblQuestDifficulty2.Text = "difficulty";
             // 
-            // questtype2
+            // lblQuestType2
             // 
-            questtype2.AutoSize = true;
-            questtype2.BackColor = Color.FromArgb(60, 40, 0);
-            questtype2.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            questtype2.ForeColor = Color.LightGray;
-            questtype2.Location = new Point(268, 351);
-            questtype2.Name = "questtype2";
-            questtype2.Size = new Size(121, 15);
-            questtype2.TabIndex = 59;
-            questtype2.Text = "quest type (solo/group)";
+            lblQuestType2.AutoSize = true;
+            lblQuestType2.BackColor = Color.FromArgb(60, 40, 0);
+            lblQuestType2.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblQuestType2.ForeColor = Color.LightGray;
+            lblQuestType2.Location = new Point(268, 351);
+            lblQuestType2.Name = "lblQuestType2";
+            lblQuestType2.Size = new Size(121, 15);
+            lblQuestType2.TabIndex = 59;
+            lblQuestType2.Text = "quest type (solo/group)";
             // 
-            // activequestname2
+            // lblQuestTitle2
             // 
-            activequestname2.AutoSize = true;
-            activequestname2.BackColor = Color.FromArgb(60, 40, 0);
-            activequestname2.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            activequestname2.ForeColor = Color.FromArgb(255, 224, 96);
-            activequestname2.Location = new Point(268, 328);
-            activequestname2.Name = "activequestname2";
-            activequestname2.Size = new Size(155, 23);
-            activequestname2.TabIndex = 58;
-            activequestname2.Text = "ACTIVE QUEST";
+            lblQuestTitle2.AutoSize = true;
+            lblQuestTitle2.BackColor = Color.FromArgb(60, 40, 0);
+            lblQuestTitle2.Font = new Font("Times New Roman", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblQuestTitle2.ForeColor = Color.FromArgb(255, 224, 96);
+            lblQuestTitle2.Location = new Point(268, 328);
+            lblQuestTitle2.Name = "lblQuestTitle2";
+            lblQuestTitle2.Size = new Size(155, 23);
+            lblQuestTitle2.TabIndex = 58;
+            lblQuestTitle2.Text = "ACTIVE QUEST";
             // 
             // pictureBox5
             // 
@@ -475,7 +472,6 @@
             pictureBox6.Size = new Size(174, 116);
             pictureBox6.TabIndex = 70;
             pictureBox6.TabStop = false;
-            pictureBox6.Click += pictureBox6_Click;
             // 
             // label4
             // 
@@ -489,54 +485,55 @@
             label4.TabIndex = 71;
             label4.Text = "Reward Points";
             // 
-            // totalpoints
+            // lblTotalPoints
             // 
-            totalpoints.AutoSize = true;
-            totalpoints.BackColor = Color.FromArgb(43, 21, 0);
-            totalpoints.Font = new Font("Nirmala Text", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            totalpoints.ForeColor = Color.Moccasin;
-            totalpoints.Location = new Point(33, 423);
-            totalpoints.Name = "totalpoints";
-            totalpoints.Size = new Size(155, 25);
-            totalpoints.TabIndex = 72;
-            totalpoints.Text = "REWARD POINTS";
+            lblTotalPoints.AutoSize = true;
+            lblTotalPoints.BackColor = Color.FromArgb(43, 21, 0);
+            lblTotalPoints.Font = new Font("Nirmala Text", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTotalPoints.ForeColor = Color.Moccasin;
+            lblTotalPoints.Location = new Point(33, 423);
+            lblTotalPoints.Name = "lblTotalPoints";
+            lblTotalPoints.Size = new Size(155, 25);
+            lblTotalPoints.TabIndex = 72;
+            lblTotalPoints.Text = "REWARD POINTS";
             // 
-            // button1
+            // btnRedeem
             // 
-            button1.BackColor = Color.FromArgb(43, 21, 0);
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.ForeColor = Color.FromArgb(60, 40, 0);
-            button1.Location = new Point(120, 464);
-            button1.Name = "button1";
-            button1.Size = new Size(76, 23);
-            button1.TabIndex = 73;
-            button1.UseVisualStyleBackColor = false;
+            btnRedeem.BackColor = Color.FromArgb(43, 21, 0);
+            btnRedeem.BackgroundImage = (Image)resources.GetObject("btnRedeem.BackgroundImage");
+            btnRedeem.BackgroundImageLayout = ImageLayout.Stretch;
+            btnRedeem.FlatStyle = FlatStyle.Flat;
+            btnRedeem.ForeColor = Color.FromArgb(60, 40, 0);
+            btnRedeem.Location = new Point(120, 464);
+            btnRedeem.Name = "btnRedeem";
+            btnRedeem.Size = new Size(76, 23);
+            btnRedeem.TabIndex = 73;
+            btnRedeem.UseVisualStyleBackColor = false;
+            btnRedeem.Click += btnRedeem_Click;
             // 
-            // deadline2
+            // lblQuestDeadline2
             // 
-            deadline2.AutoSize = true;
-            deadline2.BackColor = Color.Chartreuse;
-            deadline2.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            deadline2.ForeColor = SystemColors.ActiveCaptionText;
-            deadline2.Location = new Point(268, 461);
-            deadline2.Name = "deadline2";
-            deadline2.Size = new Size(74, 15);
-            deadline2.TabIndex = 74;
-            deadline2.Text = "DEADLINE: ";
+            lblQuestDeadline2.AutoSize = true;
+            lblQuestDeadline2.BackColor = Color.Chartreuse;
+            lblQuestDeadline2.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblQuestDeadline2.ForeColor = SystemColors.ActiveCaptionText;
+            lblQuestDeadline2.Location = new Point(268, 461);
+            lblQuestDeadline2.Name = "lblQuestDeadline2";
+            lblQuestDeadline2.Size = new Size(74, 15);
+            lblQuestDeadline2.TabIndex = 74;
+            lblQuestDeadline2.Text = "DEADLINE: ";
             // 
-            // label5
+            // lblQuestDeadline1
             // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Chartreuse;
-            label5.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = SystemColors.ActiveCaptionText;
-            label5.Location = new Point(268, 271);
-            label5.Name = "label5";
-            label5.Size = new Size(74, 15);
-            label5.TabIndex = 75;
-            label5.Text = "DEADLINE: ";
+            lblQuestDeadline1.AutoSize = true;
+            lblQuestDeadline1.BackColor = Color.Chartreuse;
+            lblQuestDeadline1.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblQuestDeadline1.ForeColor = SystemColors.ActiveCaptionText;
+            lblQuestDeadline1.Location = new Point(268, 271);
+            lblQuestDeadline1.Name = "lblQuestDeadline1";
+            lblQuestDeadline1.Size = new Size(74, 15);
+            lblQuestDeadline1.TabIndex = 75;
+            lblQuestDeadline1.Text = "DEADLINE: ";
             // 
             // Form8
             // 
@@ -545,35 +542,35 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1009, 581);
-            Controls.Add(label5);
-            Controls.Add(deadline2);
-            Controls.Add(button1);
-            Controls.Add(totalpoints);
+            Controls.Add(lblQuestDeadline1);
+            Controls.Add(lblQuestDeadline2);
+            Controls.Add(btnRedeem);
+            Controls.Add(lblTotalPoints);
             Controls.Add(label4);
             Controls.Add(pictureBox6);
-            Controls.Add(submitproofofwork2);
-            Controls.Add(abandonquest2);
-            Controls.Add(activequestdescription3);
-            Controls.Add(toolsredeemed2);
+            Controls.Add(btnSubmitProof2);
+            Controls.Add(btnAbandonQuest2);
+            Controls.Add(lblQuestDesc2);
+            Controls.Add(lblRedeemedTools2);
             Controls.Add(label6);
-            Controls.Add(taskrewardsupply2);
-            Controls.Add(taskrewardpoints2);
+            Controls.Add(lblRewardSupply2);
+            Controls.Add(lblRewardPoints2);
             Controls.Add(label9);
-            Controls.Add(questdifficulty2);
-            Controls.Add(questtype2);
-            Controls.Add(activequestname2);
+            Controls.Add(lblQuestDifficulty2);
+            Controls.Add(lblQuestType2);
+            Controls.Add(lblQuestTitle2);
             Controls.Add(pictureBox5);
-            Controls.Add(submitproofofwork);
-            Controls.Add(abandonquest);
-            Controls.Add(activequestdescription2);
-            Controls.Add(toolsredeemed);
+            Controls.Add(btnSubmitProof1);
+            Controls.Add(btnAbandonQuest1);
+            Controls.Add(lblQuestDesc1);
+            Controls.Add(lblRedeemedTools1);
             Controls.Add(label2);
-            Controls.Add(taskrewardsupply);
-            Controls.Add(taskrewardpoints);
+            Controls.Add(lblRewardSupply1);
+            Controls.Add(lblRewardPoints1);
             Controls.Add(label3);
-            Controls.Add(questdifficulty);
-            Controls.Add(questtype);
-            Controls.Add(activequestname);
+            Controls.Add(lblQuestDifficulty1);
+            Controls.Add(lblQuestType1);
+            Controls.Add(lblQuestTitle1);
             Controls.Add(pictureBox4);
             Controls.Add(pointshop3);
             Controls.Add(citizenquest3);
@@ -607,34 +604,34 @@
         private Button citizendashboard3;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
-        private Label activequestname;
-        private Label questtype;
-        private Label questdifficulty;
+        private Label lblQuestTitle1;
+        private Label lblQuestType1;
+        private Label lblQuestDifficulty1;
         private Label label3;
-        private Label taskrewardpoints;
-        private Label taskrewardsupply;
+        private Label lblRewardPoints1;
+        private Label lblRewardSupply1;
         private Label label2;
-        private Label toolsredeemed;
-        private Label activequestdescription2;
-        private Button abandonquest;
-        private Button submitproofofwork;
-        private Button submitproofofwork2;
-        private Button abandonquest2;
-        private Label activequestdescription3;
-        private Label toolsredeemed2;
+        private Label lblRedeemedTools1;
+        private Label lblQuestDesc1;
+        private Button btnAbandonQuest1;
+        private Button btnSubmitProof1;
+        private Button btnSubmitProof2;
+        private Button btnAbandonQuest2;
+        private Label lblQuestDesc2;
+        private Label lblRedeemedTools2;
         private Label label6;
-        private Label taskrewardsupply2;
-        private Label taskrewardpoints2;
+        private Label lblRewardSupply2;
+        private Label lblRewardPoints2;
         private Label label9;
-        private Label questdifficulty2;
-        private Label questtype2;
-        private Label activequestname2;
+        private Label lblQuestDifficulty2;
+        private Label lblQuestType2;
+        private Label lblQuestTitle2;
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private Label label4;
-        private Label totalpoints;
-        private Button button1;
-        private Label deadline2;
-        private Label label5;
+        private Label lblTotalPoints;
+        private Button btnRedeem;
+        private Label lblQuestDeadline2;
+        private Label lblQuestDeadline1;
     }
 }

@@ -720,7 +720,7 @@
   <data name="pictureBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAATAAAAArCAYAAAD/ndQfAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAErZJREFUeF7tm/ezXVUVx7EMI5YRkRaldwi9B0ghEEhCGgMIooARDIQeDBiQIr0X
+        vAAADrwBlbxySQAAErZJREFUeF7tm/ezXVUVx7EMI5YRkRaldwi9B0ghEEhCGgMIooARDIQeDBiQIr0X
         qRIgECAEklAcUcQRRRTHEcXBjkoRRRT9H47zOY/vZb11197n3JcXyIX9w3eSt+uq313OvquM3nyVqqCg
         oKAfsYovKCgoKOgXFAIrKCjoWxQCKygo6FsUAisoKOhbFAIrKCjoWxQCKygo6FsUAisoKOhbFAIrKCjo
         W7QisAkjP1zdetLW1R/vOrB6Y+n06n+PHFz9Z9mM+m/Krztu8+qZa8fUbb85a8u63oPyVF0Oryw6qDr1
@@ -4135,7 +4135,7 @@
         qCfhJwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="abandonquest.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAbandonQuest1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAkYAAAB4CAYAAAAXMj2YAAAABGdBTUEAALGPC/xhBQAAG7NJREFUeF7t
         nQuQHMV9xhcBAvRAK4nHIZCEhJYTEhLSaIW0d7fSSYhFAoSQhEDeCw9z5Co2CY5iyq7YKVyuHBgw53BY
@@ -4259,7 +4259,7 @@
         Jtb/A6xdfzGWpkbUAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="submitproofofwork.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSubmitProof1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAjgAAAB6CAYAAACyeim4AAAABGdBTUEAALGPC/xhBQAAJcJJREFUeF7t
         nQd4VceZ940QEt1gkBDdxjYYAxYYJFBDCAnRVECogQAXbNS7ECBAGFRQMXaIscPGhVjgJN5kky9OnvWm
@@ -4426,7 +4426,7 @@
         PRQFq7n/PQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="submitproofofwork2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSubmitProof2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAjgAAAB6CAYAAACyeim4AAAABGdBTUEAALGPC/xhBQAAJcJJREFUeF7t
         nQd4VceZ940QEt1gkBDdxjYYAxYYJFBDCAnRVECogQAXbNS7ECBAGFRQMXaIscPGhVjgJN5kky9OnvWm
@@ -4593,7 +4593,7 @@
         PRQFq7n/PQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="abandonquest2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnAbandonQuest2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAkYAAAB4CAYAAAAXMj2YAAAABGdBTUEAALGPC/xhBQAAG7NJREFUeF7t
         nQuQHMV9xhcBAvRAK4nHIZCEhJYTEhLSaIW0d7fSSYhFAoSQhEDeCw9z5Co2CY5iyq7YKVyuHBgw53BY
@@ -5087,7 +5087,7 @@
   <data name="pictureBox6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAYAAAC+ZpjcAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAACqtJREFUeF7t1iEBACAQwMCvQA765wOPZfLEmSXY7DUHAIDOvAEAgD8GCwAgZrAA
+        DAAACwwBP0AiyAAACqtJREFUeF7t1iEBACAQwMCvQA765wOPZfLEmSXY7DUHAIDOvAEAgD8GCwAgZrAA
         AGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAg
         ZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIG
         CwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAAAGIGCwAgZrAA
@@ -5136,7 +5136,7 @@
         RK5CYII=
 </value>
   </data>
-  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnRedeem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOsAAABHCAYAAADm1LBAAAAABGdBTUEAALGPC/xhBQAACxdJREFUeF7t
         nXtQVNcdxxfkIQoI7C7yfikPQc0qEUqj0UwfaTq4PFIGhfIIykYQcFLlZRFvqoKoxEKhOyaxmpjMdNL+

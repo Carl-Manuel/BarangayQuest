@@ -1,38 +1,43 @@
-﻿using System;
+﻿using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-using MySqlConnector;
+using System.Linq;
 using System.Security.Cryptography;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BarangayQuest
 {
     public partial class Form3 : Form
     {
+        private readonly string connString = "Server=localhost;Database=barangayquest_db;User ID=root;Password=091916;"; //DB CONNECTION
+
         public Form3()
         {
             InitializeComponent();
+            WireRegistrationUX();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void WireRegistrationUX()
         {
+            // Mask Passcode / PIN fields
+            txtPasscode.UseSystemPasswordChar = true;
+            txtVerifyPasscode.UseSystemPasswordChar = true;
 
+            // Enforce numeric-only input up to 11 digits on Contact Number
+            txtContactNumber.MaxLength = 11;
+            txtContactNumber.KeyPress += (s, e) =>
+            {
+                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
+            };
         }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private readonly string connString = "Server=localhost;Database=barangayquest_db;User ID=root;Password=091916;"; //DB CONNECTION
 
         private async void btnRegister_Click(object sender, EventArgs e)
         {
@@ -48,13 +53,56 @@ namespace BarangayQuest
             string passcode = txtPasscode.Text;
             string verifyPasscode = txtVerifyPasscode.Text;
 
+            // Check required fields
             if (string.IsNullOrWhiteSpace(fullName) ||
                 string.IsNullOrWhiteSpace(barangayId) ||
                 string.IsNullOrWhiteSpace(contact) ||
                 string.IsNullOrWhiteSpace(username) ||
-                string.IsNullOrWhiteSpace(passcode))
+                string.IsNullOrWhiteSpace(passcode) ||
+                string.IsNullOrWhiteSpace(verifyPasscode))
             {
-                MessageBox.Show("Please fill in all required fields.", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please fill in all required registration fields.", "Missing Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Validate Full Name
+            if (fullName.Length < 2 || fullName.All(char.IsDigit))
+            {
+                MessageBox.Show("Please enter a valid Full Name (at least 2 letters).", "Invalid Full Name", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtFullName.Focus();
+                return;
+            }
+
+            // Validate Barangay ID Number
+            if (barangayId.Length < 3)
+            {
+                MessageBox.Show("Please enter a valid Barangay ID Number.", "Invalid Barangay ID", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtBarangayID.Focus();
+                return;
+            }
+
+            // Validate Contact Number (must be strictly 11 digits)
+            if (contact.Length != 11 || !contact.All(char.IsDigit))
+            {
+                MessageBox.Show("Contact Number must be exactly 11 numeric digits (e.g., 09123456789).", "Invalid Contact Number", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtContactNumber.Focus();
+                txtContactNumber.SelectAll();
+                return;
+            }
+
+            // Validate Username
+            if (username.Length < 4 || username.Contains(' '))
+            {
+                MessageBox.Show("Username / Account ID must be at least 4 characters long and contain no spaces.", "Invalid Username", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtUsername.Focus();
+                return;
+            }
+
+            // Validate Passcode / PIN
+            if (passcode.Length < 4)
+            {
+                MessageBox.Show("Passcode / PIN must be at least 4 characters long.", "Weak Passcode", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtPasscode.Focus();
                 return;
             }
 
@@ -72,6 +120,38 @@ namespace BarangayQuest
             {
                 using var conn = new MySqlConnection(connString);
                 await conn.OpenAsync();
+
+                //  Pre-check duplicate Username or Barangay ID for clear error feedback
+                string duplicateSql = @"
+                    SELECT Username, BarangayIDNumber
+                    FROM Users
+                    WHERE Username = @username OR BarangayIDNumber = @brgyId
+                    LIMIT 1;";
+
+                using (var dupCmd = new MySqlCommand(duplicateSql, conn))
+                {
+                    dupCmd.Parameters.AddWithValue("@username", username);
+                    dupCmd.Parameters.AddWithValue("@brgyId", barangayId);
+
+                    using var reader = await dupCmd.ExecuteReaderAsync();
+                    if (await reader.ReadAsync())
+                    {
+                        string existingUser = reader["Username"]?.ToString() ?? "";
+                        if (string.Equals(existingUser, username, StringComparison.OrdinalIgnoreCase))
+                        {
+                            MessageBox.Show("That Username / Account ID is already taken. Please choose another one.", "Duplicate Username", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            txtUsername.Focus();
+                            txtUsername.SelectAll();
+                        }
+                        else
+                        {
+                            MessageBox.Show("That Barangay ID Number is already registered to an account.", "Duplicate Barangay ID", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            txtBarangayID.Focus();
+                            txtBarangayID.SelectAll();
+                        }
+                        return;
+                    }
+                }
 
                 using var transaction = await conn.BeginTransactionAsync();
 
@@ -97,8 +177,8 @@ namespace BarangayQuest
                     }
 
                     string insertWorkerSql = @"
-                    INSERT INTO Citizen_Worker (UserID, AccountStatus)
-                    VALUES (@userId, 'Active');";
+                        INSERT INTO Citizen_Worker (UserID, AccountStatus)
+                        VALUES (@userId, 'Active');";
 
                     using (var workerCmd = new MySqlCommand(insertWorkerSql, conn, transaction))
                     {
@@ -150,8 +230,14 @@ namespace BarangayQuest
         private void returntorole_Click(object sender, EventArgs e)
         {
             Form2 Form2 = new Form2();
+            Form2.FormClosed += (s, args) => this.Close();
             Form2.Show();
             this.Hide();
         }
+
+        // Taena di ko to mahanap
+        private void label1_Click(object sender, EventArgs e) { }
+        private void textBox3_TextChanged(object sender, EventArgs e) { }
+        private void textBox5_TextChanged(object sender, EventArgs e) { }
     }
 }

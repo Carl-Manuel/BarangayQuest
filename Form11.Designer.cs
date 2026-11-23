@@ -151,7 +151,6 @@
             pictureBox4.Size = new Size(704, 376);
             pictureBox4.TabIndex = 48;
             pictureBox4.TabStop = false;
-            pictureBox4.Click += pictureBox4_Click;
             // 
             // pictureBox5
             // 
@@ -248,6 +247,7 @@
             makeannouncement.Size = new Size(203, 33);
             makeannouncement.TabIndex = 57;
             makeannouncement.UseVisualStyleBackColor = false;
+            makeannouncement.Click += makeannouncement_Click;
             // 
             // manageaccsecurityadmin
             // 
@@ -285,6 +285,7 @@
             logout1.Size = new Size(135, 22);
             logout1.TabIndex = 60;
             logout1.UseVisualStyleBackColor = false;
+            logout1.Click += logout1_Click;
             // 
             // Form11
             // 

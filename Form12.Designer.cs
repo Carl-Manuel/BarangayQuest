@@ -51,6 +51,7 @@
             pictureBox8 = new PictureBox();
             backbutton = new Button();
             pictureBox9 = new PictureBox();
+            btnSavePassword = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
@@ -319,6 +320,19 @@
             pictureBox9.TabIndex = 78;
             pictureBox9.TabStop = false;
             // 
+            // btnSavePassword
+            // 
+            btnSavePassword.BackColor = Color.FromArgb(60, 40, 0);
+            btnSavePassword.BackgroundImage = (Image)resources.GetObject("btnSavePassword.BackgroundImage");
+            btnSavePassword.BackgroundImageLayout = ImageLayout.Stretch;
+            btnSavePassword.FlatStyle = FlatStyle.Popup;
+            btnSavePassword.ForeColor = Color.Transparent;
+            btnSavePassword.Location = new Point(364, 385);
+            btnSavePassword.Name = "btnSavePassword";
+            btnSavePassword.Size = new Size(156, 47);
+            btnSavePassword.TabIndex = 204;
+            btnSavePassword.UseVisualStyleBackColor = false;
+            // 
             // Form12
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -326,6 +340,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1009, 581);
+            Controls.Add(btnSavePassword);
             Controls.Add(verifynewpassadmin);
             Controls.Add(newpassadmin);
             Controls.Add(currentpassadmin);
@@ -387,5 +402,6 @@
         private PictureBox pictureBox8;
         private Button backbutton;
         private PictureBox pictureBox9;
+        private Button btnSavePassword;
     }
 }

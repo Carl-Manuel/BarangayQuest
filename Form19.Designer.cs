@@ -87,6 +87,7 @@
             manageaccsecurity.Size = new Size(188, 25);
             manageaccsecurity.TabIndex = 163;
             manageaccsecurity.UseVisualStyleBackColor = false;
+            manageaccsecurity.Click += manageaccsecurity_Click;
             // 
             // label3
             // 

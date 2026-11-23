@@ -42,7 +42,7 @@ namespace BarangayQuest
             public string Title { get; set; } = "";
             public string Category { get; set; } = "";
             public string Difficulty { get; set; } = "";
-            public decimal BasePay { get; set; }
+            public string BasePay { get; set; } = "";
             public int PointsReward { get; set; }
             public double Longitude { get; set; }
             public double Latitude { get; set; }
@@ -51,6 +51,8 @@ namespace BarangayQuest
             public DateTime StartDate { get; set; }
             public DateTime EndDate { get; set; }
             public string Status { get; set; } = "";
+            public string AssignedTools { get; set; } = "";
+            public string QuestMode => MaxCapacity <= 1 ? "SOLO QUEST" : "GROUP QUEST";
         }
 
         public Form23()
@@ -65,13 +67,13 @@ namespace BarangayQuest
             await LoadNearbyQuestsAsync(currentScanCenter.Lat, currentScanCenter.Lng, SearchRadiusMeters);
         }
 
-        // Builds the Citizen-only Quest Inspector HUD inside the right edge of the panel (EDIT FOR LOOKS)
+        // Builds the Citizen-only Quest Inspector HUD inside the right edge of the panel
         private void BuildCitizenHud()
         {
             pnlQuestHud = new Panel
             {
                 Dock = DockStyle.Right,
-                Width = 300,
+                Width = 310,
                 Padding = new Padding(12),
                 BackColor = Color.FromArgb(46, 24, 10)
             };
@@ -133,9 +135,9 @@ namespace BarangayQuest
             lblWorkerBanner = new Label
             {
                 Text = string.IsNullOrWhiteSpace(UserSession.FullName)
-                    ? "CITIZEN QUEST RADAR (3 KM)"
+                    ? $"CITIZEN QUEST RADAR ({SearchRadiusMeters / 1000.0:0.#} KM)"
                     : $"WORKER: {UserSession.FullName.ToUpper()}",
-                Width = 270,
+                Width = 280,
                 Height = 24,
                 ForeColor = Color.LightGreen,
                 Font = new Font("Segoe UI", 9.5F, FontStyle.Bold)
@@ -143,8 +145,8 @@ namespace BarangayQuest
 
             lblScanStatus = new Label
             {
-                Text = "Right-click anywhere on the map to set your location and scan a 3 km radius.",
-                Width = 270,
+                Text = $"Right-click anywhere on the map to set your location and scan a {SearchRadiusMeters / 1000.0:0.#} km radius.",
+                Width = 280,
                 Height = 42,
                 ForeColor = Color.Khaki,
                 Font = new Font("Segoe UI", 8.5F, FontStyle.Regular)
@@ -153,9 +155,9 @@ namespace BarangayQuest
             lblQuestTitle = new Label
             {
                 Text = "No Quest Selected",
-                Width = 270,
+                Width = 280,
                 AutoSize = true,
-                MaximumSize = new Size(270, 0),
+                MaximumSize = new Size(280, 0),
                 ForeColor = Color.White,
                 Font = new Font("Segoe UI", 11F, FontStyle.Bold),
                 Padding = new Padding(0, 8, 0, 4)
@@ -163,10 +165,10 @@ namespace BarangayQuest
 
             lblQuestMeta = new Label
             {
-                Text = "Left-click any green pin on the map to view quest details.",
-                Width = 270,
+                Text = "Left-click any green pin on the map to inspect quest details.",
+                Width = 280,
                 AutoSize = true,
-                MaximumSize = new Size(270, 0),
+                MaximumSize = new Size(280, 0),
                 ForeColor = Color.Gainsboro,
                 Font = new Font("Segoe UI", 9F)
             };
@@ -174,19 +176,20 @@ namespace BarangayQuest
             lblQuestRewards = new Label
             {
                 Text = "",
-                Width = 270,
+                Width = 280,
                 AutoSize = true,
-                MaximumSize = new Size(270, 0),
+                MaximumSize = new Size(280, 0),
                 ForeColor = Color.Gold,
                 Font = new Font("Segoe UI", 9.5F, FontStyle.Bold),
-                Padding = new Padding(0, 8, 0, 2)
+                Padding = new Padding(0, 8, 0, 4)
             };
 
             lblQuestSlots = new Label
             {
                 Text = "",
-                Width = 270,
+                Width = 280,
                 AutoSize = true,
+                MaximumSize = new Size(280, 0),
                 ForeColor = Color.LightSkyBlue,
                 Font = new Font("Segoe UI", 9F)
             };
@@ -194,8 +197,9 @@ namespace BarangayQuest
             lblQuestSchedule = new Label
             {
                 Text = "",
-                Width = 270,
+                Width = 280,
                 AutoSize = true,
+                MaximumSize = new Size(280, 0),
                 ForeColor = Color.Silver,
                 Font = new Font("Segoe UI", 8.5F),
                 Padding = new Padding(0, 4, 0, 8)
@@ -259,11 +263,13 @@ namespace BarangayQuest
             if (e.Button != MouseButtons.Left || item.Tag is not QuestRecord q) return;
 
             selectedQuest = q;
+            string itemText = string.IsNullOrWhiteSpace(q.AssignedTools) ? "None" : q.AssignedTools;
+
             lblQuestTitle.Text = $"[{q.Status.ToUpper()}] {q.Title}";
-            lblQuestMeta.Text = $"Category: {q.Category}\nDifficulty: {q.Difficulty}";
-            lblQuestRewards.Text = $"Reward: PHP {q.BasePay:N2}  |  +{q.PointsReward} PTS";
+            lblQuestMeta.Text = $"Type: {q.QuestMode}\nCategory: {q.Category}  |  Difficulty: {q.Difficulty}";
+            lblQuestRewards.Text = $"Base Stipend: {q.BasePay}\nPoints Reward: +{q.PointsReward} PTS\nItem / Tool: {itemText}";
             lblQuestSlots.Text = $"Available Slots: {q.MaxCapacity - q.CurrentJoinedCount} left ({q.CurrentJoinedCount}/{q.MaxCapacity} joined)";
-            lblQuestSchedule.Text = $"Schedule: {q.StartDate:MMM dd, yyyy} - {q.EndDate:MMM dd, yyyy}";
+            lblQuestSchedule.Text = $"Start: {q.StartDate:MMM dd, yyyy}\nDeadline: {q.EndDate:MMM dd, yyyy hh:mm tt}";
 
             bool hasSlots = q.CurrentJoinedCount < q.MaxCapacity;
             btnAcceptQuest.Enabled = hasSlots;
@@ -287,9 +293,14 @@ namespace BarangayQuest
                 using var conn = new MySqlConnection(connString);
                 await conn.OpenAsync();
 
-                string sql = @"SELECT * FROM Quests
-                               WHERE Status IN ('Upcoming', 'Active')
-                                 AND ST_Distance_Sphere(POINT(@lng, @lat), POINT(Coordinates_X, Coordinates_Y)) <= @radius;";
+                string sql = @"
+                    SELECT q.*,
+                           (SELECT GROUP_CONCAT(t.ToolName SEPARATOR ', ')
+                            FROM Tool_Items t
+                            WHERE t.AssignedQuestID = q.QuestID) AS AssignedTools
+                    FROM Quests q
+                    WHERE q.Status IN ('Upcoming', 'Active')
+                      AND ST_Distance_Sphere(POINT(@lng, @lat), POINT(q.Coordinates_X, q.Coordinates_Y)) <= @radius;";
 
                 using var cmd = new MySqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@lng", userLng);
@@ -304,7 +315,7 @@ namespace BarangayQuest
                     count++;
                 }
 
-                lblScanStatus.Text = $"Found {count} quest(s) within 3 km.\nRight-click map to move your pin.";
+                lblScanStatus.Text = $"Found {count} quest(s) within {radiusMeters / 1000.0:0.#} km.\nRight-click map to move your pin.";
             }
             catch (Exception ex)
             {
@@ -323,7 +334,14 @@ namespace BarangayQuest
                 using var conn = new MySqlConnection(connString);
                 await conn.OpenAsync();
 
-                string sql = "SELECT * FROM Quests WHERE Status IN ('Upcoming', 'Active');";
+                string sql = @"
+                    SELECT q.*,
+                           (SELECT GROUP_CONCAT(t.ToolName SEPARATOR ', ')
+                            FROM Tool_Items t
+                            WHERE t.AssignedQuestID = q.QuestID) AS AssignedTools
+                    FROM Quests q
+                    WHERE q.Status IN ('Upcoming', 'Active');";
+
                 using var cmd = new MySqlCommand(sql, conn);
                 using var reader = await cmd.ExecuteReaderAsync();
 
@@ -334,7 +352,7 @@ namespace BarangayQuest
                     count++;
                 }
 
-                lblScanStatus.Text = $"Showing all {count} active/upcoming quest(s).\nRight-click map to filter by 3 km.";
+                lblScanStatus.Text = $"Showing all {count} active/upcoming quest(s).\nRight-click map to filter by {SearchRadiusMeters / 1000.0:0.#} km.";
             }
             catch (Exception ex)
             {
@@ -362,17 +380,43 @@ namespace BarangayQuest
 
                 try
                 {
-                    string assignSql = @"
-                        INSERT INTO Quest_Assignments (QuestID, WorkerID, AssignmentStatus, AssignedDate)
-                        VALUES (@questId, @workerId, 'Accepted', NOW());";
+                    // Prevent duplicate joins on the same quest
+                    string checkSql = @"
+                        SELECT Status
+                        FROM Quest_Memberships
+                        WHERE QuestID = @questId AND WorkerID = @workerId
+                        LIMIT 1;";
 
-                    using (var assignCmd = new MySqlCommand(assignSql, conn, tx))
+                    using (var checkCmd = new MySqlCommand(checkSql, conn, tx))
                     {
-                        assignCmd.Parameters.AddWithValue("@questId", selectedQuest.QuestID);
-                        assignCmd.Parameters.AddWithValue("@workerId", UserSession.WorkerID);
-                        await assignCmd.ExecuteNonQueryAsync();
+                        checkCmd.Parameters.AddWithValue("@questId", selectedQuest.QuestID);
+                        checkCmd.Parameters.AddWithValue("@workerId", UserSession.WorkerID);
+
+                        object? existingStatus = await checkCmd.ExecuteScalarAsync();
+                        if (existingStatus != null && existingStatus != DBNull.Value)
+                        {
+                            string statusStr = existingStatus.ToString() ?? "";
+                            if (statusStr.Equals("Joined", StringComparison.OrdinalIgnoreCase))
+                                throw new InvalidOperationException("You have already joined this quest.");
+                            if (statusStr.Equals("Completed", StringComparison.OrdinalIgnoreCase))
+                                throw new InvalidOperationException("You have already completed this quest.");
+                        }
                     }
 
+                    // Insert/re-activate membership in Quest_Memberships
+                    string joinSql = @"
+                        INSERT INTO Quest_Memberships (QuestID, WorkerID, JoinedAt, Status)
+                        VALUES (@questId, @workerId, NOW(), 'Joined')
+                        ON DUPLICATE KEY UPDATE Status = 'Joined', JoinedAt = NOW();";
+
+                    using (var joinCmd = new MySqlCommand(joinSql, conn, tx))
+                    {
+                        joinCmd.Parameters.AddWithValue("@questId", selectedQuest.QuestID);
+                        joinCmd.Parameters.AddWithValue("@workerId", UserSession.WorkerID);
+                        await joinCmd.ExecuteNonQueryAsync();
+                    }
+
+                    // Increment joined count in Quests
                     string updateSql = @"
                         UPDATE Quests
                         SET CurrentJoinedCount = CurrentJoinedCount + 1
@@ -387,7 +431,7 @@ namespace BarangayQuest
                     }
 
                     await tx.CommitAsync();
-                    MessageBox.Show($"You accepted '{selectedQuest.Title}'! Check your Dashboard for your Active Task.", "Quest Accepted", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"You accepted '{selectedQuest.Title}'! Check your Quest List for details.", "Quest Accepted", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     ClearQuestSelection();
                     await LoadNearbyQuestsAsync(currentScanCenter.Lat, currentScanCenter.Lng, SearchRadiusMeters);
@@ -400,7 +444,7 @@ namespace BarangayQuest
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Could not accept quest: {ex.Message}", "Quest Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Could not accept quest: {ex.Message}", "Quest Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 btnAcceptQuest.Enabled = true;
             }
         }
@@ -409,7 +453,7 @@ namespace BarangayQuest
         {
             selectedQuest = null;
             lblQuestTitle.Text = "No Quest Selected";
-            lblQuestMeta.Text = "Left-click any green pin on the map to view quest details.";
+            lblQuestMeta.Text = "Left-click any green pin on the map to inspect quest details.";
             lblQuestRewards.Text = "";
             lblQuestSlots.Text = "";
             lblQuestSchedule.Text = "";
@@ -418,13 +462,28 @@ namespace BarangayQuest
             btnAcceptQuest.BackColor = Color.SeaGreen;
         }
 
+        private static string FormatStipend(object? rawValue)
+        {
+            if (rawValue == null || rawValue == DBNull.Value)
+                return "None";
+
+            string text = rawValue.ToString()?.Trim() ?? "";
+            if (string.IsNullOrWhiteSpace(text))
+                return "None";
+
+            if (decimal.TryParse(text, out decimal cashAmount))
+                return $"PHP {cashAmount:N2}";
+
+            return text;
+        }
+
         private QuestRecord ReadQuest(MySqlDataReader r) => new()
         {
             QuestID = r.GetInt32("QuestID"),
             Title = r.GetString("Title"),
             Category = r.GetString("Category"),
             Difficulty = r.GetString("Difficulty"),
-            BasePay = r.GetDecimal("BasePay"),
+            BasePay = FormatStipend(r["BasePay"]),
             PointsReward = r.GetInt32("PointsReward"),
             Longitude = r.GetDouble("Coordinates_X"),
             Latitude = r.GetDouble("Coordinates_Y"),
@@ -432,14 +491,15 @@ namespace BarangayQuest
             CurrentJoinedCount = r.GetInt32("CurrentJoinedCount"),
             StartDate = r.GetDateTime("StartDate"),
             EndDate = r.GetDateTime("EndDate"),
-            Status = r.GetString("Status")
+            Status = r.GetString("Status"),
+            AssignedTools = r["AssignedTools"] == DBNull.Value ? "" : r["AssignedTools"].ToString() ?? ""
         };
 
         private void AddQuestPinToMap(QuestRecord q)
         {
             var marker = new GMarkerGoogle(new PointLatLng(q.Latitude, q.Longitude), GMarkerGoogleType.green_dot)
             {
-                ToolTipText = $"{q.Title} (+{q.PointsReward} pts)",
+                ToolTipText = $"{q.Title} [{q.QuestMode}] • {q.BasePay} (+{q.PointsReward} pts)",
                 ToolTipMode = MarkerTooltipMode.OnMouseOver,
                 Tag = q
             };
@@ -471,4 +531,4 @@ namespace BarangayQuest
             });
         }
     }
-}
+}   

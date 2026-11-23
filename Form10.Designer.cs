@@ -81,6 +81,7 @@
             inventorymanagement.Size = new Size(358, 141);
             inventorymanagement.TabIndex = 23;
             inventorymanagement.UseVisualStyleBackColor = false;
+            inventorymanagement.Click += inventorymanagement_Click;
             // 
             // adminprofile
             // 
@@ -94,6 +95,7 @@
             adminprofile.Size = new Size(358, 141);
             adminprofile.TabIndex = 24;
             adminprofile.UseVisualStyleBackColor = false;
+            adminprofile.Click += adminprofile_Click;
             // 
             // usermanagement
             // 
@@ -107,6 +109,7 @@
             usermanagement.Size = new Size(358, 141);
             usermanagement.TabIndex = 25;
             usermanagement.UseVisualStyleBackColor = false;
+            usermanagement.Click += usermanagement_Click;
             // 
             // questmapdispatch
             // 
@@ -120,6 +123,7 @@
             questmapdispatch.Size = new Size(358, 141);
             questmapdispatch.TabIndex = 26;
             questmapdispatch.UseVisualStyleBackColor = false;
+            questmapdispatch.Click += questmapdispatch_Click;
             // 
             // pictureBox3
             // 
@@ -131,7 +135,6 @@
             pictureBox3.Size = new Size(271, 96);
             pictureBox3.TabIndex = 27;
             pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox4
             // 

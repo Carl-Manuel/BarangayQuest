@@ -919,6 +919,7 @@
             update.Size = new Size(161, 51);
             update.TabIndex = 198;
             update.UseVisualStyleBackColor = false;
+            update.Click += update_Click;
             // 
             // label1
             // 
@@ -1284,7 +1285,6 @@
             label40.Size = new Size(123, 14);
             label40.TabIndex = 168;
             label40.Text = "FAMILY HYGIENE KIT";
-            label40.Click += label40_Click;
             // 
             // button22
             // 

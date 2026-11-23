@@ -100,6 +100,7 @@
             worksubmissions.Size = new Size(39, 39);
             worksubmissions.TabIndex = 159;
             worksubmissions.UseVisualStyleBackColor = false;
+            worksubmissions.Click += worksubmissions_Click;
             // 
             // dispatcherprofile
             // 
@@ -113,6 +114,7 @@
             dispatcherprofile.Size = new Size(39, 39);
             dispatcherprofile.TabIndex = 157;
             dispatcherprofile.UseVisualStyleBackColor = false;
+            dispatcherprofile.Click += dispatcherprofile_Click;
             // 
             // dispatcherdashboard
             // 
@@ -126,6 +128,7 @@
             dispatcherdashboard.Size = new Size(39, 39);
             dispatcherdashboard.TabIndex = 156;
             dispatcherdashboard.UseVisualStyleBackColor = false;
+            dispatcherdashboard.Click += dispatcherdashboard_Click;
             // 
             // pictureBox9
             // 
@@ -217,6 +220,7 @@
             back.Size = new Size(89, 45);
             back.TabIndex = 200;
             back.UseVisualStyleBackColor = false;
+            back.Click += back_Click;
             // 
             // next
             // 
@@ -230,6 +234,7 @@
             next.Size = new Size(88, 32);
             next.TabIndex = 201;
             next.UseVisualStyleBackColor = false;
+            next.Click += next_Click;
             // 
             // update
             // 
@@ -243,6 +248,7 @@
             update.Size = new Size(135, 39);
             update.TabIndex = 202;
             update.UseVisualStyleBackColor = false;
+            update.Click += update_Click;
             // 
             // pictureBox10
             // 

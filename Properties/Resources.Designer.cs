@@ -59,5 +59,15 @@ namespace BarangayQuest.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Copy_of_ADMIN_DASHBOARD__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Copy of ADMIN DASHBOARD (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

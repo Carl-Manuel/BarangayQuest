@@ -34,26 +34,27 @@
             citizenquest2 = new Button();
             questmap2 = new Button();
             citizendashboard2 = new Button();
-            userid2 = new Label();
-            label1 = new Label();
-            taskfinished2 = new Label();
-            username2 = new Label();
-            pictureBox5 = new PictureBox();
+            lblUserId = new Label();
+            lblWorkerRank = new Label();
+            lblTasksFinished = new Label();
+            lblFullName = new Label();
+            picAvatar = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox6 = new PictureBox();
-            button1 = new Button();
+            btnBack = new Button();
             pictureBox4 = new PictureBox();
             pictureBox7 = new PictureBox();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            currentpass = new TextBox();
+            txtCurrentPassword = new TextBox();
             contextMenuStrip1 = new ContextMenuStrip(components);
-            newpass = new TextBox();
-            verifynewpass = new TextBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            txtNewPassword = new TextBox();
+            txtVerifyPassword = new TextBox();
+            btnSavePassword = new Button();
+            ((System.ComponentModel.ISupportInitialize)picAvatar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -114,64 +115,64 @@
             citizendashboard2.TabIndex = 34;
             citizendashboard2.UseVisualStyleBackColor = false;
             // 
-            // userid2
+            // lblUserId
             // 
-            userid2.AutoSize = true;
-            userid2.BackColor = Color.FromArgb(54, 4, 2);
-            userid2.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            userid2.ForeColor = Color.DarkGray;
-            userid2.Location = new Point(361, 189);
-            userid2.Name = "userid2";
-            userid2.Size = new Size(54, 15);
-            userid2.TabIndex = 26;
-            userid2.Text = "USER ID";
+            lblUserId.AutoSize = true;
+            lblUserId.BackColor = Color.FromArgb(54, 4, 2);
+            lblUserId.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblUserId.ForeColor = Color.DarkGray;
+            lblUserId.Location = new Point(361, 189);
+            lblUserId.Name = "lblUserId";
+            lblUserId.Size = new Size(54, 15);
+            lblUserId.TabIndex = 26;
+            lblUserId.Text = "USER ID";
             // 
-            // label1
+            // lblWorkerRank
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.FromArgb(252, 172, 24);
-            label1.Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Black;
-            label1.Location = new Point(228, 277);
-            label1.Name = "label1";
-            label1.Size = new Size(179, 17);
-            label1.TabIndex = 25;
-            label1.Text = "EXPERIENCED WORKER";
+            lblWorkerRank.AutoSize = true;
+            lblWorkerRank.BackColor = Color.FromArgb(252, 172, 24);
+            lblWorkerRank.Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblWorkerRank.ForeColor = Color.Black;
+            lblWorkerRank.Location = new Point(228, 277);
+            lblWorkerRank.Name = "lblWorkerRank";
+            lblWorkerRank.Size = new Size(179, 17);
+            lblWorkerRank.TabIndex = 25;
+            lblWorkerRank.Text = "EXPERIENCED WORKER";
             // 
-            // taskfinished2
+            // lblTasksFinished
             // 
-            taskfinished2.AutoSize = true;
-            taskfinished2.BackColor = Color.FromArgb(252, 172, 24);
-            taskfinished2.Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            taskfinished2.ForeColor = Color.Black;
-            taskfinished2.Location = new Point(689, 277);
-            taskfinished2.Name = "taskfinished2";
-            taskfinished2.Size = new Size(133, 17);
-            taskfinished2.TabIndex = 24;
-            taskfinished2.Text = "TASKS FINISHED: ";
+            lblTasksFinished.AutoSize = true;
+            lblTasksFinished.BackColor = Color.FromArgb(252, 172, 24);
+            lblTasksFinished.Font = new Font("Times New Roman", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTasksFinished.ForeColor = Color.Black;
+            lblTasksFinished.Location = new Point(689, 277);
+            lblTasksFinished.Name = "lblTasksFinished";
+            lblTasksFinished.Size = new Size(133, 17);
+            lblTasksFinished.TabIndex = 24;
+            lblTasksFinished.Text = "TASKS FINISHED: ";
             // 
-            // username2
+            // lblFullName
             // 
-            username2.AutoSize = true;
-            username2.BackColor = Color.FromArgb(54, 4, 2);
-            username2.Font = new Font("Times New Roman", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            username2.ForeColor = Color.FromArgb(255, 224, 96);
-            username2.Location = new Point(339, 144);
-            username2.Name = "username2";
-            username2.Size = new Size(100, 33);
-            username2.TabIndex = 23;
-            username2.Text = "NAME";
+            lblFullName.AutoSize = true;
+            lblFullName.BackColor = Color.FromArgb(54, 4, 2);
+            lblFullName.Font = new Font("Times New Roman", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblFullName.ForeColor = Color.FromArgb(255, 224, 96);
+            lblFullName.Location = new Point(339, 144);
+            lblFullName.Name = "lblFullName";
+            lblFullName.Size = new Size(100, 33);
+            lblFullName.TabIndex = 23;
+            lblFullName.Text = "NAME";
             // 
-            // pictureBox5
+            // picAvatar
             // 
-            pictureBox5.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox5.BackgroundImage = (Image)resources.GetObject("pictureBox5.BackgroundImage");
-            pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox5.Location = new Point(173, 144);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(160, 118);
-            pictureBox5.TabIndex = 22;
-            pictureBox5.TabStop = false;
+            picAvatar.BackColor = Color.FromArgb(64, 0, 0);
+            picAvatar.BackgroundImage = (Image)resources.GetObject("picAvatar.BackgroundImage");
+            picAvatar.BackgroundImageLayout = ImageLayout.Stretch;
+            picAvatar.Location = new Point(173, 144);
+            picAvatar.Name = "picAvatar";
+            picAvatar.Size = new Size(160, 118);
+            picAvatar.TabIndex = 22;
+            picAvatar.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -217,17 +218,17 @@
             pictureBox6.TabIndex = 39;
             pictureBox6.TabStop = false;
             // 
-            // button1
+            // btnBack
             // 
-            button1.BackColor = Color.Transparent;
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(200, 412);
-            button1.Name = "button1";
-            button1.Size = new Size(133, 32);
-            button1.TabIndex = 41;
-            button1.UseVisualStyleBackColor = false;
+            btnBack.BackColor = Color.Transparent;
+            btnBack.BackgroundImage = (Image)resources.GetObject("btnBack.BackgroundImage");
+            btnBack.BackgroundImageLayout = ImageLayout.Stretch;
+            btnBack.FlatStyle = FlatStyle.Flat;
+            btnBack.Location = new Point(200, 412);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(133, 32);
+            btnBack.TabIndex = 41;
+            btnBack.UseVisualStyleBackColor = false;
             // 
             // pictureBox4
             // 
@@ -289,44 +290,57 @@
             label5.TabIndex = 47;
             label5.Text = "VERIFY NEW PASSWORD";
             // 
-            // currentpass
+            // txtCurrentPassword
             // 
-            currentpass.BackColor = Color.FromArgb(64, 0, 0);
-            currentpass.BorderStyle = BorderStyle.None;
-            currentpass.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            currentpass.ForeColor = Color.LightGray;
-            currentpass.Location = new Point(210, 342);
-            currentpass.Name = "currentpass";
-            currentpass.Size = new Size(179, 26);
-            currentpass.TabIndex = 48;
-            currentpass.TextChanged += citizenusernametxt_TextChanged;
+            txtCurrentPassword.BackColor = Color.FromArgb(64, 0, 0);
+            txtCurrentPassword.BorderStyle = BorderStyle.None;
+            txtCurrentPassword.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtCurrentPassword.ForeColor = Color.LightGray;
+            txtCurrentPassword.Location = new Point(210, 342);
+            txtCurrentPassword.Name = "txtCurrentPassword";
+            txtCurrentPassword.Size = new Size(179, 26);
+            txtCurrentPassword.TabIndex = 48;
+            txtCurrentPassword.TextChanged += citizenusernametxt_TextChanged;
             // 
             // contextMenuStrip1
             // 
             contextMenuStrip1.Name = "contextMenuStrip1";
             contextMenuStrip1.Size = new Size(61, 4);
             // 
-            // newpass
+            // txtNewPassword
             // 
-            newpass.BackColor = Color.FromArgb(64, 0, 0);
-            newpass.BorderStyle = BorderStyle.None;
-            newpass.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            newpass.ForeColor = Color.LightGray;
-            newpass.Location = new Point(698, 338);
-            newpass.Name = "newpass";
-            newpass.Size = new Size(179, 26);
-            newpass.TabIndex = 50;
+            txtNewPassword.BackColor = Color.FromArgb(64, 0, 0);
+            txtNewPassword.BorderStyle = BorderStyle.None;
+            txtNewPassword.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNewPassword.ForeColor = Color.LightGray;
+            txtNewPassword.Location = new Point(698, 338);
+            txtNewPassword.Name = "txtNewPassword";
+            txtNewPassword.Size = new Size(179, 26);
+            txtNewPassword.TabIndex = 50;
             // 
-            // verifynewpass
+            // txtVerifyPassword
             // 
-            verifynewpass.BackColor = Color.FromArgb(64, 0, 0);
-            verifynewpass.BorderStyle = BorderStyle.None;
-            verifynewpass.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            verifynewpass.ForeColor = Color.LightGray;
-            verifynewpass.Location = new Point(698, 412);
-            verifynewpass.Name = "verifynewpass";
-            verifynewpass.Size = new Size(179, 26);
-            verifynewpass.TabIndex = 51;
+            txtVerifyPassword.BackColor = Color.FromArgb(64, 0, 0);
+            txtVerifyPassword.BorderStyle = BorderStyle.None;
+            txtVerifyPassword.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtVerifyPassword.ForeColor = Color.LightGray;
+            txtVerifyPassword.Location = new Point(698, 412);
+            txtVerifyPassword.Name = "txtVerifyPassword";
+            txtVerifyPassword.Size = new Size(179, 26);
+            txtVerifyPassword.TabIndex = 51;
+            // 
+            // btnSavePassword
+            // 
+            btnSavePassword.BackColor = Color.FromArgb(60, 40, 0);
+            btnSavePassword.BackgroundImage = (Image)resources.GetObject("btnSavePassword.BackgroundImage");
+            btnSavePassword.BackgroundImageLayout = ImageLayout.Stretch;
+            btnSavePassword.FlatStyle = FlatStyle.Popup;
+            btnSavePassword.ForeColor = Color.Transparent;
+            btnSavePassword.Location = new Point(376, 409);
+            btnSavePassword.Name = "btnSavePassword";
+            btnSavePassword.Size = new Size(135, 39);
+            btnSavePassword.TabIndex = 203;
+            btnSavePassword.UseVisualStyleBackColor = false;
             // 
             // Form7
             // 
@@ -335,32 +349,33 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1009, 581);
-            Controls.Add(verifynewpass);
-            Controls.Add(newpass);
-            Controls.Add(currentpass);
+            Controls.Add(btnSavePassword);
+            Controls.Add(txtVerifyPassword);
+            Controls.Add(txtNewPassword);
+            Controls.Add(txtCurrentPassword);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox4);
-            Controls.Add(button1);
+            Controls.Add(btnBack);
             Controls.Add(pictureBox6);
             Controls.Add(pointshop2);
             Controls.Add(citizenquest2);
             Controls.Add(questmap2);
             Controls.Add(citizendashboard2);
-            Controls.Add(userid2);
-            Controls.Add(label1);
-            Controls.Add(taskfinished2);
-            Controls.Add(username2);
-            Controls.Add(pictureBox5);
+            Controls.Add(lblUserId);
+            Controls.Add(lblWorkerRank);
+            Controls.Add(lblTasksFinished);
+            Controls.Add(lblFullName);
+            Controls.Add(picAvatar);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
             DoubleBuffered = true;
             Name = "Form7";
             Text = "Form7";
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picAvatar).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -377,24 +392,25 @@
         private Button citizenquest2;
         private Button questmap2;
         private Button citizendashboard2;
-        private Label userid2;
-        private Label label1;
-        private Label taskfinished2;
-        private Label username2;
-        private PictureBox pictureBox5;
+        private Label lblUserId;
+        private Label lblWorkerRank;
+        private Label lblTasksFinished;
+        private Label lblFullName;
+        private PictureBox picAvatar;
         private PictureBox pictureBox3;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox6;
-        private Button button1;
+        private Button btnBack;
         private PictureBox pictureBox4;
         private PictureBox pictureBox7;
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox currentpass;
+        private TextBox txtCurrentPassword;
         private ContextMenuStrip contextMenuStrip1;
-        private TextBox newpass;
-        private TextBox verifynewpass;
+        private TextBox txtNewPassword;
+        private TextBox txtVerifyPassword;
+        private Button btnSavePassword;
     }
 }

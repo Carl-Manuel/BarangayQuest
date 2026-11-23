@@ -167,6 +167,7 @@
             backbutton2.Size = new Size(133, 57);
             backbutton2.TabIndex = 80;
             backbutton2.UseVisualStyleBackColor = false;
+            backbutton2.Click += backbutton2_Click;
             // 
             // publish
             // 
@@ -175,11 +176,12 @@
             publish.BackgroundImageLayout = ImageLayout.Stretch;
             publish.FlatStyle = FlatStyle.Flat;
             publish.ForeColor = Color.FromArgb(60, 40, 0);
-            publish.Location = new Point(669, 402);
+            publish.Location = new Point(668, 429);
             publish.Name = "publish";
             publish.Size = new Size(228, 44);
             publish.TabIndex = 81;
             publish.UseVisualStyleBackColor = false;
+            publish.Click += publish_Click;
             // 
             // announcementtxt
             // 

@@ -80,6 +80,7 @@
             dispatcherprofile.Size = new Size(291, 151);
             dispatcherprofile.TabIndex = 200;
             dispatcherprofile.UseVisualStyleBackColor = false;
+            dispatcherprofile.Click += dispatcherprofile_Click;
             // 
             // worksubmissions
             // 
@@ -93,6 +94,7 @@
             worksubmissions.Size = new Size(291, 151);
             worksubmissions.TabIndex = 201;
             worksubmissions.UseVisualStyleBackColor = false;
+            worksubmissions.Click += worksubmissions_Click;
             // 
             // statusofusers
             // 
@@ -106,6 +108,7 @@
             statusofusers.Size = new Size(291, 151);
             statusofusers.TabIndex = 202;
             statusofusers.UseVisualStyleBackColor = false;
+            statusofusers.Click += statusofusers_Click;
             // 
             // pictureBox3
             // 

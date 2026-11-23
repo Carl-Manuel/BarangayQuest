@@ -1912,7 +1912,7 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="picAvatar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAYgAAAEDCAYAAAAvNJM9AAAABGdBTUEAALGPC/xhBQAAbvRJREFUeF7t
         fQV4VMf6fnv1f++vRUJ0dyOQBNc4HkKAuG+UBCgt7sWSYBUIWirUKS1OHHcv9FYoUL2VW6VIFCkWIu//
@@ -2391,7 +2391,7 @@
         CAgICAgICAgICAgICKji/wMwmLf9dpbOUgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnManageSecurity.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnManageAccount.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAjEAAAA1CAYAAACwYbrLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
         cQAAEnEB89x6jgAAD4tJREFUeF7tnXmMXVUdx9+0U7qXdjqdaTudNqlILVBExAJGREJYgrgvoEZAFMJW

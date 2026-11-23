@@ -117,7 +117,6 @@
             label1.Size = new Size(159, 23);
             label1.TabIndex = 50;
             label1.Text = "ADMIN PORTAL";
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -188,6 +187,7 @@
             accessverificationdesk.Size = new Size(219, 29);
             accessverificationdesk.TabIndex = 56;
             accessverificationdesk.UseVisualStyleBackColor = false;
+            accessverificationdesk.Click += accessverificationdesk_Click;
             // 
             // pictureBox1
             // 
@@ -212,6 +212,7 @@
             returntoroleselection.Size = new Size(208, 29);
             returntoroleselection.TabIndex = 58;
             returntoroleselection.UseVisualStyleBackColor = false;
+            returntoroleselection.Click += returntoroleselection_Click;
             // 
             // Form9
             // 
