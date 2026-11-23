@@ -267,6 +267,14 @@ namespace BarangayQuest
                     yield return child;
             }
         }
+
+        private void returntorole2_Click(object sender, EventArgs e)
+        {
+            Form2 Form2 = new Form2();
+            Form2.FormClosed += (s, args) => this.Close();
+            Form2.Show();
+            this.Hide();
+        }
     }
 
     public static class DispatcherSession

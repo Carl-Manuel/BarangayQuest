@@ -14,7 +14,7 @@ namespace BarangayQuest
 {
     public partial class Form3 : Form
     {
-        private readonly string connString = "Server=localhost;Database=barangayquest_db;User ID=root;Password=091916;"; //DB CONNECTION
+        private readonly string connString = "Server=localhost;Database=barangayquest_db;User ID=root;Password=Chickensalad123_;"; //DB CONNECTION
 
         public Form3()
         {
@@ -239,5 +239,10 @@ namespace BarangayQuest
         private void label1_Click(object sender, EventArgs e) { }
         private void textBox3_TextChanged(object sender, EventArgs e) { }
         private void textBox5_TextChanged(object sender, EventArgs e) { }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -42,6 +42,7 @@
             label1 = new Label();
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
+            returntorole2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -198,6 +199,18 @@
             pictureBox3.TabIndex = 152;
             pictureBox3.TabStop = false;
             // 
+            // returntorole2
+            // 
+            returntorole2.BackgroundImage = (Image)resources.GetObject("returntorole2.BackgroundImage");
+            returntorole2.BackgroundImageLayout = ImageLayout.Stretch;
+            returntorole2.FlatStyle = FlatStyle.Popup;
+            returntorole2.Location = new Point(774, 44);
+            returntorole2.Name = "returntorole2";
+            returntorole2.Size = new Size(164, 24);
+            returntorole2.TabIndex = 161;
+            returntorole2.UseVisualStyleBackColor = true;
+            returntorole2.Click += returntorole2_Click;
+            // 
             // Form16
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -205,6 +218,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1009, 581);
+            Controls.Add(returntorole2);
             Controls.Add(accessverificationdesk2);
             Controls.Add(dispatcherpassword);
             Controls.Add(label4);
@@ -242,5 +256,6 @@
         private Label label1;
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
+        private Button returntorole2;
     }
 }
