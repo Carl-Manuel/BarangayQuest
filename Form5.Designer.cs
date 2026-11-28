@@ -252,6 +252,7 @@
             pointshop.Size = new Size(399, 58);
             pointshop.TabIndex = 14;
             pointshop.UseVisualStyleBackColor = false;
+            pointshop.Click += pointshop_Click;
             // 
             // pictureBox3
             // 

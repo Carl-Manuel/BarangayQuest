@@ -643,15 +643,9 @@ namespace BarangayQuest
         // Designer-bound click handlers for the graphic buttons
         private async void suspendacc_Click(object sender, EventArgs e)
         {
-            if (suspendacc != null) suspendacc.Enabled = false;
-            try
-            {
-                await ToggleSuspendSelectedUserAsync();
-            }
-            finally
-            {
-                if (suspendacc != null) suspendacc.Enabled = true;
-            }
+            var suspendForm = new Form25();
+            suspendForm.Show();
+            this.Hide();
         }
 
         private async void updatebutt_Click(object sender, EventArgs e)
@@ -670,15 +664,10 @@ namespace BarangayQuest
 
         private async void backbutton3_Click(object sender, EventArgs e)
         {
-            if (currentPage > 0)
-            {
-                currentPage--;
-                await LoadRegisteredUsersAsync();
-            }
-            else
-            {
-                NavigateTo(new X());
-            }
+            Form25 nextForm = new Form25();
+            nextForm.FormClosed += (s, args) => Application.Exit();
+            nextForm.Show();
+            this.Hide();
         }
 
         private async void next_Click(object sender, EventArgs e)
@@ -694,6 +683,12 @@ namespace BarangayQuest
             }
         }
 
-        private void label3_Click(object sender, EventArgs e) { }
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Form26 nextForm = new Form26();
+            nextForm.FormClosed += (s, args) => Application.Exit();
+            nextForm.Show();
+            this.Hide();
+        }
     }
 }

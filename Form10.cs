@@ -169,5 +169,14 @@ namespace BarangayQuest
             form15.Show();
             this.Hide();
         }
+
+        private void codeverifier_Click(object sender, EventArgs e)
+        {
+            {
+                Form29 form29 = new Form29();
+                form29.Show();
+                this.Hide();
+            }
+        }
     }
 }

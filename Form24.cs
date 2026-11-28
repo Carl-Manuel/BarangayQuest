@@ -144,16 +144,41 @@ namespace BarangayQuest
                 using var conn = new MySqlConnection(connString);
                 await conn.OpenAsync();
 
-                string sessionName = UserSession.FullName?.Trim() ?? "";
+                int activeUserId = UserSession.UserID > 0 ? UserSession.UserID : DispatcherSession.UserID;
+                string sessionName = !string.IsNullOrWhiteSpace(UserSession.FullName)
+                    ? UserSession.FullName.Trim()
+                    : (DispatcherSession.FullName?.Trim() ?? "");
 
-                if (!string.IsNullOrEmpty(sessionName))
+                if (activeUserId > 0)
                 {
-                    string sql = "SELECT FullName, Role FROM Users WHERE FullName = @name LIMIT 1;";
+                    string sql = "SELECT FullName, Role FROM Users WHERE UserID = @uid LIMIT 1;";
+                    using var cmd = new MySqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@uid", activeUserId);
+                    using var reader = await cmd.ExecuteReaderAsync();
+
+                    if (!await reader.ReadAsync() ||
+                        !string.Equals(reader["Role"]?.ToString(), "SuperAdmin", StringComparison.OrdinalIgnoreCase))
+                    {
+                        DenyNonAdminAccess();
+                        return false;
+                    }
+
+                    lblAdminBanner.Text = $"ADMIN: {(reader["FullName"]?.ToString() ?? sessionName).ToUpperInvariant()}";
+                }
+                else if (!string.IsNullOrEmpty(sessionName))
+                {
+                    string sql = @"
+                        SELECT FullName, Role
+                        FROM Users
+                        WHERE FullName = @name OR Username = @name
+                        ORDER BY (Role = 'SuperAdmin') DESC, UserID ASC
+                        LIMIT 1;";
                     using var cmd = new MySqlCommand(sql, conn);
                     cmd.Parameters.AddWithValue("@name", sessionName);
                     using var reader = await cmd.ExecuteReaderAsync();
 
-                    if (!await reader.ReadAsync() || !string.Equals(reader["Role"]?.ToString(), "SuperAdmin", StringComparison.OrdinalIgnoreCase))
+                    if (!await reader.ReadAsync() ||
+                        !string.Equals(reader["Role"]?.ToString(), "SuperAdmin", StringComparison.OrdinalIgnoreCase))
                     {
                         DenyNonAdminAccess();
                         return false;

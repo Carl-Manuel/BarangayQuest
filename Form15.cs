@@ -497,5 +497,13 @@ namespace BarangayQuest
                 if (update != null) update.Enabled = true;
             }
         }
+
+        private void toolinventory_Click(object sender, EventArgs e)
+        {
+            Form27 nextForm = new Form27();
+            nextForm.FormClosed += (s, args) => Application.Exit();
+            nextForm.Show();
+            this.Hide();
+        }
     }
 }

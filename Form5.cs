@@ -408,5 +408,10 @@ namespace BarangayQuest
         }
 
         private void Form5_Load(object? sender, EventArgs e) { }
+
+        private void pointshop_Click(object sender, EventArgs e)
+        {
+            NavigateTo(new Form28());
+        }
     }
 }

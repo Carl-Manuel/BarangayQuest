@@ -53,10 +53,9 @@
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(81, 37);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
+            pictureBox1.Location = new Point(71, 28);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1003, 89);
+            pictureBox1.Size = new Size(878, 67);
             pictureBox1.TabIndex = 21;
             pictureBox1.TabStop = false;
             // 
@@ -65,10 +64,9 @@
             pictureBox2.BackColor = Color.FromArgb(60, 40, 0);
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(101, 48);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
+            pictureBox2.Location = new Point(88, 36);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(440, 67);
+            pictureBox2.Size = new Size(385, 50);
             pictureBox2.TabIndex = 22;
             pictureBox2.TabStop = false;
             // 
@@ -79,10 +77,9 @@
             inventorymanagement.BackgroundImageLayout = ImageLayout.Stretch;
             inventorymanagement.FlatStyle = FlatStyle.Flat;
             inventorymanagement.ForeColor = Color.White;
-            inventorymanagement.Location = new Point(29, 134);
-            inventorymanagement.Margin = new Padding(3, 4, 3, 4);
+            inventorymanagement.Location = new Point(25, 100);
             inventorymanagement.Name = "inventorymanagement";
-            inventorymanagement.Size = new Size(344, 174);
+            inventorymanagement.Size = new Size(301, 130);
             inventorymanagement.TabIndex = 23;
             inventorymanagement.UseVisualStyleBackColor = false;
             inventorymanagement.Click += inventorymanagement_Click;
@@ -94,10 +91,9 @@
             adminprofile.BackgroundImageLayout = ImageLayout.Stretch;
             adminprofile.FlatStyle = FlatStyle.Flat;
             adminprofile.ForeColor = Color.White;
-            adminprofile.Location = new Point(401, 133);
-            adminprofile.Margin = new Padding(3, 4, 3, 4);
+            adminprofile.Location = new Point(351, 100);
             adminprofile.Name = "adminprofile";
-            adminprofile.Size = new Size(344, 175);
+            adminprofile.Size = new Size(301, 131);
             adminprofile.TabIndex = 24;
             adminprofile.UseVisualStyleBackColor = false;
             adminprofile.Click += adminprofile_Click;
@@ -109,10 +105,9 @@
             usermanagement.BackgroundImageLayout = ImageLayout.Stretch;
             usermanagement.FlatStyle = FlatStyle.Flat;
             usermanagement.ForeColor = Color.White;
-            usermanagement.Location = new Point(777, 134);
-            usermanagement.Margin = new Padding(3, 4, 3, 4);
+            usermanagement.Location = new Point(680, 100);
             usermanagement.Name = "usermanagement";
-            usermanagement.Size = new Size(344, 174);
+            usermanagement.Size = new Size(301, 130);
             usermanagement.TabIndex = 25;
             usermanagement.UseVisualStyleBackColor = false;
             usermanagement.Click += usermanagement_Click;
@@ -124,10 +119,9 @@
             questmapdispatch.BackgroundImageLayout = ImageLayout.Stretch;
             questmapdispatch.FlatStyle = FlatStyle.Flat;
             questmapdispatch.ForeColor = Color.White;
-            questmapdispatch.Location = new Point(208, 334);
-            questmapdispatch.Margin = new Padding(3, 4, 3, 4);
+            questmapdispatch.Location = new Point(182, 250);
             questmapdispatch.Name = "questmapdispatch";
-            questmapdispatch.Size = new Size(344, 174);
+            questmapdispatch.Size = new Size(301, 130);
             questmapdispatch.TabIndex = 26;
             questmapdispatch.UseVisualStyleBackColor = false;
             questmapdispatch.Click += questmapdispatch_Click;
@@ -137,10 +131,9 @@
             pictureBox3.BackColor = Color.Transparent;
             pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
             pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox3.Location = new Point(222, 529);
-            pictureBox3.Margin = new Padding(3, 4, 3, 4);
+            pictureBox3.Location = new Point(194, 397);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(310, 128);
+            pictureBox3.Size = new Size(271, 96);
             pictureBox3.TabIndex = 27;
             pictureBox3.TabStop = false;
             // 
@@ -149,10 +142,9 @@
             pictureBox4.BackColor = Color.Transparent;
             pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(593, 532);
-            pictureBox4.Margin = new Padding(3, 4, 3, 4);
+            pictureBox4.Location = new Point(519, 399);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(310, 128);
+            pictureBox4.Size = new Size(271, 96);
             pictureBox4.TabIndex = 28;
             pictureBox4.TabStop = false;
             // 
@@ -162,9 +154,9 @@
             totalusers.BackColor = Color.FromArgb(60, 40, 0);
             totalusers.Font = new Font("Tempus Sans ITC", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             totalusers.ForeColor = SystemColors.Control;
-            totalusers.Location = new Point(297, 587);
+            totalusers.Location = new Point(260, 440);
             totalusers.Name = "totalusers";
-            totalusers.Size = new Size(172, 31);
+            totalusers.Size = new Size(136, 24);
             totalusers.TabIndex = 29;
             totalusers.Text = "TOTAL USERS";
             // 
@@ -174,9 +166,9 @@
             activequests.BackColor = Color.FromArgb(60, 40, 0);
             activequests.Font = new Font("Tempus Sans ITC", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             activequests.ForeColor = SystemColors.Control;
-            activequests.Location = new Point(661, 587);
+            activequests.Location = new Point(578, 440);
             activequests.Name = "activequests";
-            activequests.Size = new Size(198, 31);
+            activequests.Size = new Size(157, 24);
             activequests.TabIndex = 30;
             activequests.Text = "ACTIVE QUESTS";
             // 
@@ -185,10 +177,9 @@
             pictureBox5.BackColor = Color.Transparent;
             pictureBox5.BackgroundImage = (Image)resources.GetObject("pictureBox5.BackgroundImage");
             pictureBox5.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox5.Location = new Point(6, 699);
-            pictureBox5.Margin = new Padding(3, 4, 3, 4);
+            pictureBox5.Location = new Point(5, 524);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(1141, 65);
+            pictureBox5.Size = new Size(998, 49);
             pictureBox5.TabIndex = 31;
             pictureBox5.TabStop = false;
             // 
@@ -199,20 +190,20 @@
             codeverifier.BackgroundImageLayout = ImageLayout.Stretch;
             codeverifier.FlatStyle = FlatStyle.Flat;
             codeverifier.ForeColor = Color.White;
-            codeverifier.Location = new Point(593, 334);
-            codeverifier.Margin = new Padding(3, 4, 3, 4);
+            codeverifier.Location = new Point(519, 250);
             codeverifier.Name = "codeverifier";
-            codeverifier.Size = new Size(344, 174);
+            codeverifier.Size = new Size(301, 130);
             codeverifier.TabIndex = 32;
             codeverifier.UseVisualStyleBackColor = false;
+            codeverifier.Click += codeverifier_Click;
             // 
             // X
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1153, 775);
+            ClientSize = new Size(1009, 581);
             Controls.Add(codeverifier);
             Controls.Add(pictureBox5);
             Controls.Add(activequests);
@@ -225,7 +216,6 @@
             Controls.Add(inventorymanagement);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "X";
             Text = "Form10";
             Load += X_Load;

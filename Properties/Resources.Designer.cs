@@ -69,5 +69,15 @@ namespace BarangayQuest.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_11_28_175419_Photoroom {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2026-11-28 175419-Photoroom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
