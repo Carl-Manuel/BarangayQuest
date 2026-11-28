@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form27));
-            editcoupon = new Button();
+            editinventory = new Button();
             update = new Button();
             label1 = new Label();
             label2 = new Label();
@@ -49,17 +49,8 @@
             label37 = new Label();
             label38 = new Label();
             label40 = new Label();
-            button22 = new Button();
-            button23 = new Button();
-            button24 = new Button();
-            button26 = new Button();
-            button27 = new Button();
-            button28 = new Button();
-            button29 = new Button();
-            button30 = new Button();
             button31 = new Button();
             paybhundo = new Button();
-            wantawsan = new Button();
             twopipti = new Button();
             cook = new Button();
             egg = new Button();
@@ -136,6 +127,16 @@
             admindashboard4 = new Button();
             pictureBox3 = new PictureBox();
             pictureBox6 = new PictureBox();
+            wantawsan = new Button();
+            button21 = new Button();
+            button22 = new Button();
+            button23 = new Button();
+            button24 = new Button();
+            button25 = new Button();
+            button26 = new Button();
+            button27 = new Button();
+            button28 = new Button();
+            goodsinventory = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
@@ -148,19 +149,19 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
-            // editcoupon
+            // editinventory
             // 
-            editcoupon.BackColor = Color.FromArgb(60, 40, 0);
-            editcoupon.BackgroundImage = (Image)resources.GetObject("editcoupon.BackgroundImage");
-            editcoupon.BackgroundImageLayout = ImageLayout.Stretch;
-            editcoupon.FlatStyle = FlatStyle.Popup;
-            editcoupon.ForeColor = Color.Transparent;
-            editcoupon.Location = new Point(401, 589);
-            editcoupon.Margin = new Padding(3, 4, 3, 4);
-            editcoupon.Name = "editcoupon";
-            editcoupon.Size = new Size(184, 48);
-            editcoupon.TabIndex = 320;
-            editcoupon.UseVisualStyleBackColor = false;
+            editinventory.BackColor = Color.FromArgb(60, 40, 0);
+            editinventory.BackgroundImage = (Image)resources.GetObject("editinventory.BackgroundImage");
+            editinventory.BackgroundImageLayout = ImageLayout.Stretch;
+            editinventory.FlatStyle = FlatStyle.Popup;
+            editinventory.ForeColor = Color.Transparent;
+            editinventory.Location = new Point(349, 495);
+            editinventory.Margin = new Padding(3, 4, 3, 4);
+            editinventory.Name = "editinventory";
+            editinventory.Size = new Size(205, 68);
+            editinventory.TabIndex = 320;
+            editinventory.UseVisualStyleBackColor = false;
             // 
             // update
             // 
@@ -169,7 +170,7 @@
             update.BackgroundImageLayout = ImageLayout.Stretch;
             update.FlatStyle = FlatStyle.Popup;
             update.ForeColor = Color.Transparent;
-            update.Location = new Point(682, 583);
+            update.Location = new Point(551, 502);
             update.Margin = new Padding(3, 4, 3, 4);
             update.Name = "update";
             update.Size = new Size(184, 68);
@@ -184,9 +185,9 @@
             label1.ForeColor = Color.Black;
             label1.Location = new Point(915, 413);
             label1.Name = "label1";
-            label1.Size = new Size(160, 16);
+            label1.Size = new Size(150, 32);
             label1.TabIndex = 318;
-            label1.Text = "₱500 CASH ASSISTANCE";
+            label1.Text = "PAINTBRUSH, ROLLER\r\nAND BUCKET";
             // 
             // label2
             // 
@@ -194,11 +195,11 @@
             label2.BackColor = Color.FromArgb(248, 160, 14);
             label2.Font = new Font("Times New Roman", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Black;
-            label2.Location = new Point(932, 288);
+            label2.Location = new Point(913, 289);
             label2.Name = "label2";
-            label2.Size = new Size(127, 32);
+            label2.Size = new Size(156, 32);
             label2.TabIndex = 317;
-            label2.Text = "₱1000 \r\nCASH ASSISTANCE";
+            label2.Text = "BOLO / GRASS CUTTER\r\nAND PRUNING SHEARS";
             label2.TextAlign = ContentAlignment.TopCenter;
             // 
             // label4
@@ -207,11 +208,11 @@
             label4.BackColor = Color.FromArgb(248, 160, 14);
             label4.Font = new Font("Times New Roman", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.Black;
-            label4.Location = new Point(915, 188);
+            label4.Location = new Point(915, 172);
             label4.Name = "label4";
-            label4.Size = new Size(160, 16);
+            label4.Size = new Size(145, 48);
             label4.TabIndex = 316;
-            label4.Text = "₱250 CASH ASSISTANCE";
+            label4.Text = "HAMMER, PLIERS\r\nAND SCREWDRIVERS\r\nSET";
             // 
             // label9
             // 
@@ -221,9 +222,9 @@
             label9.ForeColor = Color.Black;
             label9.Location = new Point(578, 395);
             label9.Name = "label9";
-            label9.Size = new Size(155, 32);
+            label9.Size = new Size(67, 16);
             label9.TabIndex = 314;
-            label9.Text = "COOKING ESSENTIALS\r\nPACK";
+            label9.Text = "WHISTLE";
             label9.TextAlign = ContentAlignment.TopCenter;
             // 
             // label10
@@ -232,11 +233,11 @@
             label10.BackColor = Color.FromArgb(248, 160, 14);
             label10.Font = new Font("Times New Roman", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.Black;
-            label10.Location = new Point(594, 301);
+            label10.Location = new Point(574, 304);
             label10.Name = "label10";
-            label10.Size = new Size(118, 16);
+            label10.Size = new Size(154, 16);
             label10.TabIndex = 313;
-            label10.Text = "1 TRAY OF EGGS ";
+            label10.Text = "REFLECTORIZED VEST";
             // 
             // label11
             // 
@@ -318,9 +319,10 @@
             label31.ForeColor = Color.Black;
             label31.Location = new Point(590, 188);
             label31.Name = "label31";
-            label31.Size = new Size(129, 16);
+            label31.Size = new Size(89, 32);
             label31.TabIndex = 298;
-            label31.Text = "5KG SACK OF RICE";
+            label31.Text = "UMBRELLA / \r\nRAINCOAT";
+            label31.TextAlign = ContentAlignment.BottomCenter;
             // 
             // label33
             // 
@@ -330,9 +332,9 @@
             label33.ForeColor = Color.Black;
             label33.Location = new Point(247, 395);
             label33.Name = "label33";
-            label33.Size = new Size(144, 32);
+            label33.Size = new Size(111, 16);
             label33.TabIndex = 296;
-            label33.Text = "5-GALLON PURIFIED \r\nWATER REFILL STUB";
+            label33.Text = "WHEELBARROW";
             label33.TextAlign = ContentAlignment.TopCenter;
             // 
             // label35
@@ -343,9 +345,9 @@
             label35.ForeColor = Color.Black;
             label35.Location = new Point(252, 284);
             label35.Name = "label35";
-            label35.Size = new Size(114, 32);
+            label35.Size = new Size(105, 16);
             label35.TabIndex = 294;
-            label35.Text = "LAUNDRY N \r\nCLEANING PACK";
+            label35.Text = "SHOVEL / RAKE";
             label35.TextAlign = ContentAlignment.TopCenter;
             // 
             // label36
@@ -392,121 +394,10 @@
             label40.ForeColor = Color.Black;
             label40.Location = new Point(242, 176);
             label40.Name = "label40";
-            label40.Size = new Size(145, 16);
+            label40.Size = new Size(128, 32);
             label40.TabIndex = 289;
-            label40.Text = "FAMILY HYGIENE KIT";
-            // 
-            // button22
-            // 
-            button22.BackColor = Color.FromArgb(248, 160, 14);
-            button22.BackgroundImage = (Image)resources.GetObject("button22.BackgroundImage");
-            button22.BackgroundImageLayout = ImageLayout.Stretch;
-            button22.FlatStyle = FlatStyle.Flat;
-            button22.ForeColor = Color.FromArgb(248, 160, 14);
-            button22.Location = new Point(863, 395);
-            button22.Margin = new Padding(3, 4, 3, 4);
-            button22.Name = "button22";
-            button22.Size = new Size(46, 55);
-            button22.TabIndex = 288;
-            button22.UseVisualStyleBackColor = false;
-            // 
-            // button23
-            // 
-            button23.BackColor = Color.FromArgb(248, 160, 14);
-            button23.BackgroundImage = (Image)resources.GetObject("button23.BackgroundImage");
-            button23.BackgroundImageLayout = ImageLayout.Stretch;
-            button23.FlatStyle = FlatStyle.Flat;
-            button23.ForeColor = Color.FromArgb(248, 160, 14);
-            button23.Location = new Point(863, 284);
-            button23.Margin = new Padding(3, 4, 3, 4);
-            button23.Name = "button23";
-            button23.Size = new Size(46, 55);
-            button23.TabIndex = 287;
-            button23.UseVisualStyleBackColor = false;
-            // 
-            // button24
-            // 
-            button24.BackColor = Color.FromArgb(248, 160, 14);
-            button24.BackgroundImage = (Image)resources.GetObject("button24.BackgroundImage");
-            button24.BackgroundImageLayout = ImageLayout.Stretch;
-            button24.FlatStyle = FlatStyle.Flat;
-            button24.ForeColor = Color.FromArgb(248, 160, 14);
-            button24.Location = new Point(863, 176);
-            button24.Margin = new Padding(3, 4, 3, 4);
-            button24.Name = "button24";
-            button24.Size = new Size(46, 55);
-            button24.TabIndex = 286;
-            button24.UseVisualStyleBackColor = false;
-            // 
-            // button26
-            // 
-            button26.BackColor = Color.FromArgb(248, 160, 14);
-            button26.BackgroundImage = (Image)resources.GetObject("button26.BackgroundImage");
-            button26.BackgroundImageLayout = ImageLayout.Stretch;
-            button26.FlatStyle = FlatStyle.Flat;
-            button26.ForeColor = Color.FromArgb(248, 160, 14);
-            button26.Location = new Point(526, 395);
-            button26.Margin = new Padding(3, 4, 3, 4);
-            button26.Name = "button26";
-            button26.Size = new Size(46, 55);
-            button26.TabIndex = 284;
-            button26.UseVisualStyleBackColor = false;
-            // 
-            // button27
-            // 
-            button27.BackColor = Color.FromArgb(248, 160, 14);
-            button27.BackgroundImage = (Image)resources.GetObject("button27.BackgroundImage");
-            button27.BackgroundImageLayout = ImageLayout.Stretch;
-            button27.FlatStyle = FlatStyle.Flat;
-            button27.ForeColor = Color.FromArgb(248, 160, 14);
-            button27.Location = new Point(526, 287);
-            button27.Margin = new Padding(3, 4, 3, 4);
-            button27.Name = "button27";
-            button27.Size = new Size(46, 55);
-            button27.TabIndex = 283;
-            button27.UseVisualStyleBackColor = false;
-            // 
-            // button28
-            // 
-            button28.BackColor = Color.FromArgb(248, 160, 14);
-            button28.BackgroundImage = (Image)resources.GetObject("button28.BackgroundImage");
-            button28.BackgroundImageLayout = ImageLayout.Stretch;
-            button28.FlatStyle = FlatStyle.Flat;
-            button28.ForeColor = Color.FromArgb(248, 160, 14);
-            button28.Location = new Point(526, 179);
-            button28.Margin = new Padding(3, 4, 3, 4);
-            button28.Name = "button28";
-            button28.Size = new Size(46, 55);
-            button28.TabIndex = 282;
-            button28.UseVisualStyleBackColor = false;
-            // 
-            // button29
-            // 
-            button29.BackColor = Color.FromArgb(248, 160, 14);
-            button29.BackgroundImage = (Image)resources.GetObject("button29.BackgroundImage");
-            button29.BackgroundImageLayout = ImageLayout.Stretch;
-            button29.FlatStyle = FlatStyle.Flat;
-            button29.ForeColor = Color.FromArgb(248, 160, 14);
-            button29.Location = new Point(190, 395);
-            button29.Margin = new Padding(3, 4, 3, 4);
-            button29.Name = "button29";
-            button29.Size = new Size(46, 55);
-            button29.TabIndex = 281;
-            button29.UseVisualStyleBackColor = false;
-            // 
-            // button30
-            // 
-            button30.BackColor = Color.FromArgb(248, 160, 14);
-            button30.BackgroundImage = (Image)resources.GetObject("button30.BackgroundImage");
-            button30.BackgroundImageLayout = ImageLayout.Stretch;
-            button30.FlatStyle = FlatStyle.Flat;
-            button30.ForeColor = Color.FromArgb(248, 160, 14);
-            button30.Location = new Point(190, 285);
-            button30.Margin = new Padding(3, 4, 3, 4);
-            button30.Name = "button30";
-            button30.Size = new Size(46, 55);
-            button30.TabIndex = 280;
-            button30.UseVisualStyleBackColor = false;
+            label40.Text = "BROOMSTICK AND\r\nDUSTPAN";
+            label40.TextAlign = ContentAlignment.BottomCenter;
             // 
             // button31
             // 
@@ -515,7 +406,7 @@
             button31.BackgroundImageLayout = ImageLayout.Stretch;
             button31.FlatStyle = FlatStyle.Flat;
             button31.ForeColor = Color.FromArgb(248, 160, 14);
-            button31.Location = new Point(190, 177);
+            button31.Location = new Point(187, 173);
             button31.Margin = new Padding(3, 4, 3, 4);
             button31.Name = "button31";
             button31.Size = new Size(46, 55);
@@ -535,20 +426,6 @@
             paybhundo.Size = new Size(223, 101);
             paybhundo.TabIndex = 278;
             paybhundo.UseVisualStyleBackColor = false;
-            // 
-            // wantawsan
-            // 
-            wantawsan.BackColor = Color.FromArgb(60, 40, 0);
-            wantawsan.BackgroundImage = (Image)resources.GetObject("wantawsan.BackgroundImage");
-            wantawsan.BackgroundImageLayout = ImageLayout.Stretch;
-            wantawsan.FlatStyle = FlatStyle.Flat;
-            wantawsan.ForeColor = Color.FromArgb(60, 40, 0);
-            wantawsan.Location = new Point(850, 261);
-            wantawsan.Margin = new Padding(3, 4, 3, 4);
-            wantawsan.Name = "wantawsan";
-            wantawsan.Size = new Size(223, 101);
-            wantawsan.TabIndex = 277;
-            wantawsan.UseVisualStyleBackColor = false;
             // 
             // twopipti
             // 
@@ -1539,6 +1416,146 @@
             pictureBox6.TabIndex = 200;
             pictureBox6.TabStop = false;
             // 
+            // wantawsan
+            // 
+            wantawsan.BackColor = Color.FromArgb(60, 40, 0);
+            wantawsan.BackgroundImage = (Image)resources.GetObject("wantawsan.BackgroundImage");
+            wantawsan.BackgroundImageLayout = ImageLayout.Stretch;
+            wantawsan.FlatStyle = FlatStyle.Flat;
+            wantawsan.ForeColor = Color.FromArgb(60, 40, 0);
+            wantawsan.Location = new Point(850, 261);
+            wantawsan.Margin = new Padding(3, 4, 3, 4);
+            wantawsan.Name = "wantawsan";
+            wantawsan.Size = new Size(223, 101);
+            wantawsan.TabIndex = 277;
+            wantawsan.UseVisualStyleBackColor = false;
+            // 
+            // button21
+            // 
+            button21.BackColor = Color.FromArgb(248, 160, 14);
+            button21.BackgroundImage = (Image)resources.GetObject("button21.BackgroundImage");
+            button21.BackgroundImageLayout = ImageLayout.Stretch;
+            button21.FlatStyle = FlatStyle.Flat;
+            button21.ForeColor = Color.FromArgb(248, 160, 14);
+            button21.Location = new Point(188, 281);
+            button21.Margin = new Padding(3, 4, 3, 4);
+            button21.Name = "button21";
+            button21.Size = new Size(46, 55);
+            button21.TabIndex = 321;
+            button21.UseVisualStyleBackColor = false;
+            // 
+            // button22
+            // 
+            button22.BackColor = Color.FromArgb(248, 160, 14);
+            button22.BackgroundImage = (Image)resources.GetObject("button22.BackgroundImage");
+            button22.BackgroundImageLayout = ImageLayout.Stretch;
+            button22.FlatStyle = FlatStyle.Flat;
+            button22.ForeColor = Color.FromArgb(248, 160, 14);
+            button22.Location = new Point(187, 393);
+            button22.Margin = new Padding(3, 4, 3, 4);
+            button22.Name = "button22";
+            button22.Size = new Size(46, 55);
+            button22.TabIndex = 322;
+            button22.UseVisualStyleBackColor = false;
+            // 
+            // button23
+            // 
+            button23.BackColor = Color.FromArgb(248, 160, 14);
+            button23.BackgroundImage = (Image)resources.GetObject("button23.BackgroundImage");
+            button23.BackgroundImageLayout = ImageLayout.Stretch;
+            button23.FlatStyle = FlatStyle.Flat;
+            button23.ForeColor = Color.FromArgb(248, 160, 14);
+            button23.Location = new Point(524, 176);
+            button23.Margin = new Padding(3, 4, 3, 4);
+            button23.Name = "button23";
+            button23.Size = new Size(46, 55);
+            button23.TabIndex = 323;
+            button23.UseVisualStyleBackColor = false;
+            // 
+            // button24
+            // 
+            button24.BackColor = Color.FromArgb(248, 160, 14);
+            button24.BackgroundImage = (Image)resources.GetObject("button24.BackgroundImage");
+            button24.BackgroundImageLayout = ImageLayout.Stretch;
+            button24.FlatStyle = FlatStyle.Flat;
+            button24.ForeColor = Color.FromArgb(248, 160, 14);
+            button24.Location = new Point(524, 281);
+            button24.Margin = new Padding(3, 4, 3, 4);
+            button24.Name = "button24";
+            button24.Size = new Size(46, 55);
+            button24.TabIndex = 324;
+            button24.UseVisualStyleBackColor = false;
+            // 
+            // button25
+            // 
+            button25.BackColor = Color.FromArgb(248, 160, 14);
+            button25.BackgroundImage = (Image)resources.GetObject("button25.BackgroundImage");
+            button25.BackgroundImageLayout = ImageLayout.Stretch;
+            button25.FlatStyle = FlatStyle.Flat;
+            button25.ForeColor = Color.FromArgb(248, 160, 14);
+            button25.Location = new Point(526, 393);
+            button25.Margin = new Padding(3, 4, 3, 4);
+            button25.Name = "button25";
+            button25.Size = new Size(46, 55);
+            button25.TabIndex = 325;
+            button25.UseVisualStyleBackColor = false;
+            // 
+            // button26
+            // 
+            button26.BackColor = Color.FromArgb(248, 160, 14);
+            button26.BackgroundImage = (Image)resources.GetObject("button26.BackgroundImage");
+            button26.BackgroundImageLayout = ImageLayout.Stretch;
+            button26.FlatStyle = FlatStyle.Flat;
+            button26.ForeColor = Color.FromArgb(248, 160, 14);
+            button26.Location = new Point(861, 173);
+            button26.Margin = new Padding(3, 4, 3, 4);
+            button26.Name = "button26";
+            button26.Size = new Size(46, 55);
+            button26.TabIndex = 326;
+            button26.UseVisualStyleBackColor = false;
+            // 
+            // button27
+            // 
+            button27.BackColor = Color.FromArgb(248, 160, 14);
+            button27.BackgroundImage = (Image)resources.GetObject("button27.BackgroundImage");
+            button27.BackgroundImageLayout = ImageLayout.Stretch;
+            button27.FlatStyle = FlatStyle.Flat;
+            button27.ForeColor = Color.FromArgb(248, 160, 14);
+            button27.Location = new Point(861, 281);
+            button27.Margin = new Padding(3, 4, 3, 4);
+            button27.Name = "button27";
+            button27.Size = new Size(46, 55);
+            button27.TabIndex = 327;
+            button27.UseVisualStyleBackColor = false;
+            // 
+            // button28
+            // 
+            button28.BackColor = Color.FromArgb(248, 160, 14);
+            button28.BackgroundImage = (Image)resources.GetObject("button28.BackgroundImage");
+            button28.BackgroundImageLayout = ImageLayout.Stretch;
+            button28.FlatStyle = FlatStyle.Flat;
+            button28.ForeColor = Color.FromArgb(248, 160, 14);
+            button28.Location = new Point(861, 393);
+            button28.Margin = new Padding(3, 4, 3, 4);
+            button28.Name = "button28";
+            button28.Size = new Size(46, 55);
+            button28.TabIndex = 328;
+            button28.UseVisualStyleBackColor = false;
+            // 
+            // goodsinventory
+            // 
+            goodsinventory.BackColor = Color.FromArgb(60, 40, 0);
+            goodsinventory.BackgroundImage = (Image)resources.GetObject("goodsinventory.BackgroundImage");
+            goodsinventory.BackgroundImageLayout = ImageLayout.Stretch;
+            goodsinventory.FlatStyle = FlatStyle.Popup;
+            goodsinventory.ForeColor = Color.Transparent;
+            goodsinventory.Location = new Point(749, 498);
+            goodsinventory.Margin = new Padding(3, 4, 3, 4);
+            goodsinventory.Name = "goodsinventory";
+            goodsinventory.Size = new Size(190, 72);
+            goodsinventory.TabIndex = 329;
+            goodsinventory.UseVisualStyleBackColor = false;
+            // 
             // Form27
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -1546,7 +1563,16 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1153, 775);
-            Controls.Add(editcoupon);
+            Controls.Add(goodsinventory);
+            Controls.Add(button28);
+            Controls.Add(button27);
+            Controls.Add(button26);
+            Controls.Add(button25);
+            Controls.Add(button24);
+            Controls.Add(button23);
+            Controls.Add(button22);
+            Controls.Add(button21);
+            Controls.Add(editinventory);
             Controls.Add(update);
             Controls.Add(label1);
             Controls.Add(label2);
@@ -1566,14 +1592,6 @@
             Controls.Add(label37);
             Controls.Add(label38);
             Controls.Add(label40);
-            Controls.Add(button22);
-            Controls.Add(button23);
-            Controls.Add(button24);
-            Controls.Add(button26);
-            Controls.Add(button27);
-            Controls.Add(button28);
-            Controls.Add(button29);
-            Controls.Add(button30);
             Controls.Add(button31);
             Controls.Add(paybhundo);
             Controls.Add(wantawsan);
@@ -1672,7 +1690,7 @@
 
         #endregion
 
-        private Button editcoupon;
+        private Button editinventory;
         private Button update;
         private Label label1;
         private Label label2;
@@ -1692,17 +1710,8 @@
         private Label label37;
         private Label label38;
         private Label label40;
-        private Button button22;
-        private Button button23;
-        private Button button24;
-        private Button button26;
-        private Button button27;
-        private Button button28;
-        private Button button29;
-        private Button button30;
         private Button button31;
         private Button paybhundo;
-        private Button wantawsan;
         private Button twopipti;
         private Button cook;
         private Button egg;
@@ -1779,5 +1788,15 @@
         private Button admindashboard4;
         private PictureBox pictureBox3;
         private PictureBox pictureBox6;
+        private Button wantawsan;
+        private Button button21;
+        private Button button22;
+        private Button button23;
+        private Button button24;
+        private Button button25;
+        private Button button26;
+        private Button button27;
+        private Button button28;
+        private Button goodsinventory;
     }
 }
